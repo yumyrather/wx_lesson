@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+				<%= render_page_title %> 
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		    <%= csrf_meta_tags %>
+		    <%= stylesheet_link_tag "admin", media: "all" %>
+		    <%= javascript_include_tag "admin"%>
+				<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    </head>
+    <body class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+			<%=render 'shared/admin/header_nav'%>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+           <%=render 'shared/admin/side_nav'%>
+					  <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Dashboard
+                        <small>Control panel</small>
+                    </h1>
+										<%= render_breadcrumb %>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+									<%= notice_message %>
+	
+         		      <%= yield %>
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+    </body>
+</html>

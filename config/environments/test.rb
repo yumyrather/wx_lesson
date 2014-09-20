@@ -33,4 +33,6 @@ WxLesson::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+  SITE_NAME = "超越极限"
+  
 end

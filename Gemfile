@@ -25,6 +25,12 @@ gem 'rack-contrib'
 gem 'rack-cors'
 
 
+#pageinate
+gem 'wice_grid'
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 0.1.3'
+gem "ransack"
+
 
 
 # Use SCSS for stylesheets
@@ -48,10 +54,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'simple_form'
+gem 'bootstrap_helper', github: 'xdite/bootstrap-helper'
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
+group :development, :test do
+  gem 'better_errors'
+  gem "binding_of_caller"
+  gem 'meta_request'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

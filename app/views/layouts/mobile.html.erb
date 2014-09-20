@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>上理果园</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "mobile", media: "all" %>
+    <%= javascript_include_tag "mobile"%>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <!--header class="bar bar-nav">
+      <h1 class="title"></h1>
+    </header-->
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <%= yield %>
+    </div>
+
+		<nav class="bar bar-tab">
+			<%=link_to mobile_root_path,:class=>"tab-item","data-ignore"=>"push" do%>
+		    <span class="icon fa fa-home"></span>
+		    <span class="tab-label">首页</span>
+				<%end%>
+			<%=link_to mobile_products_path,:class=>"tab-item","data-ignore"=>"push" do%>
+		    <span class="icon fa fa-list"></span>
+		    <span class="tab-label">选购</span>
+			<%end%>
+			
+			
+			<%=link_to edit_mobile_cart_path(current_cart),:class=>"tab-item","data-ignore"=>"push"  do%>
+		    <span class="icon fa fa-shopping-cart"></span>
+		    <span class="tab-label">购物车</span>
+			<%end%>
+		  <a class="tab-item" href="#">
+		    <span class="icon fa fa-user"></span>
+		    <span class="tab-label">个人中心</span>
+		  </a>
+
+		</nav>
+		
+  </body>
+</html>
+
+
+<script>
+function onBridgeReady(){
+ WeixinJSBridge.call('hideOptionMenu');
+}
+
+if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+}else{
+    onBridgeReady();
+}
+</script>

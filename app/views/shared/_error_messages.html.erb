@@ -1,0 +1,12 @@
+<% if target.errors.any? %>
+	<div class="alert alert-danger alert-dismissable">
+		<i class="fa fa-ban"></i>
+	  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<p><strong>有<%=target.errors.count%>处问题导致无法提交:</strong></p>
+		<ul>
+		<% target.errors.full_messages.each do |msg| %>
+	    <li><%= msg %></li>
+	  <% end %>
+		</ul>
+	</div>
+<% end %>
