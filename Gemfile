@@ -60,7 +60,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'simple_form'
-gem 'bootstrap_helper', github: 'xdite/bootstrap-helper'
+gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
 gem 'ckeditor'
 
 group :doc do
