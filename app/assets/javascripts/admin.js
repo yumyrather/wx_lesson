@@ -1,6 +1,5 @@
 //= require jquery
 //= require jquery_ujs
-//= require ckeditor/init
 //= require  admin/jquery-ui-1.10.3.min.js
 //= require  admin/bootstrap.min.js
 //= require  admin/plugins/morris/morris.min.js
