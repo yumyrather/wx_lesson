@@ -57,7 +57,7 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'bootstrap_helper', '4.2.2.1'
+gem 'bootstrap_helper'
 gem 'simple_form'
 gem 'ckeditor'
 
