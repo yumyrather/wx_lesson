@@ -59,8 +59,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'bootstrap_helper', '4.2.2.1'
 gem 'simple_form'
-gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
 gem 'ckeditor'
 
 group :doc do
