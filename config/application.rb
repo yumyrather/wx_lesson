@@ -20,6 +20,11 @@ module WxLesson
     # config.time_zone = 'Central Time (US & Canada)'
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += %W(#{config.root}/lib/**/*.rb)
+    
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    
+    
+    
     config.paths.add "lib", glob: "**/*.rb"
     
     config.paths.add "app/api", glob: "**/*.rb"
