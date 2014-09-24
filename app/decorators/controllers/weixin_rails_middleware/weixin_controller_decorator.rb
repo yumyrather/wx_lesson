@@ -27,8 +27,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     def response_text_message(options={})
       @wx_keyword = WxKeyword.find_by_keyword(@keyword)
       if @wx_keyword 
-        
-        reply_news_message(articles_list_by_keyword(@keyword))
+        reply_news_message(articles_list_by_keyword(@wx_keyword))
         
       else
         reply_text_message("")
