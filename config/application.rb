@@ -37,7 +37,7 @@ module WxLesson
     config.i18n.default_locale = :"zh-CN"
     config.time_zone = 'Beijing'
     config.active_record.default_timezone = :local
-    config.assets.precompile += %w(admin.css admin.js ckeditor.js)    
+    config.assets.precompile += %w(admin.css admin.js ckeditor.js mobile.js mobile.css)    
     
   end
 end
