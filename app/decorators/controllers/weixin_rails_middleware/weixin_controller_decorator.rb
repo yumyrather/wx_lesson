@@ -3,15 +3,36 @@
 # 2, @weixin_public_account: 如果配置了public_account_class选项,则会返回当前实例,否则返回nil.
 # 3, @keyword: 目前微信只有这三种情况存在关键字: 文本消息, 事件推送, 接收语音识别结果
 WeixinRailsMiddleware::WeixinController.class_eval do
-
+  def server_path
+    "http://115.29.189.26"
+  end
   def reply
     render xml: send("response_#{@weixin_message.MsgType}_message", {})
   end
 
+  def articles_list_by_keyword(keyword)
+    arts = []
+
+    keyword.wx_articles.each do |article|
+      art = generate_article("#{article.title}", "#{article.breif}", "#{server_path}/images/banner.jpg?1",mobile_wx_article_url(article))
+      arts << art_title
+    end
+    # 商城首页
+    arts
+  end
+  
+  
   private
 
     def response_text_message(options={})
-      reply_text_message("Your Message: #{@keyword}")
+      @wx_keyword = WxKeyword.find_by_keyword(@keyword)
+      if @wx_keyword 
+        
+        reply_news_message(articles_list_by_keyword(@keyword))
+        
+      else
+        reply_text_message("")
+      end
     end
 
     # <Location_X>23.134521</Location_X>

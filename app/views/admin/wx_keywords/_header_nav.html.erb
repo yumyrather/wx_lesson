@@ -1,0 +1,4 @@
+<%= render_list :class => "nav nav-pills" do |li|
+     li << link_to(t("关键信息"), [:admin,@keyword])
+     li << link_to(t("返回图文消息列表"), wx_article_list_admin_wx_keyword_path(@keyword))
+end %>

@@ -26,14 +26,14 @@ ActiveRecord::Schema.define(version: 20140924020819) do
     t.datetime "updated_at"
   end
 
-  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
-  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
+  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
   create_table "wx_articles", force: true do |t|
     t.string   "title"
     t.string   "cover"
     t.string   "breif"
-    t.text     "content",    limit: 4294967295
+    t.text     "content",    limit: 2147483647
     t.boolean  "hidden",                        default: true
     t.datetime "created_at"
     t.datetime "updated_at"

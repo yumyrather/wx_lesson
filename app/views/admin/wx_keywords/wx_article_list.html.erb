@@ -1,0 +1,46 @@
+<%=render 'header_nav'%>
+<div class="box">
+	<div class="box-header">
+	   <h3 class="box-title">关键字-<%=@keyword.keyword%>
+     </h3>
+
+	</div><!-- /.box-header -->
+	<div class="box-body">
+    <div class="row">
+        <div class="col-md-12">
+					<%= grid(@articles_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+						g.column :name => 'title', :attribute => 'title' do |article|
+							link_to article.title,[:admin,article]
+						end
+
+						g.column do |article|
+							current_item = @keyword.wx_keyword_items.find_by_wx_article_id(article.id)
+							if current_item
+								edit =  link_to "移除", [:admin,current_item], method: :delete ,:id=>"link_article_#{article.id}",:remote=>true
+							else
+								remove = link_to "添加", admin_wx_keyword_items_path(:article_id=>article,:keyword_id=>@keyword),:method=>:post,:id=>"link_article_#{article.id}",:remote=>true
+								raw "#{edit} #{remove}"
+							end
+
+
+						end
+
+					end -%>
+				</div>	
+
+		
+			</div>
+			
+		
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="btn-group pull-left">
+		<%=link_to "返回列表",admin_wx_articles_path,:class=>"btn"%>
+	
+	</div>
+	<div class="btn-group pull-right">
+	</div>
+</div>

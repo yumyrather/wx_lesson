@@ -12,6 +12,7 @@ WxLesson::Application.routes.draw do
       end
     end
     resources :wx_articles
+    resources :wx_keyword_items
   end
   
   

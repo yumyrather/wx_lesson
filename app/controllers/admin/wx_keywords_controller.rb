@@ -29,7 +29,7 @@ class  Admin::WxKeywordsController < Admin::BaseController
 
     def update
       @keyword = WxKeyword.find(params[:id]) 
-      if @article.update(wx_keyword_params)
+      if @keyword.update(wx_keyword_params)
         redirect_to [:admin,@keyword],:notice=>"更新关键字成功!"
       else
         render 'edit'
@@ -38,6 +38,7 @@ class  Admin::WxKeywordsController < Admin::BaseController
 
     def destroy
       @keyword = WxKeyword.find(params[:id]) 
+      
       @keyword.destroy
       redirect_to admin_wx_keywords_path
     end
@@ -46,6 +47,7 @@ class  Admin::WxKeywordsController < Admin::BaseController
     def wx_article_list
       @keyword = WxKeyword.find(params[:id])
       @articles = WxArticle.all
+      @articles_grid = initialize_grid(@articles,:per_page => 20)
     end
     
     private
