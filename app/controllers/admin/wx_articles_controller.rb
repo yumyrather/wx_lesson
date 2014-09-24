@@ -1,5 +1,12 @@
 class  Admin::WxArticlesController < Admin::BaseController  
 
+  def index
+    @page_title = "微信图文消息管理"
+    @q = WxArticle.search(params[:q])
+    @articles = @q.result(distinct: true)
+    @articles_grid = initialize_grid(@articles,:per_page => 20)
+  end
+  
   def show
     @article = WxArticle.find(params[:id])
   end
