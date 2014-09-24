@@ -17,7 +17,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
 
     keyword.wx_articles.each do |article|
       art = generate_article("#{article.title}", "#{article.breif}", "#{server_path}/images/banner.jpg?1",mobile_wx_article_url(article))
-      arts << art_title
+      arts << art
     end
     # 商城首页
     arts
