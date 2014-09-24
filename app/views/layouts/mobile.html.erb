@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>上理果园</title>
+		<%= render_page_title %> 
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -28,23 +28,20 @@
     </div>
 
 		<nav class="bar bar-tab">
-			<%=link_to mobile_root_path,:class=>"tab-item","data-ignore"=>"push" do%>
+			<%=link_to "#",:class=>"tab-item","data-ignore"=>"push"  do%>
 		    <span class="icon fa fa-home"></span>
-		    <span class="tab-label">首页</span>
-				<%end%>
-			<%=link_to mobile_products_path,:class=>"tab-item","data-ignore"=>"push" do%>
+		    <span class="tab-label">最新动态</span>
+			<%end%>
+			<%=link_to "#",:class=>"tab-item","data-ignore"=>"push"  do%>
 		    <span class="icon fa fa-list"></span>
-		    <span class="tab-label">选购</span>
+		    <span class="tab-label">精品课程</span>
 			<%end%>
 			
 			
-			<%=link_to edit_mobile_cart_path(current_cart),:class=>"tab-item","data-ignore"=>"push"  do%>
-		    <span class="icon fa fa-shopping-cart"></span>
-		    <span class="tab-label">购物车</span>
-			<%end%>
+
 		  <a class="tab-item" href="#">
 		    <span class="icon fa fa-user"></span>
-		    <span class="tab-label">个人中心</span>
+		    <span class="tab-label">会员中心</span>
 		  </a>
 
 		</nav>

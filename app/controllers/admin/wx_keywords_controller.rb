@@ -42,6 +42,12 @@ class  Admin::WxKeywordsController < Admin::BaseController
       redirect_to admin_wx_keywords_path
     end
 
+
+    def wx_article_list
+      @keyword = WxKeyword.find(params[:id])
+      @articles = WxArticle.all
+    end
+    
     private
     def wx_keyword_params
       params.require(:wx_keyword).permit!

@@ -1,6 +1,8 @@
 <%= grid(@keywords_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
-	g.column :name => 'ID', :attribute => 'id'
-	g.column :name => 'keyword', :attribute => 'keyword'
+
+	g.column :name => 'keyword', :attribute => 'keyword' do |keyword|
+		link_to keyword.keyword,[:admin,keyword]
+	end
 	g.column :name => 'hidden', :attribute => 'hidden'
 
 

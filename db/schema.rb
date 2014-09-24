@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140923154242) do
+ActiveRecord::Schema.define(version: 20140924020819) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(version: 20140923154242) do
     t.string   "breif"
     t.text     "content",    limit: 4294967295
     t.boolean  "hidden",                        default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wx_keyword_items", force: true do |t|
+    t.integer  "wx_keyword_id"
+    t.integer  "wx_article_id"
+    t.integer  "priority"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

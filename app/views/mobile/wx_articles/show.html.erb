@@ -1,0 +1,13 @@
+<ul class="table-view">
+  <li class="table-view-cell media">
+     <div class="media-body">
+			<h4><%=@article.title%></h4>
+			<small> 发布于<%= l @article.created_at%></small><br/
+			<hr/>
+     </div>
+  </li>
+</ul>
+
+<div class="content-padded rich_content">
+	<%=raw @article.content%>
+</div>
