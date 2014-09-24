@@ -15,6 +15,10 @@ class  Admin::WxArticlesController < Admin::BaseController
     @article = WxArticle.new    
   end
   
+  def edit
+    @article = WxArticle.find(params[:id])
+  end
+  
   def create
     @article = WxArticle.new(wx_article_params)
     if @article.save
@@ -22,6 +26,22 @@ class  Admin::WxArticlesController < Admin::BaseController
     else
       render 'new'
     end
+  end
+  
+  def update
+    @article = WxArticle.find(params[:id])
+    if @article.update(wx_article_params)
+      redirect_to [:admin,@article],:notice=>"更新图文消息成功!"
+    else
+      render 'edit'
+    end
+  end
+  
+  def destroy
+    @article = WxArticle.find(params[:id])
+    
+    @article.destroy
+    redirect_to admin_wx_articles_path
   end
   
   private
