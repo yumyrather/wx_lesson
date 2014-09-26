@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140924020819) do
+ActiveRecord::Schema.define(version: 20140926082707) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -39,6 +39,18 @@ ActiveRecord::Schema.define(version: 20140924020819) do
     t.datetime "updated_at"
   end
 
+  create_table "wx_chapters", force: true do |t|
+    t.integer  "wx_lesson_id"
+    t.string   "title"
+    t.integer  "no"
+    t.string   "cover"
+    t.text     "content",        limit: 2147483647
+    t.integer  "reader_counter",                    default: 0
+    t.boolean  "public_flag",                       default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "wx_keyword_items", force: true do |t|
     t.integer  "wx_keyword_id"
     t.integer  "wx_article_id"
@@ -51,6 +63,34 @@ ActiveRecord::Schema.define(version: 20140924020819) do
     t.string   "keyword"
     t.string   "keyword_type"
     t.boolean  "hidden",       default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wx_lesson", force: true do |t|
+    t.string   "title"
+    t.string   "cover"
+    t.text     "content",           limit: 2147483647
+    t.integer  "wx_chapters_count"
+    t.boolean  "public_flag",                          default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wx_users", force: true do |t|
+    t.string   "open_id"
+    t.string   "username"
+    t.string   "name"
+    t.string   "rights"
+    t.string   "role"
+    t.datetime "last_login"
+    t.string   "ip"
+    t.string   "status"
+    t.string   "bz"
+    t.string   "phone"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "year",       default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
