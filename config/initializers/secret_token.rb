@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-WxLesson::Application.config.secret_key_base = 'e8c918791df1e4bf204e81dac1226f8e1e31f3c736aab291f2823c5c5a22c0ca1dd969bcaca191478806ac963276d5ebb5885fac2dd5081a8844576d66062d80'
+WxCast::Application.config.secret_key_base = 'e8c918791df1e4bf204e81dac1226f8e1e31f3c736aab291f2823c5c5a22c0ca1dd969bcaca191478806ac963276d5ebb5885fac2dd5081a8844576d66062d80'

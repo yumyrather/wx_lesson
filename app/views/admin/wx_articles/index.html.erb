@@ -71,8 +71,12 @@ position:relative;
 				<div class="article_body">
 				</div>
 				<div class="article_footer">
-					<%=link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i>编辑</button>"), edit_admin_wx_article_path(article)%>
-				<%=remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i>删除</button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }%>
+					<div class="btn-group pull-left">
+						<%=link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i>编辑</button>"), edit_admin_wx_article_path(article)%>
+					</div>
+					<div class="btn-group pull-right">
+						<%=remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i>删除</button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }%>
+					</div>
 				</div>
 			</div>
 		<%end%>

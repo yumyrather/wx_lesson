@@ -17,7 +17,7 @@ class CreateWxUsers < ActiveRecord::Migration
       t.timestamps
     end
     
-    create_table :wx_lesson do |t|
+    create_table :wx_lessons do |t|
       t.string :title
       t.string :cover
       t.text :content, :limit => 4294967295

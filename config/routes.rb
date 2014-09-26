@@ -1,4 +1,4 @@
-WxLesson::Application.routes.draw do
+WxCast::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   mount WeixinRailsMiddleware::Engine, at: "/"
   
@@ -11,8 +11,15 @@ WxLesson::Application.routes.draw do
         get 'wx_article_list'
       end
     end
-    resources :wx_articles
     resources :wx_keyword_items
+    resources :wx_articles
+    
+    
+    # LESSON PART
+    resources :wx_lessons
+    resources :wx_chapters
+    resources :wx_users
+    
   end
   
   

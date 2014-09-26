@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20140926082707) do
     t.datetime "updated_at"
   end
 
-  create_table "wx_lesson", force: true do |t|
+  create_table "wx_lessons", force: true do |t|
     t.string   "title"
     t.string   "cover"
     t.text     "content",           limit: 2147483647

@@ -5,7 +5,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
-module WxLesson
+module WxCast
   class Application < Rails::Application
         config.to_prepare do
       # Load application's model / class decorators
