@@ -11,5 +11,7 @@ class ArticleCoverUploaderUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-
+  version :normal do
+    process :resize_to_fit => [360, 200]
+  end
 end
