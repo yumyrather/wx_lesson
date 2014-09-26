@@ -6,13 +6,20 @@
 	border-width:1px;
 	border-style: solid;
 	margin-left:10px;
+	padding-top:10px;
+	padding-left:0px;
+	padding-right:0px;
+	
 }
 
-.article_header,.article_body{
+.article_header{
 	border-bottom-style: dashed;
 	border-bottom-width:1px;
 }
 
+.article_footer{
+	margin-top:5px;
+}
 .images-content{
 	position: absolute;
 	z-index: 1;
@@ -49,7 +56,7 @@ position:relative;
 	<div class="box-body">
 		<div class="row">
 		<%@articles.each do |article|%>
-    	<div class="col-md-4 article">
+    	<div class="col-md-3 article">
 				<div class="article_header">
 					<div class="images-wrapper">
 						<%=image_tag article.cover_url(:normal)%>
@@ -62,9 +69,7 @@ position:relative;
 				</div>
 				
 				<div class="article_body">
-					<%= truncate article.breif%>
 				</div>
-				
 				<div class="article_footer">
 					<%=link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i>编辑</button>"), edit_admin_wx_article_path(article)%>
 				<%=remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i>删除</button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }%>
