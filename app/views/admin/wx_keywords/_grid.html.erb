@@ -1,11 +1,13 @@
 <%= grid(@keywords_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
 
-	g.column :name => 'keyword', :attribute => 'keyword' do |keyword|
+	g.column :name => '关键字', :attribute => 'keyword' do |keyword|
 		link_to keyword.keyword,[:admin,keyword]
 	end
-	g.column :name => 'hidden', :attribute => 'hidden'
-
-
+	
+	g.column :name => '激活', :attribute => 'hidden' do |keyword|
+		t keyword.hidden.to_s
+	end
+	
 	g.column do |keyword|
 		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_keyword_path(keyword)
 		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,keyword], method: :delete, data: { confirm: 'Are you sure?' }

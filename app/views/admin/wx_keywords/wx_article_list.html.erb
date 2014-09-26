@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-12">
 					<%= grid(@articles_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
-						g.column :name => 'title', :attribute => 'title' do |article|
+						g.column :name => '标题', :attribute => 'title' do |article|
 							link_to article.title,[:admin,article]
 						end
 

@@ -1,0 +1,17 @@
+"zh-CN":
+    "true": "是"
+    "false": "否"   
+    activerecord:
+        models:
+            wx_article: "微信图文消息"
+            wx_keyword: "微信关键字"
+        attributes:
+            wx_keyword:
+                keyword: "关键字"
+                hidden: "激活"
+            wx_article:
+                title: "标题"
+                breif: "简介"
+                cover: "封面"
+                hidden: "隐藏"
+                content: "正文"
