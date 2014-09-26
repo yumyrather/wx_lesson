@@ -1,0 +1,16 @@
+<%=render 'shared/error_messages',:target=>@lesson%>
+<div class="row">
+	<%if @lesson.cover %>
+		<%=image_tag @lesson.cover_url(:normal)%>
+	<%end%>
+</div>
+<%=simple_form_for([:admin,@lesson],:html=>{:class=>"form-horizontal"}) do |f|%>
+	<%= f.input :cover,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :title,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :content,:input_html=>{:class=>"form-control"}%>	
+	
+	<div class="form-actions">
+		<%=link_to "返回列表", admin_wx_lessons_path,:class=>"btn"%>
+		<button type="submit" class="btn btn-primary pull-right">保存</button> 
+	</div> <!-- /form-actions -->
+<%end%>

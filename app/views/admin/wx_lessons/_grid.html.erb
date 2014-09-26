@@ -1,0 +1,13 @@
+<%= grid(@lessons_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+
+	g.column :name => '课程名称', :attribute => 'title' do |lesson|
+		link_to lesson.title,[:admin,lesson]
+	end
+	
+	g.column do |lesson|
+		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_lesson_path(lesson)
+		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,lesson], method: :delete, data: { confirm: 'Are you sure?' }
+		raw "#{edit} #{remove}"
+	end
+	
+end -%>
