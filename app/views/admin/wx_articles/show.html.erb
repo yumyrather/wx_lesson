@@ -13,7 +13,13 @@
 	<div class="box-body">
     <div class="row">
         <div class="col-md-4">
-						<h4>分配关键字</h4>
+					<b>封面:</b>
+	
+					<%if @article.cover %>
+						<%=image_tag @article.cover_url(:normal)%>
+					<%end%>
+	
+						<b>分配关键字:</b>
 						<%@article.wx_keyword_items.each do |item|%>
 							<%=link_to item.wx_keyword.keyword,[:admin,item.wx_keyword]%><br/>
 						<%end%>
@@ -24,13 +30,10 @@
 				</div>
 				
         <div class="col-md-8">
-						<%if @article.cover %>
 						<b>简介</b><br/>
 						<p><%=@article.breif%></p>
 						
 						<b>正文</b><br/>
-							<%=image_tag @article.cover_url(:normal)%>
-						<%end%>
 					<%=raw @article.content%>
 				</div>	
 				
