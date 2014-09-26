@@ -1,7 +1,38 @@
 <%= content_for :title do %>
 	微信图图文消息列表
 <% end %>
+<style>
+.article{
+	border-width:1px;
+	border-style: solid;
+	margin-left:10px;
+}
 
+.article_header,.article_body{
+	border-bottom-style: dashed;
+	border-bottom-width:1px;
+}
+
+.images-content{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	color: #fff;
+	background: rgba(0,0,0,.7);
+	height: 54px;
+	line-height: 54px; 
+	overflow: hidden;
+}
+
+.images-wrapper{
+min-height:200px;
+position:relative;
+}
+
+
+</style>
 <div class="box">
 	<div class="box-header">
 	   <h3 class="box-title">微信图文消息列表</h3>
@@ -16,6 +47,30 @@
      </div>
 	</div><!-- /.box-header -->
 	<div class="box-body">
-		<%=render 'grid'%>
+		<div class="row">
+		<%@articles.each do |article|%>
+    	<div class="col-md-4 article">
+				<div class="article_header">
+					<div class="images-wrapper">
+						<%=image_tag article.cover_url(:normal)%>
+						
+						<div class="images-content">
+							<%=article.title%>
+						</div>
+					</div>
+					<h3></h3>
+				</div>
+				
+				<div class="article_body">
+					<%= truncate article.breif%>
+				</div>
+				
+				<div class="article_footer">
+					<%=link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i>编辑</button>"), edit_admin_wx_article_path(article)%>
+				<%=remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i>删除</button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }%>
+				</div>
+			</div>
+		<%end%>
+		</div>
 	</div>
 </div>
