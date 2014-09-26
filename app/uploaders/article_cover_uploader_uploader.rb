@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 class ArticleCoverUploaderUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
 
   storage :file
   # storage :fog
@@ -14,4 +15,6 @@ class ArticleCoverUploaderUploader < CarrierWave::Uploader::Base
   version :normal do
     process :resize_to_fit => [360, 200]
   end
+  
+  
 end
