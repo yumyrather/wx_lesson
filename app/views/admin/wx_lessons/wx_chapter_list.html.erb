@@ -11,32 +11,24 @@
 	</div><!-- /.box-header -->
 	<div class="box-body">
     <div class="row">
-        <div class="col-md-4">
-					<b>封面:</b>
-	
-					<%if @lesson.cover %>
-						<%=image_tag @lesson.cover_url(:normal)%>
-					<%end%>
-	
-
-						<b>创建文档时间</b>:
-						<p><%=l @lesson.created_at %></p>
-						<b>最后编辑时间</b>:
-						<p><%=l @lesson.updated_at %></p>	
-				</div>
-				
-        <div class="col-md-8">
-						<b>简介</b><br/>
-						<p><%=@lesson.content%></p>
-						
+        <div class="col-md-12">
 						<b>课程列表</b><br/>
-						
+						<%= grid(@chapters_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+
+							g.column :name => '章节名称', :attribute => 'title' do |chapter|
+								link_to chapter.title,[:admin,chapter]
+							end
+
+							g.column do |chapter|
+								edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_chapter_path(chapter)
+								remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,chapter], method: :delete, data: { confirm: 'Are you sure?' }
+								raw "#{edit} #{remove}"
+							end
+						end -%>
 				</div>	
-				
+
 		
 			</div>
-			
-		
 	</div>
 </div>
 
@@ -47,7 +39,6 @@
 	
 	</div>
 	<div class="btn-group pull-right">
-		<%=link_to "编辑",edit_admin_wx_lesson_path(@lesson),:class=>"btn"%>
-		<%=link_to "删除",[:admin,@lesson],:method=>:delete,:class=>"btn btn-danger"%>
+		<%=link_to "新增章节",new_admin_wx_chapter_path(:lesson_id=>@lesson),:class=>"btn"%>
 	</div>
 </div>
