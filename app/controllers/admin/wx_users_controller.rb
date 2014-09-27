@@ -8,13 +8,16 @@ class  Admin::WxUsersController < Admin::BaseController
     
     def show
       @wx_user = WxUser.find(params[:id])
-      
     end
     
     def new
       @wx_user = WxUser.new
     end
 
+    def edit
+      @wx_user = WxUser.find(params[:id])
+    end
+    
     def create
       @wx_user = WxUser.new(wx_user_params)
       @wx_user.password = @wx_user.encrypt_password
@@ -24,6 +27,19 @@ class  Admin::WxUsersController < Admin::BaseController
         render 'new'
       end
     end
+    
+    def update
+      @wx_user = WxUser.find(params[:id])
+      @wx_user.update(wx_user_params)
+      @wx_user.password = @wx_user.encrypt_password
+      if @wx_user.save
+        redirect_to [:admin,@wx_user],:notice=>"更新微信订阅用户成功!"
+      else
+        render 'edit'
+      end
+    end
+    
+    
     
     private
     def wx_user_params

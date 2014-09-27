@@ -1,17 +1,17 @@
-class SessionsController < Mobile::BaseController  
-  layout 'signin'
+class Mobile::SessionsController < ApplicationController
+  layout 'mobile'
   def new
   end
 
   def create
-    @page_title = t('session.login')
-    user = User.find_by(email: params[:session][:email].downcase)
+    user = WxUser.find_by(username: params[:session][:username])
+    
     if user && user.authenticate(params[:session][:password])
-      sign_in user
-      user.update_attribute(:last_ip, request.remote_ip)
-      redirect_back_or index_path
+      wx_sign_in user
+      user.update_attribute(:ip, request.remote_ip)
+      redirect_back_or mobile_root_path
     else
-      flash.now[:error] = t('session.email_or_password_incorrect')
+      flash.now[:error] = "密码错误"
       render 'new'
     end
   end

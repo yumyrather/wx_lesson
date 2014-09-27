@@ -10,4 +10,11 @@ class WxUser < ActiveRecord::Base
      Digest::MD5.hexdigest("#{self.username}#{self.password}")
   end
   
+  
+  def authenticate(password)
+    try_password = Digest::MD5.hexdigest("#{self.username}#{password}")
+    
+    puts "#{self.password} & #{try_password}"
+    try_password == self.password   
+  end
 end
