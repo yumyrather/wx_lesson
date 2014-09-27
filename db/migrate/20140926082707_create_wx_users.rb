@@ -4,16 +4,23 @@ class CreateWxUsers < ActiveRecord::Migration
       t.string :open_id
       t.string :username
       t.string :name
+      t.string :password
       t.string :rights
-      t.string :role
+      t.integer :wx_role_id
       t.datetime :last_login
       t.string :ip
       t.string :status
-      t.string :bz
+      t.string :remark
       t.string :phone
       t.datetime :start_time
       t.datetime :end_time
       t.integer :year,:default=>0
+      t.timestamps
+    end
+    
+    create_table :wx_roles do |t|
+      t.string :name
+      t.boolean :admin_flag,:default=>false
       t.timestamps
     end
     
@@ -36,5 +43,7 @@ class CreateWxUsers < ActiveRecord::Migration
       t.boolean :public_flag,:default=>true
       t.timestamps
     end
+    
+    add_column :wx_articles, :public_flag,:boolean,:default=>true
   end
 end

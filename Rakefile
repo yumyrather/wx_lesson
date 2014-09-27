@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-WxLesson::Application.load_tasks
+WxCast::Application.load_tasks

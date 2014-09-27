@@ -29,14 +29,35 @@ ActiveRecord::Schema.define(version: 20140926082707) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
+  create_table "sys_app_users", id: false, force: true do |t|
+    t.string  "USER_ID",    limit: 100
+    t.string  "USERNAME"
+    t.string  "PASSWORD"
+    t.string  "NAME"
+    t.string  "RIGHTS"
+    t.string  "ROLE_ID",    limit: 100
+    t.string  "LAST_LOGIN"
+    t.string  "IP",         limit: 100
+    t.string  "STATUS",     limit: 32
+    t.string  "BZ"
+    t.string  "PHONE",      limit: 100
+    t.string  "SFID",       limit: 100
+    t.string  "START_TIME", limit: 100
+    t.string  "END_TIME",   limit: 100
+    t.integer "YEARS",                  default: 0
+    t.string  "WEIXINID"
+    t.string  "TOROLE_ID"
+  end
+
   create_table "wx_articles", force: true do |t|
     t.string   "title"
     t.string   "cover"
     t.string   "breif"
-    t.text     "content",    limit: 2147483647
-    t.boolean  "hidden",                        default: true
+    t.text     "content",     limit: 2147483647
+    t.boolean  "hidden",                         default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "public_flag",                    default: true
   end
 
   create_table "wx_chapters", force: true do |t|
@@ -77,16 +98,24 @@ ActiveRecord::Schema.define(version: 20140926082707) do
     t.datetime "updated_at"
   end
 
+  create_table "wx_roles", force: true do |t|
+    t.string   "name"
+    t.boolean  "admin_flag", default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "wx_users", force: true do |t|
     t.string   "open_id"
     t.string   "username"
     t.string   "name"
+    t.string   "password"
     t.string   "rights"
-    t.string   "role"
+    t.integer  "wx_role_id"
     t.datetime "last_login"
     t.string   "ip"
     t.string   "status"
-    t.string   "bz"
+    t.string   "remark"
     t.string   "phone"
     t.datetime "start_time"
     t.datetime "end_time"

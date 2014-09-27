@@ -14,6 +14,10 @@ class  Admin::WxLessonsController < Admin::BaseController
       @lesson = WxLesson.new
     end
     
+    def edit
+      @lesson = WxLesson.find(params[:id])
+    end
+    
     
     def create
       @lesson = WxLesson.new(wx_lesson_params)
@@ -22,6 +26,27 @@ class  Admin::WxLessonsController < Admin::BaseController
       else
         render 'new'
       end
+    end
+    
+    
+    def update
+      @lesson = WxLesson.find(params[:id])
+      if @lesson.update(wx_lesson_params)
+        redirect_to [:admin,@lesson],:notice=>"更新图文消息成功!"
+      else
+        render 'edit'
+      end
+    end
+
+    def destroy
+      @lesson = WxLesson.find(params[:id])
+      @lesson.destroy
+      redirect_to admin_wx_lessons_path
+    end
+    
+    
+    def wx_chapter_list
+      @lesson = WxLesson.find(params[:id])
     end
     
     private

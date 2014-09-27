@@ -1,0 +1,21 @@
+<%= grid(@wx_users_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+
+	g.column :name => '课程名称', :attribute => 'id' do |wx_user|
+		link_to wx_user.id,[:admin,wx_user]
+	end
+	
+	g.column :name => '用户名', :attribute => 'username' 
+	
+	g.column :name => '姓名', :attribute => 'name' 
+	g.column :name => '会员权限', :attribute => 'wx_role_id' 
+	g.column :name => '到期时间', :attribute => 'end_time' do |wx_user|
+		l wx_user.end_time if wx_user.end_time
+	end 
+
+	g.column do |wx_user|
+		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_user_path(wx_user)
+		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,wx_user], method: :delete, data: { confirm: 'Are you sure?' }
+		raw "#{edit} #{remove}"
+	end
+	
+end -%>

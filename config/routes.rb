@@ -16,7 +16,11 @@ WxCast::Application.routes.draw do
     
     
     # LESSON PART
-    resources :wx_lessons
+    resources :wx_lessons do
+      member do
+        get 'wx_chapter_list'
+      end
+    end
     resources :wx_chapters
     resources :wx_users
     
@@ -26,7 +30,11 @@ WxCast::Application.routes.draw do
   namespace :mobile do
     root :to => 'home#index'
     resources :wx_articles
-  
+    resources :sessions, only: [:new, :create, :destroy]
+    match '/signup',    to: 'users#new',              via: 'get'
+    match '/signin',    to: 'sessions#new',           via: 'get'
+    match '/signout',   to: 'sessions#destroy',       via: 'delete'
+    match '/index',     to: 'home#index',             via: 'get'
   end
   
 end
