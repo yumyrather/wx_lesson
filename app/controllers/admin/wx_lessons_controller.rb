@@ -44,7 +44,6 @@ class  Admin::WxLessonsController < Admin::BaseController
       redirect_to admin_wx_lessons_path
     end
     
-    
     def wx_chapter_list
       @lesson = WxLesson.find(params[:id])
     end

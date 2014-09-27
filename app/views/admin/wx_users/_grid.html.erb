@@ -7,7 +7,9 @@
 	g.column :name => '用户名', :attribute => 'username' 
 	
 	g.column :name => '姓名', :attribute => 'name' 
-	g.column :name => '会员权限', :attribute => 'wx_role_id' 
+	g.column :name => '会员权限', :attribute => 'wx_role_id' do |wx_user|
+		wx_user.try(:wx_role).try(:name)
+	end
 	g.column :name => '到期时间', :attribute => 'end_time' do |wx_user|
 		l wx_user.end_time if wx_user.end_time
 	end 

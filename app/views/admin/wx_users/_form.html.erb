@@ -1,0 +1,27 @@
+<%=render 'shared/error_messages',:target=>@wx_user%>
+
+<%=simple_form_for([:admin,@wx_user],:html=>{:class=>"form-horizontal"}) do |f|%>
+	<%= f.input :username,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :password,:as=>:password,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :name,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :phone,:input_html=>{:class=>"form-control"}%>	
+	
+	<div class="control-group datetime optional wx_user_end_time">
+		<label class="datetime optional control-label" for="wx_user_end_time_1i">会员有效期限</label>
+		<div class="controls">
+			<%= f.date_field :start_time,:input_html=>{:class=>"form-control"}%>	~ <%= f.date_field :end_time,:input_html=>{:class=>"form-control"}%>	
+			
+		</div>
+	</div>
+	
+	
+
+	
+	<%= f.input :open_id,:input_html=>{:class=>"form-control"}%>	
+	
+	
+	<div class="form-actions">
+		<%=link_to "返回列表", admin_wx_lessons_path,:class=>"btn"%>
+		<button type="submit" class="btn btn-primary pull-right">保存</button> 
+	</div> <!-- /form-actions -->
+<%end%>

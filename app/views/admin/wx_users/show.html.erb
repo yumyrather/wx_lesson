@@ -1,0 +1,62 @@
+<%= content_for :title do %>
+	微信订阅用户信息
+<% end %>
+
+<div class="box">
+	<div class="box-header">
+	   <h3 class="box-title">用户名 - <%=@wx_user.username%>
+     </h3>
+
+	</div><!-- /.box-header -->
+	<div class="box-body">
+    <div class="row">
+        <div class="col-md-4">
+	
+
+				</div>
+				
+        <div class="col-md-8">
+						<b>用户名</b><br/>
+						<p><%=@wx_user.username%></p>
+						<b>姓名</b><br/>
+						<p><%=@wx_user.name%></p>
+						<b>手机</b><br/>
+						<p><%=@wx_user.phone%></p>
+						<b>权限</b><br/>
+						<p><%=@wx_user.try(:wx_role).try(:name)%></p>
+						
+						<b>状态</b><br/>
+						<p><%=@wx_user.status%></p>
+						<b>备注</b><br/>
+						<p><%=@wx_user.remark%></p>
+						<b>最后登录时间</b><br/>
+						<p><%=l @wx_user.last_login if @wx_user.last_login%></p>
+						<b>最后登录IP</b><br/>
+						<p><%= @wx_user.ip %></p>
+						
+						<b>微信ID</b><br/>
+						<p><%=@wx_user.open_id%></p>
+						<b>用户创建时间</b><br/>
+						<p><%=l @wx_user.created_at if @wx_user.created_at%></p>
+						<b>用户最后更新时间</b><br/>
+						<p><%=l @wx_user.updated_at if @wx_user.updated_at%></p>
+				</div>	
+				
+		
+			</div>
+			
+		
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="btn-group pull-left">
+		<%=link_to "返回列表",admin_wx_users_path,:class=>"btn"%>
+	
+	</div>
+	<div class="btn-group pull-right">
+		<%=link_to "编辑",edit_admin_wx_user_path(@wx_user),:class=>"btn"%>
+		<%=link_to "删除",[:admin,@wx_user],:method=>:delete,:class=>"btn btn-danger"%>
+	</div>
+</div>
