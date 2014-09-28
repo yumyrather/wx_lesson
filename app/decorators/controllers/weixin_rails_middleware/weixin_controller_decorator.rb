@@ -12,10 +12,15 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     render xml: send("response_#{@weixin_message.MsgType}_message", {})
   end
 
-  def articles_list_by_keyword(keyword)
+  def articles_list_by_keyword(keyword,user)
     arts = []
-
-    keyword.wx_articles.each do |article|
+    if user.nil?
+      @articles = keyword.wx_articles.where("public_flag = ?",true)
+    else
+      @articles = keyword.wx_articles
+    end
+    
+    @articles.each do |article|
       cover_url = article.cover.nil? ? "" : "#{server_path}#{article.cover_url(:normal)}"
       art = generate_article("#{article.title}", "#{article.breif}", "#{cover_url}",mobile_wx_article_url(article))
       arts << art
@@ -30,8 +35,15 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     def response_text_message(options={})
       @wx_keyword = WxKeyword.find_by_keyword(@keyword)
       if @wx_keyword 
-        reply_news_message(articles_list_by_keyword(@wx_keyword))
         
+        @user = WeixinUser.find_by_open_id(open_id)
+        
+        @articles = articles_list_by_keyword(@wx_keyword,@user)
+        if @articles.any?
+          reply_news_message(@articles)
+        else
+          reply_text_message("")
+        end
       else
         reply_text_message("")
       end

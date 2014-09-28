@@ -9,7 +9,8 @@
 	
   <%= f.input :title,:input_html=>{:class=>"form-control"}%>	
 	<%= f.input :breif,:input_html=>{:class=>"form-control"}%>	
-	
+	<div class="control-group string optional wx_article_breif"><label class="string optional control-label" for="wx_article_breif">免费文章</label><%= f.check_box :public_flag,:input_html=>{:class=>"form-control"}%>
+	</div>	
 	<%= f.cktext_area :content,:input_html=>{:class=>"form-control"}%>
 	
 	<div class="form-actions">

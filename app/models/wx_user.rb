@@ -6,6 +6,10 @@ class WxUser < ActiveRecord::Base
   
   belongs_to :wx_role
   
+  def active_pay_user?
+    
+  end
+  
   def encrypt_password
      Digest::MD5.hexdigest("#{self.username}#{self.password}")
   end

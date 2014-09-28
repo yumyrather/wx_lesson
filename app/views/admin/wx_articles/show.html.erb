@@ -18,7 +18,9 @@
 					<%if @article.cover %>
 						<%=image_tag @article.cover_url(:normal)%>
 					<%end%>
-	
+					<hr/>
+						<b>是否免费</b>
+						<p><%=t @article.public_flag.to_s%></p>
 						<b>分配关键字:</b>
 						<%@article.wx_keyword_items.each do |item|%>
 							<%=link_to item.wx_keyword.keyword,[:admin,item.wx_keyword]%><br/>
