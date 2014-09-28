@@ -36,7 +36,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
       @wx_keyword = WxKeyword.find_by_keyword(@keyword)
       if @wx_keyword 
         
-        @user = WxUser.find_by_open_id(open_id)
+        @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
         
         @articles = articles_list_by_keyword(@wx_keyword,@user)
         if @articles.any?
