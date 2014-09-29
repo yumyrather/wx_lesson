@@ -14,11 +14,16 @@
         <div class="col-md-12">
 						<b>课程列表</b><br/>
 						<%= grid(@chapters_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+							g.column :name => '章节编号', :attribute => 'no' 
 
 							g.column :name => '章节名称', :attribute => 'title' do |chapter|
 								link_to chapter.title,[:admin,chapter]
 							end
 
+							g.column :name => '收费章节', :attribute => 'public_flag' do |chapter|
+								t chapter.public_flag.to_s
+							end
+							
 							g.column do |chapter|
 								edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_chapter_path(chapter)
 								remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,chapter], method: :delete, data: { confirm: 'Are you sure?' }
@@ -26,8 +31,6 @@
 							end
 						end -%>
 				</div>	
-
-		
 			</div>
 	</div>
 </div>

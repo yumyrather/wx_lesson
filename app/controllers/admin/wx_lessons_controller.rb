@@ -48,8 +48,6 @@ class  Admin::WxLessonsController < Admin::BaseController
       @lesson = WxLesson.find(params[:id])
       @chapters = @lesson.wx_chapters.order("no asc")
       @chapters_grid = initialize_grid(@chapters,:per_page => 20)
-      
-      
     end
     
     private

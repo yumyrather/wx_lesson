@@ -1,0 +1,55 @@
+<%= content_for :title do %>
+	课程章节信息
+<% end %>
+
+
+
+<div class="box">
+	<div class="box-header">
+	   <h3 class="box-title">标题-<%=@chapter.title%>
+     </h3>
+
+	</div><!-- /.box-header -->
+	<div class="box-body">
+    <div class="row">
+        <div class="col-md-4">
+					<b>封面:</b>
+					<%if @chapter.cover %>
+						<%=image_tag @chapter.cover_url(:normal)%>
+					<%end%>
+					<hr/>
+						<b>是否免费</b>
+						<p><%=t @chapter.public_flag.to_s%></p>
+						<b>课程名称:</b>
+						<%=link_to @chapter.try(:wx_lesson).try(:title),[:admin,@chapter.wx_lesson]%><br/>
+						<p>第<%=@chapter.no%>章</p>
+						<b>创建文档时间</b>:
+						<p><%=l @chapter.created_at %></p>
+						<b>最后编辑时间</b>:
+						<p><%=l @chapter.updated_at %></p>	
+				</div>
+				
+        <div class="col-md-8">
+						
+						<b>正文</b><br/>
+					<%=raw @chapter.content%>
+				</div>	
+				
+		
+			</div>
+			
+		
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="btn-group pull-left">
+		<%=link_to "返回课程",admin_wx_lesson_path(@chapter.wx_lesson),:class=>"btn"%>
+	
+	</div>
+	<div class="btn-group pull-right">
+		<%=link_to "编辑",edit_admin_wx_chapter_path(@chapter),:class=>"btn"%>
+		<%=link_to "删除",[:admin,@chapter],:method=>:delete,:class=>"btn btn-danger"%>
+	</div>
+</div>

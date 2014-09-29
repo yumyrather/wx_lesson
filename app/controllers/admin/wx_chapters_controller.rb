@@ -1,12 +1,17 @@
 class  Admin::WxChaptersController < Admin::BaseController  
   def show
-    @article = WxChapter.find(params[:id])
+    @chapter = WxChapter.find(params[:id])
   end
   
   
   def new
     @chapter = WxChapter.new
     @chapter.wx_lesson_id = params[:lesson_id]
+  end
+  
+  
+  def edit
+    @chapter = WxChapter.find(params[:id])
   end
   
   def create
@@ -17,6 +22,24 @@ class  Admin::WxChaptersController < Admin::BaseController
     else
       render 'new'
     end
+  end
+  
+  
+  def update
+    @chapter = WxChapter.find(params[:id])
+    if @chapter.update(wx_chatper_params)
+      redirect_to wx_chapter_list_admin_wx_lesson_path(@chapter.wx_lesson_id),:notice=>"更新课程章节成功!"
+    else
+      render 'edit'
+    end
+  end
+  
+  
+  def destroy
+    @chapter = WxChapter.find(params[:id])
+    @lesson_id = @chpater.wx_lesson.id
+    @chapter.destroy
+    redirect_to admin_wx_lesson_path(@lesson_id),:notice=>"删除课程章节成功!"
   end
   
   

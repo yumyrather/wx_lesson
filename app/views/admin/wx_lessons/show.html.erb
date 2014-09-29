@@ -33,11 +33,14 @@
 						<table class="table">
 							<thead>
 								<tr>
+									<th>章节编号</th>
 									<th>章节名称</th>
 								</tr>
 							</thead>
 							<%@lesson.wx_chapters.each do |chapter|%>
 								<tr>
+									<td><%=chapter.no%></td>
+									
 									<td><%=chapter.title%></td>
 								</tr>
 							<%end%>
