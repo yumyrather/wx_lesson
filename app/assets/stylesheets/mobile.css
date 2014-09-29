@@ -12,3 +12,7 @@
  *= require ratchet_base
  *= require font-awesome
  */
+
+.rich_content{
+	padding-bottom:50px;
+}
