@@ -1,0 +1,26 @@
+<%=render 'shared/error_messages',:target=>@chapter%>
+<div class="row">
+	<%if @chapter.cover %>
+		<%=image_tag @chapter.cover_url(:normal)%>
+	<%end%>
+</div>
+<%=simple_form_for([:admin,@chapter],:html=>{:class=>"form-horizontal"}) do |f|%>
+		<%= f.input :wx_lesson_id,:input_html=>{:class=>"form-control"},:as=>:hidden%>	
+
+	<%= f.input :cover,:input_html=>{:class=>"form-control"}%>	
+	
+  <%= f.input :title,:input_html=>{:class=>"form-control"}%>	
+
+  <%= f.input :no,:input_html=>{:class=>"form-control"},:as=>"integer"%>	
+
+
+
+	<%= f.input :public_flag,:html=>{:class=>"form-control"},:collection=>[["免费",1],["收费",0]],:include_blank=>false%>
+	
+	<%= f.cktext_area :content,:input_html=>{:class=>"form-control"}, :ckeditor => { :height => 500 }%>
+	
+	<div class="form-actions">
+		<%=link_to "返回列表", admin_wx_keywords_path,:class=>"btn"%>
+		<button type="submit" class="btn btn-primary pull-right">保存</button> 
+	</div> <!-- /form-actions -->
+<%end%>
