@@ -1,4 +1,4 @@
-class Mobile::SessionsController < ApplicationController
+class Mobile::SessionsController < Mobile::BaseController
   layout 'mobile_article'
   def new
   end
