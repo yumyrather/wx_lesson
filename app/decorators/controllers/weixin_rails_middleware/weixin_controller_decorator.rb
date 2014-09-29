@@ -158,12 +158,12 @@ WeixinRailsMiddleware::WeixinController.class_eval do
             @chatpers = @wx_lesson.wx_chapters.where("no > 0 and no is not null and no <= ?",@study_record.now_chatpter)
             arts = []
             
-            cover_url = article.cover.nil? ? "" : "#{server_path}#{@wx_lesson.cover_url(:normal)}"
+            cover_url = @wx_lesson.cover.nil? ? "" : "#{server_path}#{@wx_lesson.cover_url(:normal)}"
             title = generate_article("#{@wx_lesson.title}", "", "#{cover_url}",mobile_wx_lesson_url(@wx_lesson))
             arts << title
             
              @chatpers.each do |chapter|
-              cover_url = article.cover.nil? ? "" : "#{server_path}#{chapter.cover_url(:normal)}"
+              cover_url = chapter.cover.nil? ? "" : "#{server_path}#{chapter.cover_url(:normal)}"
               art = generate_article("#{chapter.title}", "第#{chapter.no}章", "#{cover_url}",mobile_wx_chapter_url(chapter))
               arts << art
             end
