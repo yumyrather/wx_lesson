@@ -28,19 +28,36 @@
     </div>
 
 		<nav class="bar bar-tab">
-			<%=link_to "#",:class=>"tab-item","data-ignore"=>"push"  do%>
+			<%=link_to mobile_root_path,:class=>"tab-item","data-ignore"=>"push"  do%>
 		    <span class="icon fa fa-home"></span>
 		    <span class="tab-label">最新动态</span>
 			<%end%>
-			<%=link_to "#",:class=>"tab-item","data-ignore"=>"push"  do%>
-		    <span class="icon fa fa-list"></span>
-		    <span class="tab-label">精品课程</span>
+			
+			
+			<%if current_wx_user%>			
+				<%=link_to mobile_wx_lesson_path(1),:class=>"tab-item","data-ignore"=>"push"  do%>
+			    <span class="icon fa fa-list"></span>
+			    <span class="tab-label">精品课程</span>
+				<%end%>
+			<%else%>
+				<%=link_to "#",:class=>"tab-item","data-ignore"=>"push"  do%>
+			    <span class="icon fa fa-list"></span>
+			    <span class="tab-label">精品课程</span>
+				<%end%>
 			<%end%>
 
-		  <a class="tab-item" href="#">
-		    <span class="icon fa fa-user"></span>
-		    <span class="tab-label">会员中心</span>
-		  </a>
+			
+			<%if current_wx_user%>
+				<%=link_to [:mobile,current_wx_user],:class=>"tab-item","data-ignore"=>"push"  do%>
+			    <span class="icon fa fa-user"></span>
+			    <span class="tab-label">会员中心</span>
+				<%end%>
+			<%else%>
+				<%=link_to mobile_signin_path,:class=>"tab-item","data-ignore"=>"push"  do%>
+			    <span class="icon fa fa-user"></span>
+			    <span class="tab-label">会员中心</span>
+				<%end%>
+			<%end%>
 		</nav>
 		
   </body>

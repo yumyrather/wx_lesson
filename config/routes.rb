@@ -33,6 +33,7 @@ WxCast::Application.routes.draw do
     
     resources :wx_lessons 
     resources :wx_chapters
+    resources :wx_users,:only=>[:show]
     
     
     resources :sessions, only: [:new, :create, :destroy]

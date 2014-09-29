@@ -11,7 +11,7 @@ class Mobile::SessionsController < Mobile::BaseController
       if current_weichat_id
         user.update_attribute(:open_id,current_weichat_id)
       end
-      redirect_back_or mobile_root_path
+      redirect_back_or mobile_wx_user_path(user)
     else
       flash.now[:error] = "密码错误"
       render 'new'
