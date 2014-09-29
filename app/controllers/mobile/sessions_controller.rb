@@ -5,10 +5,10 @@ class Mobile::SessionsController < ApplicationController
 
   def create
     user = WxUser.find_by(username: params[:session][:username])
-    
     if user && user.authenticate(params[:session][:password])
       wx_sign_in user
       user.update_attribute(:ip, request.remote_ip)
+      user.update_attribute(:open_id,current_weichat_id)
       redirect_back_or mobile_root_path
     else
       flash.now[:error] = "密码错误"

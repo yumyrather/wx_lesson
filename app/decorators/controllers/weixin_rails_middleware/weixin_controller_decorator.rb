@@ -140,6 +140,14 @@ WeixinRailsMiddleware::WeixinController.class_eval do
           else
             reply_text_message("您无法浏超越极限进阶课程。如您已是我们的会员,请点击会员中心进行登录后，再次点击该菜单,用户最新的课程信息。")
           end
+          
+        elsif @keyword == "BUTTON_3_1"
+          arts = []
+          cover_url = "#{server_path}"+"images/wx/reg_logo.png"
+          art = generate_article("会员中心", "高级会员登入", "#{cover_url}",mobile_signin_path)
+          arts << art
+          reply_news_message(arts)
+          
         else
           reply_text_message("你点击了: #{@keyword}")
         end
