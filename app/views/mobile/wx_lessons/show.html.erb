@@ -25,7 +25,7 @@ position:relative;
 }
 
 .thumb{
-	width:150px;
+	width:100px;
 }
 </style>
 
@@ -44,7 +44,7 @@ position:relative;
 		<%=link_to [:mobile,chapter],:class=>"tab-item","data-ignore"=>"push"  do%>
 			<%=image_tag chapter.cover_url(:normal),:class=>"media-object pull-left thumb"%>
 	      <div class="media-body">
-					<h4><%=chapter.title%></h4>
+					<p><%=chapter.title%></p>
 	      </div>
 		<%end%>
   </li>
