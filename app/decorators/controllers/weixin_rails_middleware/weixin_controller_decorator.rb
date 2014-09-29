@@ -133,7 +133,16 @@ WeixinRailsMiddleware::WeixinController.class_eval do
 
       # 点击菜单拉取消息时的事件推送
       def reply_click_event
-        reply_text_message("你点击了: #{@keyword}")
+        if @keyword == "BUTTON_1_1"
+          @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
+          if @user
+            reply_text_message("您是会员，这是一条测试消息")
+          else
+            reply_text_message("您无法浏超越极限进阶课程。如您已是我们的会员,请点击会员中心进行登录后，再次点击该菜单,用户最新的课程信息。")
+          end
+        else
+          reply_text_message("你点击了: #{@keyword}")
+        end
       end
 
       # 点击菜单跳转链接时的事件推送

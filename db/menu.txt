@@ -1,0 +1,33 @@
+{
+        "button": [
+  			{
+            "type": "click", 
+            "name": "超越课程", 
+            "key": "BUTTON_1_1", 
+            "sub_button": [ ]
+        }, 
+            {
+                "name": "许师智慧", 
+                "sub_button": [
+                    {
+                        "type": "click", 
+                        "name": "智慧语录", 
+                        "key": "BUTTON_2_1", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "click", 
+                        "name": "潜能激发", 
+                        "key": "BUTTON_2_2", 
+                        "sub_button": [ ]
+                    }
+                ]
+            }, 
+            {
+                "type": "click", 
+                "name": "会员中心", 
+                "key": "BUTTON_3_1", 
+                "sub_button": [ ]
+            }
+        ]
+    }
