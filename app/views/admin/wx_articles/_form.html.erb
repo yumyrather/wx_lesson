@@ -9,8 +9,8 @@
 	
   <%= f.input :title,:input_html=>{:class=>"form-control"}%>	
 	<%= f.input :breif,:input_html=>{:class=>"form-control"}%>	
-	<div class="control-group string optional wx_article_breif"><label class="string optional control-label" for="wx_article_breif">免费文章</label><%= f.check_box :public_flag,:html=>{:class=>"minimal"}%>
-	</div>	
+	<%= f.input :public_flag,:html=>{:class=>"form-control"},:collection=>[["免费",1],["收费",0]],:include_blank=>false%>
+	
 	<%= f.cktext_area :content,:input_html=>{:class=>"form-control"}%>
 	
 	<div class="form-actions">
@@ -18,3 +18,11 @@
 		<button type="submit" class="btn btn-primary pull-right">保存</button> 
 	</div> <!-- /form-actions -->
 <%end%>
+
+
+<script>
+$('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+     checkboxClass: 'icheckbox_minimal',
+     radioClass: 'iradio_minimal'
+ });
+</script>

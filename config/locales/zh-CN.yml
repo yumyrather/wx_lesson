@@ -15,6 +15,7 @@
                 cover: "封面"
                 hidden: "隐藏"
                 content: "正文"
+                public_flag: "是否收费阅读"
             wx_user:
                 username: "用户名"
                 name: "姓名"
