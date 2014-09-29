@@ -6,9 +6,15 @@
 			<hr/>
      </div>
   </li>
+	<%=link_to mobile_wx_lesson_path(@chapter.try(:wx_lesson)),:class=>"tab-item","data-ignore"=>"push"  do%>
+
   <li class="table-view-cell media">
+	
 		<p>课程名称:<%=@chapter.try(:wx_lesson).try(:title)%></p>
 	</li>
+	
+	<%end%>
+	
 </ul>
 
 <div class="content-padded rich_content">

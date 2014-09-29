@@ -1,0 +1,54 @@
+<style>
+.images-content{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	color: #fff;
+	background: rgba(0,0,0,.7);
+	height: 54px;
+	line-height: 54px; 
+	overflow: hidden;
+}
+
+.images-wrapper{
+min-height:200px;
+position:relative;
+}
+.pad{
+	padding-left:30px;
+}
+
+.no_pad{
+	padding:0px;
+}
+
+.thumb{
+	width:150px;
+}
+</style>
+
+<div class="header">
+		<div class="images-wrapper">
+			<%=image_tag @lesson.cover_url(:normal)%>
+			<div class="images-content pad">
+				课程名称：<%=@lesson.title%>
+			</div>
+		</div>
+</div>
+
+<ul class="table-view">
+	<%@chapters.each do |chapter|%>
+	<li class="table-view-cell media">
+		<%=link_to [:mobile,chapter],:class=>"tab-item","data-ignore"=>"push"  do%>
+			<%=image_tag chapter.cover_url(:normal),:class=>"media-object pull-left thumb"%>
+	      <div class="media-body">
+					<h4><%=chapter.title%></h4>
+	      </div>
+		<%end%>
+  </li>
+	<%end%>
+</ul>
+
+
