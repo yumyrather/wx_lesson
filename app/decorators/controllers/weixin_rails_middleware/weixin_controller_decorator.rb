@@ -142,7 +142,11 @@ WeixinRailsMiddleware::WeixinController.class_eval do
               @study_record = WxLessonUserRecord.new
               @study_record.wx_lesson_id = @wx_lesson.id
               @study_record.wx_user_id = @user.id
+              @study_record.now_chatpter = 0
             end
+            
+            logger.info("lesson size : #{@wx_lesson.wx_chapters.size}")
+            logger.info("study_record id and step : #{@study_record.id.size} & #{@study_record.now_chatpter}")
             
             if @study_record.now_chatpter < @wx_lesson.wx_chapters.size
                @study_record.now_chatpter += 1
