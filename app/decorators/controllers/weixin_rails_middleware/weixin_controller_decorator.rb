@@ -143,8 +143,8 @@ WeixinRailsMiddleware::WeixinController.class_eval do
           
         elsif @keyword == "BUTTON_3_1"
           arts = []
-          cover_url = "#{server_path}"+"images/wx/reg_logo.png"
-          art = generate_article("会员中心", "高级会员登入", "#{cover_url}",mobile_signin_path)
+          cover_url = "#{server_path}"+"/images/wx/reg_logo.png"
+          art = generate_article("会员中心", "高级会员登入", "#{cover_url}",mobile_signin_url)
           arts << art
           reply_news_message(arts)
           
