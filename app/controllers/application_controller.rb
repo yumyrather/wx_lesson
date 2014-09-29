@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   
    def set_weichat_id
      if params[:weichat_id].present?
-      session[:weichat_id]=params[:weichat_id]
+       session[:weichat_id] = params[:weichat_id]
+       logger.info("weichat_id = #{session[:weichat_id]}")
      end
   end
   

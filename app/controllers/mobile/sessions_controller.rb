@@ -1,5 +1,5 @@
 class Mobile::SessionsController < ApplicationController
-  layout 'mobile'
+  layout 'mobile_article'
   def new
   end
 
@@ -8,7 +8,9 @@ class Mobile::SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       wx_sign_in user
       user.update_attribute(:ip, request.remote_ip)
-      user.update_attribute(:open_id,current_weichat_id)
+      if current_weichat_id
+        user.update_attribute(:open_id,current_weichat_id)
+      end
       redirect_back_or mobile_root_path
     else
       flash.now[:error] = "密码错误"
