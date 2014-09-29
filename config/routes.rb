@@ -30,6 +30,11 @@ WxCast::Application.routes.draw do
   namespace :mobile do
     root :to => 'home#index'
     resources :wx_articles
+    
+    resources :wx_lessons 
+    resources :wx_chapters
+    
+    
     resources :sessions, only: [:new, :create, :destroy]
     match '/signup',    to: 'users#new',              via: 'get'
     match '/signin',    to: 'sessions#new',           via: 'get'
