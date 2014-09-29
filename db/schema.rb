@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926082707) do
+ActiveRecord::Schema.define(version: 20140929053659) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -84,6 +84,15 @@ ActiveRecord::Schema.define(version: 20140926082707) do
     t.string   "keyword"
     t.string   "keyword_type"
     t.boolean  "hidden",       default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wx_lesson_user_records", force: true do |t|
+    t.integer  "wx_lesson_id"
+    t.integer  "wx_user_id"
+    t.datetime "last_signin"
+    t.integer  "now_chatpter"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

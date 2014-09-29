@@ -136,7 +136,29 @@ WeixinRailsMiddleware::WeixinController.class_eval do
         if @keyword == "BUTTON_1_1"
           @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
           if @user
-            reply_text_message("您是会员，这是一条测试消息")
+            @wx_lesson = WxLesson.first
+            @study_record = @wx_lesson.wx_lesson_user_records.find_by_wx_user_id(@user.id)
+            if @study_record.nil?
+              @study_record = WxLessonUserRecord.new
+              @study_record.wx_lesson_id = @wx_lesson.id
+              @study_record.wx_user_id = @user.id
+            end
+            
+            if @study_record.now_chatpter < @wx_lesson.wx_chapters.size
+               @study_record.now_chatpter += 1
+            end
+            
+            @study_record.last_signin = Time.now
+            @study_record.save
+            
+            @chatpers = @wx_lesson.wx_chapters.where("no > 0 and no is not null and no <= ?",@study_record.now_chatpter)
+            arts = []
+             @chatpers.each do |chapter|
+              cover_url = article.cover.nil? ? "" : "#{server_path}#{chapter.cover_url(:normal)}"
+              art = generate_article("#{chapter.title}", "第#{chapter.no}章", "#{cover_url}",mobile_wx_chapter_url(chapter))
+              arts << art
+            end
+            reply_news_message(arts)
           else
             reply_text_message("您无法浏超越极限进阶课程。如您已是我们的会员,请点击会员中心进行登录后，再次点击该菜单,用户最新的课程信息。")
           end
