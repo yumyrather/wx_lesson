@@ -21,7 +21,7 @@
 						<b>是否免费</b>
 						<p><%=t @chapter.public_flag.to_s%></p>
 						<b>课程名称:</b>
-						<%=link_to @chapter.try(:wx_lesson).try(:title),[:admin,@chapter.wx_lesson]%><br/>
+						<%=link_to @chapter.try(:wx_lesson).try(:title),[:admin,@chapter.wx_lesson] if @chapter.wx_lesson%><br/>
 						<p>第<%=@chapter.no%>章</p>
 						<b>创建文档时间</b>:
 						<p><%=l @chapter.created_at %></p>

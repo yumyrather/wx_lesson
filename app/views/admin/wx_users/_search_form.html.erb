@@ -1,0 +1,27 @@
+<div class="box box-solid box-primary">
+    <div class="box-header">
+        <h3 class="box-title">条件查询</h3>
+        <div class="box-tools pull-right">
+            <button class="btn btn-primary btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-primary btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+        </div>
+    </div>
+    <div class="box-body">
+			<%= search_form_for(@q,url: admin_wx_users_path,:html=>{:class=>"form-horizontal"} ) do |f| %>
+			  <div class="control-group">
+			    <label class="control-label" for="inputEmail">用户名:</label>
+						<%=f.text_field :username_cont%>
+			  </div>
+			  <div class="control-group">
+			    <label class="control-label" for="inputEmail">姓  名:</label>
+						<%=f.text_field :name_cont%>
+			  </div>
+			  <div class="control-group">
+			    <label class="control-label" for="inputEmail">手  机:</label>
+						<%=f.text_field :phone_cont%>
+			  </div>
+			<hr/>
+			  <%= f.submit "查询",:class=>"btn btn-block btn-primary" %>				  
+			<% end %>
+    </div><!-- /.box-body -->
+</div><!-- /.box -->

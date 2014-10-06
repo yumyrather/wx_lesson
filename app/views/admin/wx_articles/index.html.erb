@@ -40,6 +40,10 @@ position:relative;
 
 
 </style>
+
+<%=render 'search_form'%>
+
+
 <div class="box">
 	<div class="box-header">
 	   <h3 class="box-title">微信图文消息列表</h3>
@@ -47,13 +51,15 @@ position:relative;
 		 	<ul class="pagination pagination-sm no-margin pull-right">
        <li>
        	<%=link_to new_admin_wx_article_path do%>
-					<i class="fa fa-plus">新建</i>
+					<i class="fa fa-plus ">新建</i>
 				<%end%>
        </li>
      	</ul>
      </div>
 	</div><!-- /.box-header -->
+	
 	<div class="box-body">
+
 		<div class="row">
 		<%@articles.each do |article|%>
     	<div class="col-md-3 article">

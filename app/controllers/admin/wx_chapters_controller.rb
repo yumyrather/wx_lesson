@@ -1,4 +1,11 @@
 class  Admin::WxChaptersController < Admin::BaseController  
+  def index
+    @page_title = "课程章节管理"
+    @q = WxChapter.search(params[:q])
+    @chapters = @q.result(distinct: true)
+    @chapters_grid = initialize_grid(@chapters,:per_page => 20)
+  end
+  
   def show
     @chapter = WxChapter.find(params[:id])
   end

@@ -16,6 +16,14 @@
                 hidden: "隐藏"
                 content: "正文"
                 public_flag: "是否收费阅读"
+            wx_chapter:
+                title: "标题"
+                breif: "简介"
+                cover: "封面"
+                hidden: "隐藏"
+                content: "正文"
+                public_flag: "是否收费阅读"
+                wx_lesson_id: "所属课程列表"
             wx_user:
                 username: "用户名"
                 name: "姓名"
