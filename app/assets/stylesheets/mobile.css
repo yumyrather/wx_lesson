@@ -18,5 +18,6 @@
 }
 
 .bar.bar-tab{
- background:black;
+	background-color:black;
+	border-top-color:black;
 }
