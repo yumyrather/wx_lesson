@@ -182,7 +182,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
         else
           @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
 
-          @articles = articles_list_by_keyword(@wx_keyword,@user)
+          @articles = articles_list_by_keyword(@keyword,@user)
           if @articles.any?
             reply_news_message(@articles)
           else
