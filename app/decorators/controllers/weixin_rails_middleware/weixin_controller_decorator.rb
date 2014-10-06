@@ -180,7 +180,15 @@ WeixinRailsMiddleware::WeixinController.class_eval do
           reply_news_message(arts)
           
         else
-          reply_text_message("你点击了: #{@keyword}")
+          @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
+
+          @articles = articles_list_by_keyword(@wx_keyword,@user)
+          if @articles.any?
+            reply_news_message(@articles)
+          else
+            reply_text_message("")
+          end
+          
         end
       end
 
