@@ -1,10 +1,10 @@
+<div class="content-padded">
+	<h4><%=@chapter.title%></h4>
+</div>
+
 <ul class="table-view">
-  <li class="table-view-cell media">
-     <div class="media-body">
-			<h4><%=@chapter.title%></h4>
+  <li class="table-view-cell ">
 			<small> 发布于<%= l @chapter.created_at%></small><br/
-			<hr/>
-     </div>
   </li>
 	<%=link_to mobile_wx_lesson_path(@chapter.try(:wx_lesson)),:class=>"tab-item","data-ignore"=>"push"  do%>
 
