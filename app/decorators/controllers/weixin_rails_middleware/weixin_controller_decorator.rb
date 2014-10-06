@@ -180,15 +180,22 @@ WeixinRailsMiddleware::WeixinController.class_eval do
           reply_news_message(arts)
           
         else
-          @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
+         
+           @wx_keyword = WxKeyword.find_by_keyword(@keyword)
+            if @wx_keyword 
 
-          @articles = articles_list_by_keyword(@keyword,@user)
-          if @articles.any?
-            reply_news_message(@articles)
-          else
-            reply_text_message("")
-          end
-          
+              @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
+
+              @articles = articles_list_by_keyword(@wx_keyword,@user)
+              if @articles.any?
+                reply_news_message(@articles)
+              else
+                reply_text_message("")
+              end
+            else
+              reply_text_message("")
+            end
+         
         end
       end
 
