@@ -1,5 +1,10 @@
 <%= grid(@chapters_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+	g.column :name => "课程名称"	, :attribute => 'wx_lesson_id' do |chapter|
+			chapter.try(:wx_lesson).try(:title)
+	end
+	
 	g.column :name => '章节标题', :attribute => 'title' do |chapter|
 		link_to chapter.title,[:admin,chapter]
-	end	
+	end
+	
 end -%>
