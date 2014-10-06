@@ -4,6 +4,7 @@
 	end
 
 
+	
 	g.column do |article|
 		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_article_path(article)
 		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }
