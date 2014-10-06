@@ -30,7 +30,14 @@ class  Admin::WxUsersController < Admin::BaseController
     
     def update
       @wx_user = WxUser.find(params[:id])
-      @wx_user.update(wx_user_params)
+      if params[:wx_user][:password].present?
+        @wx_user.update(wx_user_params)
+      else
+        old_password = @wx_user.password
+        @wx_user.update(wx_user_params)
+        @wx_user.password = old_password
+      end
+      
       @wx_user.password = @wx_user.encrypt_password
       if @wx_user.save
         redirect_to [:admin,@wx_user],:notice=>"更新微信订阅用户成功!"
