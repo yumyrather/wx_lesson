@@ -32,10 +32,12 @@
 	      会员等级:<%=@user.try(:wx_role).try(:name)%>
 	  </li>
 	  <li class="table-view-cell">
-	      会员开始时间:<%= l @user.start_time if @user.start_time%>
+	      会员开始时间:<br/>
+				<%= l @user.start_time,:format=>:long if @user.start_time%>
 	  </li>
 	  <li class="table-view-cell">
-	      会员到期时间:<%= l @user.end_time if @user.end_time%>
+	      会员到期时间:<br/>
+	     <%= l @user.end_time,:format=>:long  if @user.end_time%>
 	  </li>
 	</ul>
 </div>
