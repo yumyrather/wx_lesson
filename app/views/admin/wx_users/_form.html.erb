@@ -5,6 +5,7 @@
 	<%= f.input :password,:as=>:password,:input_html=>{:class=>"form-control"}%>	
 	<%= f.input :name,:input_html=>{:class=>"form-control"}%>	
 	<%= f.input :phone,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :wx_role_id,:input_html=>{:class=>"form-control"},:collection=>WxRole.all,:value_method=>:id,:label_method=>:name%>	
 	
 	<div class="control-group datetime optional wx_user_end_time">
 		<label class="datetime optional control-label" for="wx_user_end_time_1i">会员有效期限</label>
@@ -16,6 +17,7 @@
 	
 	
 
+	<%= f.input :remark,:as=>:text,:input_html=>{:class=>"form-control"}%>	
 	
 	<%= f.input :open_id,:input_html=>{:class=>"form-control"}%>	
 	
