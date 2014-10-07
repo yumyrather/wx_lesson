@@ -5,9 +5,16 @@ class WxUser < ActiveRecord::Base
   validates :username, uniqueness: true
   
   belongs_to :wx_role
+  OK_STATUS = "正常"
+  BLOCK_STATUS = "停用"
+  STATUS = ["正常","停用"]
   
-  def active_pay_user?
-    
+  def active?
+    if self.end_time
+      Time.now < self.end_time
+    else
+      self.status != WxUser::BLOCK_STATUS
+    end
   end
   
   def encrypt_password

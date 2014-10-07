@@ -29,6 +29,9 @@
 	      联系电话:<%=@user.phone%>
 	  </li>
 	  <li class="table-view-cell">
+	      会员状态:<%=@user.status%>
+	  </li>
+	  <li class="table-view-cell">
 	      会员等级:<%=@user.try(:wx_role).try(:name)%>
 	  </li>
 	  <li class="table-view-cell">
