@@ -3,6 +3,7 @@ require 'digest/md5'
 class WxUser < ActiveRecord::Base
   validates :username,:password,:name,:phone,:presence => true
   validates :username, uniqueness: true
+  has_many :wx_lesson_user_records,dependent: :destroy
   
   belongs_to :wx_role
   OK_STATUS = "正常"
