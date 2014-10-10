@@ -40,11 +40,24 @@ class  Admin::UsersController < Admin::BaseController
   end
   
   def destroy
-    @wx_user = WxUser.find(params[:id])
-    @wx_user.destroy
-    redirect_to admin_wx_users_path,:notice=>"删除微信订阅用户成功!"
+    @user = User.find(params[:id])
+    @user.destroy
+    redirect_to admin_users_path,:notice=>"删除管理员成功!"
   end
   
+  
+  def change_password
+    @user = User.find(params[:id])
+  end
+  
+  def update_password
+    @user = User.find(params[:id])
+    if @user.update(wx_user_params)
+      redirect_to [:admin,@user],:notice=>"更管理员信息成功!"
+    else
+      render 'change_password'
+    end
+  end
   private
   def wx_user_params
     params.require(:user).permit!

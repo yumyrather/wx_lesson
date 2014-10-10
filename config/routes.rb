@@ -24,7 +24,12 @@ WxCast::Application.routes.draw do
     end
     resources :wx_chapters
     resources :wx_users
-    resources :users
+    resources :users do
+      member do
+        get 'change_password'
+        patch 'update_password'
+      end
+    end
     
   end
   

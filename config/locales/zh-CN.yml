@@ -36,3 +36,8 @@
                 wx_role_id: "用户权限"
                 status: "状态"
                 open_id: "微信ID"
+            user:
+                email: "用户名"
+                password: "密码"
+                password_confirmation: "密码确认"
+                role: "权限"
