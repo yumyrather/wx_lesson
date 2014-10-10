@@ -4,6 +4,8 @@ class  Admin::WxUsersController < Admin::BaseController
       @q = WxUser.search(params[:q])
       @wx_users = @q.result(distinct: true)
       @wx_users_grid = initialize_grid(@wx_users,:per_page => 20)
+      
+      drop_breadcrumb("微信订阅用户", admin_wx_users_path)
     end
     
     def show

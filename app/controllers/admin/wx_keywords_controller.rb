@@ -38,7 +38,6 @@ class  Admin::WxKeywordsController < Admin::BaseController
 
     def destroy
       @keyword = WxKeyword.find(params[:id]) 
-      
       @keyword.destroy
       redirect_to admin_wx_keywords_path
     end
