@@ -10,3 +10,9 @@ User.create!(
              password: "Qwer1234",
              password_confirmation: "Qwer1234",
              role: "admin")
+Keyword.create!(
+              keyword: "BUTTON_2_1",
+              hidden: 0)
+Keyword.create!(
+              keyword: "BUTTON_2_2",
+              hidden: 0)

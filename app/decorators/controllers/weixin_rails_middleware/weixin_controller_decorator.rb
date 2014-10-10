@@ -155,7 +155,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
             @study_record.last_signin = Time.now
             @study_record.save
             
-            @chatpers = @wx_lesson.wx_chapters.where("no > 0 and no is not null and no <= ?",@study_record.now_chatpter)
+            @chatpers = @wx_lesson.wx_chapters.where("no > 0 and no is not null and no <= ?",@study_record.now_chatpter).order("no desc")
             arts = []
             
             cover_url = @wx_lesson.cover.nil? ? "" : "#{server_path}#{@wx_lesson.cover_url(:normal)}"

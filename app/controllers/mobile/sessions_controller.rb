@@ -9,6 +9,8 @@ class Mobile::SessionsController < Mobile::BaseController
       wx_sign_in user
       user.update_attribute(:ip, request.remote_ip)
       if current_weichat_id
+        exist_users = User.where("open_id = ?",current_weichat_id)
+        exist_users.update_all("open_id = null")
         user.update_attribute(:open_id,current_weichat_id)
       end
       redirect_back_or mobile_wx_user_path(user)
