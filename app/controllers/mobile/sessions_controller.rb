@@ -9,7 +9,7 @@ class Mobile::SessionsController < Mobile::BaseController
       wx_sign_in user
       user.update_attribute(:ip, request.remote_ip)
       if current_weichat_id
-        exist_users = WxUser.where("open_id = ?",current_weichat_id)
+        exist_users = WxUser.where("open_id = ? and id != ?",current_weichat_id,user.id)
         exist_users.update_all("open_id = null")
         user.update_attribute(:open_id,current_weichat_id)
       end
