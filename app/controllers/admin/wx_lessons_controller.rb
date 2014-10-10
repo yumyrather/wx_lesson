@@ -18,7 +18,6 @@ class  Admin::WxLessonsController < Admin::BaseController
       @lesson = WxLesson.find(params[:id])
     end
     
-    
     def create
       @lesson = WxLesson.new(wx_lesson_params)
       if @lesson.save
