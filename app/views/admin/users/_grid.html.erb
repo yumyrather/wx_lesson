@@ -1,0 +1,18 @@
+<%= grid(@users_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+
+	g.column :name => '编号', :attribute => 'id' do |user|
+		link_to user.id,[:admin,user]
+	end
+	
+	g.column :name => '用户名', :attribute => 'email' 
+	
+	g.column :name => '权限', :attribute => 'role' 
+
+
+	g.column do |user|
+		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_user_path(user)
+		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,user], method: :delete, data: { confirm: 'Are you sure?' }
+		raw "#{edit} #{remove}"
+	end
+	
+end -%>

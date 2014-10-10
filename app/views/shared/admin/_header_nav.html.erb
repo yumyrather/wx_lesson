@@ -44,11 +44,19 @@
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
-                            <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
-                            </div>
+                          <div class="pull-left">
+														<%if current_user%>
+
+														<%=link_to([:admin,current_user],:class=>"btn btn-default btn-flat") do%>
+													 	个人信息
+														<%end%>
+								
+													<%end%>
+													</div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+															<%=link_to(destroy_user_session_path,:method=>:delete,:class=>"btn btn-default btn-flat") do%>
+			                          登出
+															<%end%>
                             </div>
                         </li>
                     </ul>

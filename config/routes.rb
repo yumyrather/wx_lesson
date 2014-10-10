@@ -24,6 +24,7 @@ WxCast::Application.routes.draw do
     end
     resources :wx_chapters
     resources :wx_users
+    resources :users
     
   end
   

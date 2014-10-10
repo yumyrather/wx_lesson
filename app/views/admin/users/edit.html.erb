@@ -1,0 +1,23 @@
+
+<div class="box">
+	<div class="box-header">
+	   <h3 class="box-title">新建管理用户</h3>
+		 <div class="box-tools">
+
+     </div>
+	</div><!-- /.box-header -->
+	<div class="box-body">
+		<%=render 'shared/error_messages',:target=>@user%>
+
+		<%=simple_form_for([:admin,@user],:html=>{:class=>"form-horizontal"}) do |f|%>
+			<%= f.input :email,:input_html=>{:class=>"form-control"}%>	
+			<%= f.input :role,:input_html=>{:class=>"form-control"},:collection=>User::ROLES%>	
+
+			<div class="form-actions">
+				<%=link_to "返回列表", admin_wx_lessons_path,:class=>"btn"%>
+				<button type="submit" class="btn btn-primary pull-right">保存</button> 
+			</div> <!-- /form-actions -->
+		<%end%>	</div>
+</div>
+
+

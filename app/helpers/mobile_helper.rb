@@ -13,11 +13,11 @@ module MobileHelper
   end
 
   def current_wx_user=(user)
-    @current_user = user
+    @current_wx_user = user
   end
 
   def current_wx_user
-    @current_user ||= WxUser.find(session[:wx_user_id]) if session[:wx_user_id] 
+    @current_wx_user ||= WxUser.find(session[:wx_user_id]) if session[:wx_user_id] 
   end
 
   def current_wx_user?(user)

@@ -1,0 +1,13 @@
+<%=render 'shared/error_messages',:target=>@user%>
+
+<%=simple_form_for([:admin,@user],:html=>{:class=>"form-horizontal"}) do |f|%>
+	<%= f.input :email,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :password,:as=>:password,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :password_confirmation,:as=>:password,:input_html=>{:class=>"form-control"}%>	
+	<%= f.input :role,:input_html=>{:class=>"form-control"},:collection=>User::ROLES%>	
+	
+	<div class="form-actions">
+		<%=link_to "返回列表", admin_wx_lessons_path,:class=>"btn"%>
+		<button type="submit" class="btn btn-primary pull-right">保存</button> 
+	</div> <!-- /form-actions -->
+<%end%>
