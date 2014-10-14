@@ -44,7 +44,7 @@ class  Admin::WxChaptersController < Admin::BaseController
   
   def destroy
     @chapter = WxChapter.find(params[:id])
-    @lesson_id = @chpater.wx_lesson.id
+    @lesson_id = @chapter.wx_lesson_id
     @chapter.destroy
     redirect_to admin_wx_lesson_path(@lesson_id),:notice=>"删除课程章节成功!"
   end

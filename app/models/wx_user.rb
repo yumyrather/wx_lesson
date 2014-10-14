@@ -13,9 +13,13 @@ class WxUser < ActiveRecord::Base
   def active?
     if self.end_time
       Time.now < self.end_time
+    elsif self.start_time
+      Time.now > self.end_time
     else
       self.status != WxUser::BLOCK_STATUS
     end
+    
+    
   end
   
   def encrypt_password
