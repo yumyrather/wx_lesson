@@ -4,6 +4,10 @@
 		link_to keyword.keyword,[:admin,keyword]
 	end
 	
+	g.column :name => "关联图文消息数量" do |keyword|
+		keyword.wx_keyword_items.size
+	end
+	
 	g.column :name => '激活', :attribute => 'hidden' do |keyword|
 		t keyword.hidden.to_s
 	end
