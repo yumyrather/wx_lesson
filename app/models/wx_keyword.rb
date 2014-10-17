@@ -10,6 +10,6 @@ class WxKeyword < ActiveRecord::Base
   scope :actives, -> { where(hidden: false) }
   
   def active?
-    self.hidden != true
+    !self.hidden
   end
 end
