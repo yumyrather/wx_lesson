@@ -6,12 +6,8 @@
 	<% f.input :keyword_type,:input_html=>{:class=>"form-control"},:collection=>WxKeyword::REPLY_TYPES,:include_blank=>false%>
 	
 	
-	<div class="checkbox">
-      <label>
-				激活:<%= f.check_box :hidden%>
-	
-      </label>
-  </div>
+	<%= f.input :hidden,:html=>{:class=>"form-control"},:collection=>WxKeyword::ACTIVE_TYPES,:include_blank=>false%>
+
 
 	<div class="form-actions">
 		<%=link_to "返回列表", admin_wx_keywords_path,:class=>"btn"%>

@@ -182,7 +182,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
         else
          
            @wx_keyword = WxKeyword.find_by_keyword(@keyword)
-            if @wx_keyword 
+            if @wx_keyword  && @wx_keyword.active?
 
               @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
 
