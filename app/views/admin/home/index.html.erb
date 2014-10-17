@@ -13,9 +13,9 @@
             <div class="icon">
                 <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer">
-                更多信息 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+						<%=link_to admin_wx_users_path ,:class=>"small-box-footer" do%>
+							更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
         </div>
     </div><!-- ./col -->
     <div class="col-lg-3 col-xs-6">
@@ -31,11 +31,74 @@
                 </p>
             </div>
             <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+                <i class="ion ion-android-promotion"></i>
             </div>
-            <a href="#" class="small-box-footer">
-               更多信息 <i class="fa fa-arrow-circle-right"></i>
-            </a>
+						<%=link_to admin_wx_keywords_path ,:class=>"small-box-footer" do%>
+            	更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
+        </div>
+    </div><!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-green">
+            <div class="inner">
+                <h3>
+                    <%=WxArticle.all.size%>
+                </h3>
+                <p>
+                    微信图文消息
+                </p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-ios7-compose"></i>
+            </div>
+						<%=link_to admin_wx_articles_path ,:class=>"small-box-footer" do%>
+            	更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
         </div>
     </div><!-- ./col -->
 </div><!-- /.row -->
+
+<div class="row">
+ 		<div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-blue">
+            <div class="inner">
+                <h3>
+                    <%=WxLesson.all.size%>
+                </h3>
+                <p>
+                    课程主题
+                </p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-android-book"></i>
+            </div>
+						<%=link_to admin_wx_lessons_path ,:class=>"small-box-footer" do%>
+							更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
+        </div>
+    </div><!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-orange">
+            <div class="inner">
+                <h3>
+                    <%=WxChapter.all.size%>
+                    
+                </h3>
+                <p>
+                    课程章节
+                </p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-android-note"></i>
+            </div>
+						<%=link_to admin_wx_chapters_path ,:class=>"small-box-footer" do%>
+            	更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
+        </div>
+    </div><!-- ./col -->
+   
+</div><!-- /.row -->
+
