@@ -25,12 +25,12 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-              <li class="active">
+              <li>
 								<%=link_to admin_root_path do%>
                       <i class="fa fa-dashboard"></i> <span>Dashboard</span>
 								<%end%>
               </li>
-            	<li class="treeview">
+            	<li class="treeview <%=active_menu(['wx_lessons','wx_chapters'])%>" >
                   <a href="#">
                       <i class="fa fa-cube"></i>
                       <span>课程管理</span>
@@ -67,7 +67,7 @@
 										</li>
                   </ul>
               </li-->
-            	<li class="treeview">
+            	<li class="treeview <%=active_menu(['wx_keywords','wx_articles','wx_users'])%>">
                   <a href="#">
 										<i class="fa fa-weixin"></i>
                       <span>微信设置</span>
@@ -91,7 +91,7 @@
                   </ul>
               </li>
     
-            	<li class="treeview">
+            	<li class="treeview <%=active_menu(['users'])%>">
                   <a href="#">
                       <i class="fa fa-cog"></i>
                       <span>系统设置</span>
