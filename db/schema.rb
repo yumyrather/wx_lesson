@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141009125308) do
+ActiveRecord::Schema.define(version: 20141025065905) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -28,26 +28,6 @@ ActiveRecord::Schema.define(version: 20141009125308) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
-
-  create_table "sys_app_users", id: false, force: true do |t|
-    t.string  "USER_ID",    limit: 100
-    t.string  "USERNAME"
-    t.string  "PASSWORD"
-    t.string  "NAME"
-    t.string  "RIGHTS"
-    t.string  "ROLE_ID",    limit: 100
-    t.string  "LAST_LOGIN"
-    t.string  "IP",         limit: 100
-    t.string  "STATUS",     limit: 32
-    t.string  "BZ"
-    t.string  "PHONE",      limit: 100
-    t.string  "SFID",       limit: 100
-    t.string  "START_TIME", limit: 100
-    t.string  "END_TIME",   limit: 100
-    t.integer "YEARS",                  default: 0
-    t.string  "WEIXINID"
-    t.string  "TOROLE_ID"
-  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -122,6 +102,14 @@ ActiveRecord::Schema.define(version: 20141009125308) do
     t.text     "content",           limit: 2147483647
     t.integer  "wx_chapters_count"
     t.boolean  "public_flag",                          default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "frequency",                            default: "每周"
+  end
+
+  create_table "wx_lesssons_sign_logs", force: true do |t|
+    t.integer  "wx_lesson_id"
+    t.integer  "wx_user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -137,23 +137,14 @@ WeixinRailsMiddleware::WeixinController.class_eval do
           @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
           if @user
             @wx_lesson = WxLesson.first
+            #进行签到
+            @wx_lesson.sign_lesson(@user)
+            #获取签到动作后的学习进度
             @study_record = @wx_lesson.wx_lesson_user_records.find_by_wx_user_id(@user.id)
-            if @study_record.nil?
-              @study_record = WxLessonUserRecord.new
-              @study_record.wx_lesson_id = @wx_lesson.id
-              @study_record.wx_user_id = @user.id
-              @study_record.now_chatpter = 0
-            end
             
             logger.info("lesson size : #{@wx_lesson.wx_chapters.size}")
             logger.info("study_record id and step : #{@study_record.id} & #{@study_record.now_chatpter}")
-            
-            if @study_record.now_chatpter < @wx_lesson.wx_chapters.size
-               @study_record.now_chatpter += 1
-            end
-            
-            @study_record.last_signin = Time.now
-            @study_record.save
+   
             
             @chatpers = @wx_lesson.wx_chapters.where("no > 0 and no is not null and no <= ?",@study_record.now_chatpter).order("no desc")
             arts = []

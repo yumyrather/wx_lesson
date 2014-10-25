@@ -49,6 +49,14 @@ class  Admin::WxLessonsController < Admin::BaseController
       @chapters_grid = initialize_grid(@chapters,:per_page => 20)
     end
     
+    
+    def wx_user_list
+      @lesson = WxLesson.find(params[:id])
+      @records = @lesson.wx_lesson_user_records.order("updated_at desc")
+      @records_grid = initialize_grid(@records,:per_page => 20)
+    end
+    
+    
     private
     def wx_lesson_params
       params.require(:wx_lesson).permit!

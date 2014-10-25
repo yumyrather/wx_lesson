@@ -7,6 +7,7 @@
 	<div class="box-header">
 	   <h3 class="box-title">课程主题 - <%=@lesson.title%>
      </h3>
+
 	</div><!-- /.box-header -->
 	<div class="box-body">
     <div class="row">
@@ -25,27 +26,28 @@
 				</div>
 				
         <div class="col-md-8">
-						<b>简介</b><br/>
-						<p><%=@lesson.content%></p>
-						<b>更新频率</b><br/>
-						<p><%=@lesson.frequency%></p>
-						<b>课程列表</b><br/>
+					
+						<b>订阅人数:</b><%=@lesson.wx_lesson_user_records.size%><br/>
+						
 						<table class="table">
 							<thead>
 								<tr>
-									<th>章节编号</th>
-									<th>章节名称</th>
+									<th>用户姓名</th>
+									<th>学习进度</th>
+									<th>最近签到</th>
+									<th>初期订阅</th>
 								</tr>
 							</thead>
-							<%@lesson.wx_chapters.order("no").each do |chapter|%>
+							<%@records.each do |record|%>
 								<tr>
-									<td><%=chapter.no%></td>
-									<td><%=chapter.title%></td>
+									<td><%=record.try(:wx_user).try(:name)%></td>
+									<td><%=record.now_chatpter%></td>
+									<td><%=l record.updated_at %></td>
+									<td><%=l record.created_at %></td>
 								</tr>
 							<%end%>
 							<tbody>
 								
-							</tbody>
 						</table>
 				</div>	
 				
@@ -62,8 +64,5 @@
 		<%=link_to "返回列表",admin_wx_lessons_path,:class=>"btn"%>
 	
 	</div>
-	<div class="btn-group pull-right">
-		<%=link_to "编辑",edit_admin_wx_lesson_path(@lesson),:class=>"btn"%>
-		<%=link_to "删除",[:admin,@lesson],:method=>:delete,:class=>"btn btn-danger"%>
-	</div>
+
 </div>

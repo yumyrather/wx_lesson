@@ -6,6 +6,11 @@
             wx_article: "微信图文消息"
             wx_keyword: "微信关键字"
         attributes:
+            wx_lesson:
+                cover: 课程封面配图
+                title: 课表标题
+                content: 课程简介
+                frequency: 更新频率
             wx_keyword:
                 keyword: "关键字"
                 hidden: "激活"

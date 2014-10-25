@@ -1,4 +1,7 @@
 <%= render_list :class => "nav nav-pills" do |li|
      li << link_to(t("课程基本信息"), [:admin,@lesson])
      li << link_to(t("章节列表"), wx_chapter_list_admin_wx_lesson_path(@lesson))
+     li << link_to(t("用户签到进度"), wx_user_list_admin_wx_lesson_path(@lesson))
+
+
 end %>

@@ -20,6 +20,7 @@ WxCast::Application.routes.draw do
     resources :wx_lessons do
       member do
         get 'wx_chapter_list'
+        get 'wx_user_list'
       end
     end
     resources :wx_chapters
