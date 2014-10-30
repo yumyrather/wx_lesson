@@ -1,5 +1,5 @@
 class Mobile::SessionsController < Mobile::BaseController
-  layout 'mobile_article'
+  layout 'mobile_login'
   def new
   end
 
