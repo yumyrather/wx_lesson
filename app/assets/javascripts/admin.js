@@ -15,3 +15,5 @@
 //= require  admin/simditor-all.min
 //= require  wice_grid
 //= require  admin/bootstrap-editable
+//= require kindeditor
+

@@ -12,22 +12,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag "mobile", media: "all" %>
-    <%= javascript_include_tag "mobile"%>
+    <%= stylesheet_link_tag "wx_articles", media: "all" %>
   </head>
-  <body>
 
-    <!-- Make sure all your bars are the first things in your <body> -->
-    <!--header class="bar bar-nav">
-      <h1 class="title"></h1>
-    </header-->
 
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-      <%= yield %>
-    </div>
 
-	
-		
-  </body>
+	<body id="activity-detail" class="zh_CN ">
+		<div class="rich_media">
+			<div class="rich_media_inner">
+				<h2 class="rich_media_title" id="activity-name"><%=@article.title%></h2><div class="rich_media_meta_list">
+					<em id="post-date" class="rich_media_meta text"><%=l @article.updated_at if @article.updated_at%></em>
+					<a class="rich_media_meta link nickname" href="http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200709050&idx=1&sn=53c5804ce40ba3ee7ccd36f6cfa58cd1#rd" id="post-user">许伯恺</a>
+					</div>
+				<div id="page-content">
+			<div id="img-content"><div class="rich_media_content" id="js_content">
+				<%= yield %>
+			</div>
+	</body>
+
 </html>

@@ -63,7 +63,9 @@ gem 'twitter_ratchet_rails'
 
 gem 'bootstrap_helper'
 gem 'simple_form'
+
 gem 'ckeditor'
+gem 'rails_kindeditor'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
