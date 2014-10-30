@@ -6,7 +6,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
   include Rails.application.routes.url_helpers
   
   def server_path
-    "http://115.29.189.26"
+    "http://www.xubokai.net"
   end
   def reply
     render xml: send("response_#{@weixin_message.MsgType}_message", {})
