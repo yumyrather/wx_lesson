@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>超越极限</title>
+    <title>许伯恺自媒体平台|超越极限</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -29,5 +29,15 @@
 				<%= yield %>
 			</div>
 	</body>
-
+	<script>
+	WeixinApi.ready(function(Api) {
+	    // 微信分享的数据
+	    var wxData = {
+	        "appId": "", 
+	        "imgUrl" : '<%=@article.cover_url%>',
+	        "link" : '<%=mobile_article_url(@article)%>',
+	        "desc" : '<%=@article.breif%>',
+	        "title" : "<%=@article.title%>"
+	    };
+	</script>
 </html>

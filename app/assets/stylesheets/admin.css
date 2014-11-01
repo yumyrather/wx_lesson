@@ -21,3 +21,9 @@
  *= require admin/bootstrap-editable
  *= require admin/iCheck/all
 */
+
+.ke-icon-audio {
+	background-position: 0px -528px;
+	width: 16px;
+	height: 16px;
+}

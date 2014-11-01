@@ -264,8 +264,8 @@ K.options = {
 		'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
 		'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
 		'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
-		'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
-		'anchor', 'link', 'unlink', '|', 'about'
+		'flash', 'audio', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
+		'anchor', 'link', 'unlink', '|'
 	],
 	noDisableItems : ['source', 'fullscreen'],
 	colorTable : [
@@ -5687,6 +5687,7 @@ _plugin('core', function(K) {
 			body : html
 		});
 	});
+	
 	self.plugin.getSelectedLink = function() {
 		return self.cmd.commonAncestor('a');
 	};

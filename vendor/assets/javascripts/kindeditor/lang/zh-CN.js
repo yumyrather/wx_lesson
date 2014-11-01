@@ -1,4 +1,12 @@
-//= require kindeditor
+/*******************************************************************************
+* KindEditor - WYSIWYG HTML Editor for Internet
+* Copyright (C) 2006-2011 kindsoft.net
+*
+* @author Roddy <luolonghao@gmail.com>
+* @site http://www.kindsoft.net/
+* @licence http://www.kindsoft.net/license.php
+*******************************************************************************/
+
 KindEditor.lang({
 	source : 'HTML代码',
 	preview : '预览',
@@ -224,7 +232,5 @@ KindEditor.lang({
 		'1.html' : '图片和文字',
 		'2.html' : '表格',
 		'3.html' : '项目编号'
-	},
-	audio : "插入MP3",
-	"audio.url" : "音频地址"
+	}
 }, 'zh_CN');
