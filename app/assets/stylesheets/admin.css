@@ -19,7 +19,8 @@
  *= require font-awesome
  *= require admin/simditor
  *= require admin/bootstrap-editable
- *= require admin/iCheck/all
+ *= require wice_grid
+
 */
 
 .ke-icon-audio {
