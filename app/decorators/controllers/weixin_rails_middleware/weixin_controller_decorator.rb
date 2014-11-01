@@ -39,7 +39,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
         @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
         
         @articles = articles_list_by_keyword(@wx_keyword,@user)
-        if @articles.any?
+        if @articles.size > 1
           reply_news_message(@articles)
         else
           reply_text_message("")
