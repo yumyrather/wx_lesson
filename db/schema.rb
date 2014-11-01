@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20141101125020) do
     t.integer  "like_count",                     default: 0,    null: false
     t.integer  "view_count",                     default: 0,    null: false
     t.integer  "share_count",                    default: 0,    null: false
+    t.date     "post_date"
   end
 
   create_table "wx_chapters", force: true do |t|
