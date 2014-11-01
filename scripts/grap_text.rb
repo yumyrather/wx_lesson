@@ -1,7 +1,7 @@
 require "open-uri"
 require "nokogiri"
 
-@articles = WxArticle.where("id > 245")
+@articles = WxArticle.all
 
 @articles.each do |article|
   if article.content.index("http://mp.weixin.qq.com/")
