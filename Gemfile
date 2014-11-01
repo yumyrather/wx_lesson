@@ -66,6 +66,8 @@ gem 'simple_form'
 
 gem 'ckeditor'
 gem 'rails_kindeditor', github: 'akirapanda/rails_kindeditor'
+gem "second_level_cache"
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

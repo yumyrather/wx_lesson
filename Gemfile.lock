@@ -183,6 +183,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    second_level_cache (2.0.0)
+      activesupport (~> 4.0.0.beta1)
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -259,6 +261,7 @@ DEPENDENCIES
   ransack
   sass-rails (~> 4.0.0)
   sdoc
+  second_level_cache
   simple_form
   sqlite3
   therubyracer
