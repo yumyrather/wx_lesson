@@ -1,5 +1,4 @@
 class  Admin::WxArticlesController < Admin::BaseController  
-
   def index
     @page_title = "微信图文消息管理"
     @q = WxArticle.search(params[:q])

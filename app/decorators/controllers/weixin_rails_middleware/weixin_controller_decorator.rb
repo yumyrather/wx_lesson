@@ -5,6 +5,9 @@
 WeixinRailsMiddleware::WeixinController.class_eval do
   include Rails.application.routes.url_helpers
   
+  
+
+    
   def server_path
     "http://www.xubokai.net"
   end
@@ -42,10 +45,10 @@ WeixinRailsMiddleware::WeixinController.class_eval do
         if @articles.any?
           reply_news_message(@articles)
         else
-          reply_text_message("")
+          ""
         end
       else
-        reply_text_message("")
+        ""
       end
     end
 
