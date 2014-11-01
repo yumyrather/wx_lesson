@@ -1,19 +1,10 @@
 <%= grid(@articles_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
-	g.column :name => '标题', :attribute => 'title' do |article|
+	g.column :name => 'title', :attribute => 'title' do |article|
 		link_to article.title,[:admin,article]
 	end
 
-	g.column :name => "关键字" do |article|
-		link = ""
-		article.wx_keyword_items.each do |item|
-			link = link + link_to("#{item.wx_keyword.keyword}",[:admin,item.wx_keyword])
-		end
-		raw link
-	end
+
 	
-	g.column :name => "最后更新时间" do |article|
-		l article.updated_at if article.updated_at
-	end
 	g.column do |article|
 		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_wx_article_path(article)
 		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o bigger-120\"></i></button>"), [:admin,article], method: :delete, data: { confirm: 'Are you sure?' }

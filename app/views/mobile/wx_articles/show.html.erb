@@ -1,12 +1,3 @@
-<div class="content-padded">
-	<h4><%=@article.title%></h4>
-</div>
-<ul class="table-view">
-  <li class="table-view-cell">
-			<small> 发布于<%= l @article.created_at%></small><br/
-  </li>
-</ul>
-
 <div class="content-padded rich_content">
 	<%=raw @article.content%>
 </div>

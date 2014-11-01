@@ -31,13 +31,16 @@ def process(text)
   
   if @article.nil?
     @article = WxArticle.create
-    @article.title = title
-    @article.breif = intro
-    @article.content = url
-    @article.write_uploader('cover', "image.jpg") 
-    
-    @article.save
+
   end
+  
+  @article.title = title
+  @article.breif = intro
+  @article.content = url
+  @article.write_uploader('cover', "image.jpg") 
+  
+  @article.save
+  
   
   @keyword_item = WxKeywordItem.where("wx_keyword_id = ? and wx_article_id = ?",@keyword.id,@article.id)
   
