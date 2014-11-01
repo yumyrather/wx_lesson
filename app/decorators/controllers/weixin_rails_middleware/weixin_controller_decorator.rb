@@ -33,7 +33,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
   private
 
     def response_text_message(options={})
-      @wx_keyword = WxKeyword.find_by_keyword(@keyword)
+      @wx_keyword = WxKeyword.find_by :keyword => @keyword 
       if @wx_keyword 
         
         @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
