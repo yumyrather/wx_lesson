@@ -1,0 +1,1665 @@
+if($Message=='影响力'||$Message=='影響力'||$Message=='yingxiangli'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','公众演说，塑造极致影响力!
+",'人世间最大的追求，到底莫过于影响力！影响力最极致的来源，到底莫过于公众演说！','http://mmbiz.qpic.cn/mmbiz/LHJ4OG7B6Hamfyj9IFoLamhiaf8rzJBiaA0x38nEQtTLib1n2gUzX4wV5sbdmicRVb2Aazia6gHlYrSSich3ibRY7C4dA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200093634&idx=1&sn=3bd8bd0ec99f9400719edfba82736b94#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+
+if($Message=='成交'||$Message=='成交'||$Message=='chengjiao'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','一“道”一“术”，张口即可成交！
+",'公众演说性的成交是最有威力的成交！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbJL8cniaUiaHTBjfb42TuFsGZoW8ur2fNMDS5RpibVeUEiatZZqRCNavgZ7sRL5Blr0iaN1YyahuvckUA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200095869&idx=1&sn=56c6d9b0813c4c725c43b8c1f228e2b9#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+          if($Message=='问题1'||$Message=='問題1'||$Message=='wenti'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','没有问题的天堂，久了也变成了地狱!
+",'珍惜和感恩生活里的问题吧，他们让人的心电图有了起伏！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ9wW4jkWC4XyafVDFq7CUicoRd9jwSL6j7wPAIUzibuFFsJ1jx260yianZfoAXFRbrIsH6cK3W7ryqA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200098440&idx=1&sn=387549ad10fa50286fcfed7443993014#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+          if($Message=='力量'||$Message=='力量'||$Message=='liliang'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','梦想的憧憬，力量的渴望！
+",'岩缝里的竹笋，永远不屈不挠的生长。你还在坚持你的当初的梦想吗？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbueHLklCQezHb2r7YbPxymWic8IaOolHNOg9nJf5BAwkkUByG2qtL0dPaaHajhQ515icGjTyFbiaz7g/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200099892&idx=1&sn=8fe21c293ce38ff526cbd9c06471603c#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+           if($Message=='心态'||$Message=='心態'||$Message=='xintai'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','行销三十六计之心态篇
+",'只有把“我想要”、“我一定要”的概念植入消费者心中，才能创造需求！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbHZQzfXROribIx4ib1CeB8mYmcaJZe1PegbLLCoUj9EH6mTR4jwriasqWQaicla0yPqnqolMnErF8zMQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200104531&idx=1&sn=a31023a3e2f26889690ac1044fa615a0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+           if($Message=='韩国精神'||$Message=='韓國精神'||$Message=='hanguojingshen'||$Message=='hanguojinshen'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','韩国企业的“精神”
+",'只有把“我想要”、“韩国人的“快快文化”体现在生活、工作的各个方面，在韩国，我最常听到的一个词就是“吧嘞，吧嘞”，即“快一点，快一点”。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbnd7ugtBurlYJcm8v1FQTcwwRicBUNGRicW9Uxic8NTU5o2TPHh2Gumdy0subAKB9R0KibFtvCSR2qjg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200107747&idx=1&sn=e94525e0e57d3d8a46c31bf242551bd6#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='关系'||$Message=='關係'||$Message=='guanxi'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','建立自己成功的人脉圈
+",'一个人往往有什么样的圈子，就有什么样的未来！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYj4VUV4Ak3g8TQ0ljBaplsyKCcwqxTFskLdf9L5xva9iaNQOjxuvPA23m35lMTcb5tGlQacpHZlhA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200110660&idx=1&sn=9911e8b775355deed7d96bdcaa148bb0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='渴望'||$Message=='渴望'||$Message=='kewang'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','穷人为什么穷？
+",'穷人之所以穷，大多是因为他们有一种无可救药的弱点，也就是缺乏致富的野心!','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYfqvXyaViaDqIwItyiaXicNRbtI4whQlJicEnLxdSiacbkjUkUMxI8XibEImC4SNahic45Q7kUMWTE6vkyw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200113620&idx=1&sn=eb8795a0172d957b6446d299f33932ba#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='自我相处'||$Message=='自我相處'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','与自己对话
+",'知人者智，自知者明，胜人者有力，自胜者强','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYfqvXyaViaDqIwItyiaXicNRb3LibCAJtia0pbKvN3tKpeuKo5iaGrY1YHF5gw59MBvDHhqmNJ0Yhic1ciag/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200115991&idx=1&sn=879fcaaf6fe97cc69287426f11e36eff#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='蜗牛'||$Message=='蝸牛'||$Message=='woniu'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','目标需要指导
+",'目标不是孤立存在的，目标是计划相辅相成的，目标指导计划，计划的有效性影响着目标的达成。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZsocZxP7ibunIyzYHL61DkDT63dRmoNrOP801HTVsfJ1xiaCd2UO6V4bOjQj5unLbTFSNafPm1pB3g/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200119232&idx=1&sn=d2097bcda9a32a19f2428c06e6d2ef18#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+           if($Message=='过去'||$Message=='過去'||$Message=='guoqu'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','时间都去哪儿了
+",'从小到大都在为了实现人生道路上的愿望去努力成长，奋斗，坚持，匆忙的日子里太容易忽略掉生命最重要最简单的“时间”也会随着年华而终将逝去的现实。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYucZF9aT5sb1EWAaDz0LS8XAzIpic7vRZ5cnXtqibVM0cLuxibgmvulF8xoW9XYDGRocPKZDBz64MJg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200122003&idx=1&sn=a1a39becf00c72d806255034cd9d7939#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+          if($Message=='修饰'||$Message=='修飾'||$Message=='xiushi'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','麦当劳：让我们好在一起!
+",'从小到大都在为了实现人生道路上的愿望去努力成长，奋斗，坚持，匆忙的日子里太容易忽略掉生命最重要最简单的“时间”也会随着年华而终将逝去的现实。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZAss80rSHHia3KaeFLSEjGNVPPSVS371VAkvG7fxic5vKTo14mybgzmYZtibT1m86iaia8ryXPH6YXIbg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200124939&idx=1&sn=f1ba32a30ddafa20d3850aa3d40c4ef0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}           
+          if($Message=='行销'||$Message=='行銷'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','行销关键词，你知道多少？
+",'行销就是投资未来，做未来的布局！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZAss80rSHHia3KaeFLSEjGNsbmsFFzIMiaowfRKFjgziaZT45k5QQJzLOg6Ft9ibrd7pyUuUyfAOHGnQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200126886&idx=1&sn=2c27b3a0483b79ed0d40ce6dfb9b28db#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+          if($Message=='天赋'||$Message=='天賦'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','名人故事分享
+",'上天赋予每个人都有独特的天赋，把你的天赋发挥到你生命唯一的特长你便可以在这社会上撑起你领域的一片天。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYEftVKTfHDMFo069F5pxuhQfV3r7icojCbIeDDYQY8icWgNjBAMRM6PnjVOCVCmTUNdcMZ3DUxGyOg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200129263&idx=1&sn=9761eaed3bbbbc7d1da0212ec7359d1f#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+           if($Message=='平衡'||$Message=='平衡'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','一封致我孩子的信!
+",'把你的祝福跟所有人分享，因为分享跟感恩一样，分享出去的愈多，你回收的就愈多。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbYkLsmicgAibu0j8ChZJR2UlYsHaW1DtBKMKFpqlTEBZJCU1GCzBGcyUlN8kic2vRknxb5X3KVPj0xQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200131657&idx=1&sn=4bb887dba972b27bafcf2753ce20b986#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='人'||$Message=='人'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','聪明人需要加点“笨精神”
+",'为什么，为世才是大学问，世界上每一个人都精明，要令人家信服并喜欢和你交往，那才最重要。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY6eu3ic0kH9aianZ3Cxxpbs4VxciaZcpcCDo8dB61N8g0QXJQyYuxib9bEWxXZU1hcsKALcET13USkYg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200134429&idx=1&sn=4ef6ab2a40bc5df82a00df01412e627f#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+
+           if($Message=='味道'||$Message=='味道'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','团圆与记忆的味道：年糕与饺子
+",'从农耕文明走到工业文明，技术的进步使得粽子不再局限于地域和时令，但是对中国人来说，顺应自然，亲手做合适的食物，更意味着对传统生活方式的某种延续。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ2uCZ13P4iagS0cF6jUg2qurjNA70hZshdsOeBEP3icy6GnP54zMpOReYygRSqkAk8YcSicRUKOAqww/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200139471&idx=1&sn=a822f73130117a855a473064cc4608ab#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+  
+          if($Message=='说话技巧'||$Message=='說話技巧'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','催促对方妥协的话请使用电话
+",'如果你觉得自己没有说服别人的才能，不妨考虑一下用别的手段完成说服的做法。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYSuJsAaUz1XicPKkJqxpo9FGgReFO21AibicyT7tFf6LooC5PCQWaFbcmdesVAoLrpRKYOb86Ulaygg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200142176&idx=1&sn=40cf37ac77ecb5f62efaa9bbb9e97192#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+          if($Message=='腊味'||$Message=='臘味'||$Message=='辣味'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','时间修炼出的腊味灵魂
+",'中国人民聪明才智的完美化身！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HamKF7JlPgOgvfYuhSVnZCc2LQ35hJPJ0w7GwbRueMya5UiaQ0JVILxStM9Emw8H2vC8oib4PtlKHug/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200144839&idx=1&sn=302d8e50070a5d9adbd2011f479885eb#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+          if($Message=='激发'||$Message=='激發'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','激发潜在能量
+",'每一个人，即使是创造了辉煌成就的巨人，在他的一生中，利用自己大脑的潜能还不到10％。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaVsGW7bRSiaSWwWvTR4ZQqkZ5EUoz1d7iaK494L1BHUeibtt90WnuQtyFVxxYHoCM1iaIzicLLEADXSmw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200147514&idx=1&sn=7ac26dc45f558d6186d6a259fab47649#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+          if($Message=='受用'||$Message=='受用'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','感谢那些不信任你的人
+",'‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍   当你拥有力量的时候，却不使用你的力量，你就成了真正有力量的人。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYe67xPfDfITIXZOmKmFSmJ3v71piajGnTQRL6rllNbZKe1rHMYqatW5UzKAtLNgdZIEmhpTgMVrFg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200150329&idx=1&sn=a43fd1bcda4f439d499b07e7ebeb6608#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+  
+          if($Message=='抱怨'||$Message=='抱怨'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','马云：宁可公司倒闭，也要辞退负面的员工！",'抱怨和埋怨团队就是打自己耳光，说自己无能，更是在放弃机会！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZk5afxiambjafP2NJEpvicrzcMcXt0bGFAthZNHsUiboTPF3ZRianqickj829Dq2uDPyLSPFVibWOFdySA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200546520&idx=1&sn=f83efa03c71eca432c487aef9faa860d#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+              
+          if($Message=='棋局'||$Message=='棋局'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','货币凶猛与房价股市之谜!
+",'‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍泡沫的累积必将破灭，而泡沫破灭后依然是财富的蒸发，留给普通投资者的依然是伤痛。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbkiabwaJVxbCdzm4QFUP08kjRwQSqljMiaOqLpZxfRH3147x0FvRebmBguQicgp0gYZT0ibZMTXFhZcQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200156154&idx=1&sn=ec8d5ad9f13305dea3423f8ca44549a9#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+              
+          if($Message=='宁静'||$Message=='寧靜'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','李嘉诚的富贵之心
+",'‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍真正的财富，当是今生可以享用，身后仍归属于自己的。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbvC9ZhhvKFoNjzWeILTQSqQOAYzLBuAcDWxjVNYUJ4shCnibrJ1aTeiclNZZIhRHgmwFJVKeVUictcw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200159194&idx=1&sn=0e0afac9ded9891cc784202218634585#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}             
+                          
+          if($Message=='设立目标'||$Message=='設立目標'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','爱因斯坦的人生目标
+",'在人生的竞赛场上，没有确立明确目标的人，是不容易得到成功的。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbzX0KBwoep94W7v6ia5yib3nv53xHIfXwL1pz5TibYZD7daK8NX1SQEXM2Wve7mPFOczGHOaFBTrRwQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200371832&idx=1&sn=0842a3014fec34528089182de34893e9#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+          if($Message=='感恩'||$Message=='感恩'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','母亲做着世界上最辛苦的工作，给予我们最伟大的爱！
+",'世界上的一切光荣和骄傲，都来自母亲。——高尔基','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY3suNpAOdXnteadKqmHpyribUDg8jtKYmaov4CNCkBicGz9xho812MrsD4oAflcygZzx83uuJnPr7Q/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200164036&idx=1&sn=594d2be5757f211f5a63a8691d5cba79#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='1时代'||$Message=='1時代'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','乔布斯的人生忠告
+",'或许他们是 别人眼中的疯子，但他们却是我们 眼中的天才。因为只有那些疯狂到以为自己能够改变世界的人，才能真正改变世界。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbWM9aD0gXR87Txhhl8ZhMDgJKA7LI3aKZgmichmhxpicKlRr7KEIvEic0VLe0ChGrXfmIMKD8HYj4OA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200167444&idx=1&sn=843a31b70eaf0963c2c2f5fa3c2702c7#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='下一代'||$Message=='下一代'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','浅谈“虎妈式教育
+",'美国人恐慌，美式教育是不是要败给中国“虎妈”了？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbbzyQSVoRFJoVEZBVq4thLkicZiabKwOlhCYfgj2TNDu6kXPgprtFHhxx2PibAVnVdkmdWLRBwYclfg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200169850&idx=1&sn=413d2ff70eb3b5eb6bb5acf11e12c8cc#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='太极'||$Message=='太極'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','国学与太极拳：中国人必修的文武之道
+",'太极拳以武证道的功夫修持奥义及国学与太极拳的辩证关系，以武拳文练的思维，证明如果想理解国学经典所阐述的智慧，最方便法门就是修炼太极拳。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HalwToekF9ibATIryiaXzVE2hRfDUSEqJoCYKI3W4e6JPlicZ284cDHibaL8nz1xoft8E5HQfuKLE4nGA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200172160&idx=1&sn=701c8efd916e1074b0e055e00a43d13e#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='大家长'||$Message=='大家長'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','解读《弟子规》
+",'《弟子规》告诉孩子们，按照圣人孔子的儒家思想，应该遵守哪些规矩。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZFq5icYBuvOJvicS1piatR8DNdYDmjQKibmjTZLibs27YoiafugOgVE8IpxrlXUlxGM2yXgfpPVes3r0KQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200174174&idx=1&sn=04159ecde9757cff4883a8ee8cc1b254#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='时机'||$Message=='時機'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','变革的时代
+",'在“蓝色巨人”IBM的成长历程中，不乏巨大的危机，却都能化险为夷，这绝不只是运气好，根据变化做出极为科学的决策和行动反应，为IBM赢得了广阔的未来。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbtoibs834hp5h40ojgK8dUbWGCspWWias944JrxBkxWdbJoQhbRWibzTQn4ZicjVl37MmYOUqvRibPETQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200176100&idx=1&sn=a793a3c45f225c7aad1f15d71caf2f4b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+  
+           if($Message=='借口'||$Message=='藉口'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','不要有任何借口！
+",'成功者永远找方法，失败者总是找借口！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZSplqSbUDTAQfWWcu1K89mCq5UBzlbRqALQlTXdYVne75WckDrBsoeAoXjqQA1ThNt1fJksBuJ1A/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200178379&idx=1&sn=35627a89807b022c24631405c0ed0b83#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}            
+           if($Message=='团队'||$Message=='團隊'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','团队精神的重要性
+",'你有可能可以打败一个人，但是你绝对不可能打败一个整体——团队精神是看不见的堡垒，促使企业不断强大旺盛！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZDOjldGOsBqAKibcn4sdEVHuYDUbhIj64fv95qBVAKzjFwlpLmceN5fzOL3ocjCNMfYm3UXsydDKw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200181100&idx=1&sn=62df802f0182ca4b3c93ec2d9a333f9c#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}              
+  
+           if($Message=='自控'||$Message=='自控'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','只有掌控了自己内心的人，才有可能获取权力!
+",'而那些真正有所作为的人则往往会从自己的内心去寻找原因。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZjMU28G1zKgQW1ic8rGn2y1LoxgjeeptxfIRyvfUFSW3nHIW2MWtZ88ZSOK85TWPwFhJnG3icIgHMA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200184018&idx=1&sn=02e53088f88b939290f39058d5d5ac4e#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+  
+           if($Message=='清晰'||$Message=='清晰'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','斜坡理论
+",'经营理论是企业的经营纲领，是企业家经营智慧的集中反应，是决定企业发展方向的重要航灯，无论在什么情况下，都不应轻易改变。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZWy4No6b7k8V2eNiaia6JPKGNkcXxVTK8lTFF02faV4cMnRSSuFITicu4g8wUibFiayuforiaG6Mmz8s1Q/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200186651&idx=1&sn=501ac74b1255d5535569b8593d64dd09#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+           if($Message=='态度'||$Message=='態度'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','你的态度决定一切
+",'工作本身没有贵贱之分，而对于工作的态度却有高低之别。收获是成功还是失败，在于你拥有怎样的态度。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbBQQljxicScUAUDn7dVTk3VicS6kl5I3jad4oUiaZ7yaFqEDRykOLuHjDib2TEUgKZl9FoQxhtD5omBQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200188895&idx=1&sn=2e30a02862725b496e2c77121486aa4b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='效率一'||$Message=='效率一'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','提高你的工作效率
+",'工作效率高低不仅体现了企业的管理水平，还能看出企业的员工素质，更能说明企业在当今市场上的竞争力!','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZSqPljq27JrD0UaT3iaQo5diaKOBZQibHLzpjTcObjnktVZFicuMzXcDZbNwx5clSlycl4WCfyQTric4w/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200193204&idx=1&sn=a8b114e3f59a321a99ddd12903ac093c#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}             
+           if($Message=='印度'||$Message=='印度'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','印度
+",'印度共和国，通称印度，是南亚印度次大陆上的一个国家!','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbh4MbOK9yryiaUUhsw4iblfBPGcl2iaZvfSgghia451KA6Qric3HQF8NvXiaulo2M8NkAhhTC1CrLhUFmQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200196117&idx=1&sn=eb16e2dd842b86bb3e68f9ac9e4dc13a#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}               
+           if($Message=='专注'||$Message=='專注'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','猎豹的目标
+",'坚持专注，紧盯目标，精进领域，你就有更多胜算！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbh4MbOK9yryiaUUhsw4iblfBxS4IiavicOuNkjcAlKsHSfHcOV7SAYlO0f7sW2M2ZyMZVmsNjM4FvPqQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200198244&idx=1&sn=570687fbb91c37c4eb685127ee5f37c4#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+           if($Message=='梦想一'||$Message=='夢想一'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','梦想与现实
+",'梦想和现实的距离有多远？抑或梦想是美人如花隔云端？又或是梦想与现实仅有一步之遥？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbEu5VrTia41pqk7W1IHqiaib8c2AYtBiaYWPQiaHv7ERicnZYbfRqPrWsG9REyscS5DuyticIvibqianzHvOA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200201794&idx=1&sn=5da897cacff22b5039e7714faa6c37cb#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='简单'||$Message=='簡單'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','大数据时代的简单法则
+",'精简可以驱散阴霾和迷惑，它允许我们清晰地看穿错综复杂的事物，并克服一切的过量问题！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbdicLh4GUXMnibFxicCoAA2ACHDhUDrUkALhwxmtUNF3e795rHda3wuNuWjiajgIKJW40DZju7P9Swicg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200204842&idx=1&sn=cecd04935931fe06f3e14eb5833d5ca8#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}     
+           if($Message=='新媒体'||$Message=='新媒體'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','第五媒体
+",'美国《连线》杂志对新媒体的定义：“所有人对所有人的传播。”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYfZqoXiazmibmCIqyGmh92Gia6nWicXoB3559QdDBsn8bLicXZ8XrZKgebJTE9S4S6svtjmeicU1fFATGw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200208304&idx=1&sn=801a40b99bb79e33e062f0254537abaf#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}              
+           if($Message=='过错'||$Message=='過錯'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','自我辩护可以弥补过错吗？
+",'在人生中，不论是失败，还是做错事，千万不要把时间和精力花在自我辩护上，因为即使再美妙的自我辩护也无法将事！”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaQ59xHGv7UQIFLzyUOf23ulG8O49epKSF9Vr4pRMabtxBEIK5xsXanIwb4icATM0zzibocrJ3JNurA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200211280&idx=1&sn=32c34d0edffe97c24183d30869b14542#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+           if($Message=='甜蜜点'||$Message=='甜蜜點'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','找到“甜蜜点”
+",'高尔夫球杆的杆头，都有一个用于击球的最佳落点，能与球碰撞出最为“甜蜜”的美好感受，因而在高尔夫的专业术语里被叫做“甜蜜点”。”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Haja7C7huMlfGGl9efdLPIETia2b1hZq9ZZM0BsQ4Khn8FjgTG3R4XNichiaicVeHibbqYUNiblLPljrdmA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200214128&idx=1&sn=09d6636116d8da830677864a71a13205#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+  
+
+  
+  
+  
+  if($Message=='链接'||$Message=='連結'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',"连接一切 Mega Web时代破晓下的营销法则!",'Mega Web时代?”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaeRI9Kyvp6s1VDgVx1Ap1tCxsegbSCY4QRY1yGfCdhkk9JcuZQfib8iak0VgP4DxT5q3YpiaeMWgW2g/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200549441&idx=1&sn=7adb9c79f76555c54156b7dab1e42aef#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+  
+  if($Message=='旅游'||$Message=='旅遊'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','中华绝美景色
+",'中国地大物博，旅游资源丰富，风景名胜众多！”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbhgzInTK7Vv1BuQC2RZ8WuqRbGbbf1sJ7dqHIcmukqVEuFATknvibuedhHJoV9ZX8gfAYsGp09CIA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200219105&idx=1&sn=f48e17ad30fc1cc9ad9b5c83f731196b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+  if($Message=='学习'||$Message=='學習'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','孔子的学习之道
+",'人的一生不过是从光阴中借来的一段时光，岁月流淌过去，我们自己也就把这段生命镌刻成了一个样子，它成为我们的不朽，成为我们的墓志铭。”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbhgzInTK7Vv1BuQC2RZ8WuwGAfY0wdvktSOqbwnloaSlpHB7sB4uDTREViafBsayDxDJv6DD6KINg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200220228&idx=1&sn=4fecc3e51dff5cacedf87f0f45838395#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+  if($Message=='不同2'||$Message=='不同2'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','男女之间的十个差异
+",'地球上最特别的"物种"差异！”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbjVJ8n5N6GybuHESYMZ59QlDLEVnZ8iclncsBFFSTy744kz7VVYibiccn4XcZDJjJGTl6Eb9AjDOic9A/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200222043&idx=1&sn=e084a69457686d29e3e4b2384cf27bd0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+  if($Message=='机会'||$Message=='機會'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','机不可失，失不再来————机会是留给有准备的人!
+",'让我们都做一个有心人，把握住身边的每一次机会，寻找契机，拥抱稍纵即逝的机遇，快步奔向成功！抓住机遇，把握命运，审时度势，共赢好运！”','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hb6Jg35KyTb3reozP0xVr2RhIR6AR3ve87CKmrRGakkjB3EDvhBdwLhaibyZgE9pFM9y0rKsWwK0uQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200224292&idx=1&sn=d2903eaa87150ea0c93e618914e7ed6c#rd'); 
+      	        echo $resultStr;
+                  return;						
+}   
+  if($Message=='领导力'||$Message=='領導力'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"从零开始培养你的领导力",
+		'这是培养领导力的有效方法，只要你能够按持续做好每一步，你就能成为卓越的领导者。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZF26UthMicHjrKXJsHOtVhDicXxiao4B8wRTvloJlXon3q6NlJgd3zAQ4gJbYvmppiaicGhmpicqMicPGWQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200226552&idx=1&sn=f01a88cd33162f82a854b54a042f7460#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}   
+  if($Message=='家庭'||$Message=='家庭'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"美国总统奥巴马的五大教子锦囊",
+		'无论工作压力有多大，美国总统贝拉克·奥巴马都会尽量与妻女共进晚餐，分享一天的喜怒哀乐！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaBKF5wu47QzDzvgI54hLGDzUqr4ynkYlIIV0Pq1qRq78eFWRh31fzbRo2Ric4Csf1EPsXXHGGq9JQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200228529&idx=1&sn=9e8979cdf1fde06cd4f26288ce722f56#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+if($Message=='提升'||$Message=='提升'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"而立之年",
+		'三十这个年纪，在今天，这个阶段心理断乳期大大延后的时代，尤其是在大都市里，还被称作“男孩”“女孩”，那么怎样判断一个人在这个世界上是否“立”起来了呢？
+','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYT8dFhn99dKfuY4Qn5O0RDpwyNXhKicQhicIZBhqCZOUXOMHia1shKOuiaBj870Y24XfpNyZq3jVKudg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200230718&idx=1&sn=783be556371b41f9a80e6ded3b5aa40e#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='赞美'||$Message=='讚美'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"《盖章》——改变就此开始，全球观看上亿次的短片！",
+		'用积极的心态创造人生——再烦：也别忘记微笑；再急：也要注意语气；再苦：也别忘记坚持；再累：也要爱自己！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbdlg6tzc5icoxjzVej1MicgMvibSwtrw2bcBZgauCBiczXdTUNcAicuFePYLhcWfI8NKSibRkpaUOjJl4Q/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200236585&idx=1&sn=a613cdce048401a3e1427c5e7d04f798#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='伴侣'||$Message=='伴侶'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"时间会告诉你，谁会一直爱你！",
+		'认清陪你看细水长流的那个人，时间会告诉你，谁会一直爱你！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ3b4g2PhniczgyFTUDSrznc83rv2QtVkPazgeO0d5XLnzJM5azVDrz5KEb9t4x3mcIhdialaibWZGyQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200239151&idx=1&sn=ac6f433d764a6b126b86d66b1a71f700#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='人脉'||$Message=='人脈'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"优秀的领导者必须不断地拓展人脉!",
+		'如果你想拓展你的人脉圈，你就需要策略跟意志力，你必须竭尽所能！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HadWssfeDIgMFrh9URQibWjtA6mYicrceUuyMmict7QqVan9lqA8heESa5LcuDyk5mrHxdVTysibeOemg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200241942&idx=1&sn=94c8e71af6846f62b3c170e64e4faf28#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='错误'||$Message=='錯誤'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"知错改错才能成长进步!",
+		'古人云：“人非圣贤，孰能无过？”没有人能保证自己一生都不犯错误，既然无法避免，那么就没有必要害怕犯错误，关键在于以什么样的态度去对待错误。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HanVz6HyVCvaicCMiaFE5Oiccm9fd4bFmmkWVGDQ9mK1CZtRT9eCldpwnRGZ403on625CCwpMTWRTSibA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200245313&idx=1&sn=fb43e88be1d5e99f9ff338b69b3e93c9#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='口才'||$Message=='口才'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"看撒贝宁如何自设场景练口才",
+		'我喜欢演讲，因为我爱上了那种站在舞台上，当着所有人的面儿，直抒胸臆的感觉，演讲给我自信，演讲锻炼了我的心理素质和应变能力，演讲对我人生的发展进步起到了巨大的推动作用。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbBAicGIox6Qwia16HMZNKuaALnolQwiaVBcqSzsnbAnkQxHZlIg7e1dLL0LlS7xE1SRiaWN1aHkaN7bg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200248701&idx=1&sn=1899894ef3b6eba224dffd65782be3ce#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='位置'||$Message=='位置'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"伟大的领导者懂得把对的人摆在对的位置！",
+		'如果你没把人放在他们擅长的领域，你和你的团队就很难成功。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaKgVicibb54rOuD7yaR2oOlN4da7mb4hXsDHjfC2RMEryZBkWjSX45IP9Q4zZOLCrq0ONLarbUvh4Q/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200251664&idx=1&sn=3048447d3c6c6f695819a073a69d0515#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='认同'||$Message=='認同'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"杨澜震惊世界的北京申奥精彩演说！",
+		'北京申奥成功后，杨澜在莫斯科作最后陈述成为一次精彩的经典演说，杨澜的演说感动评委、震动世界，杨澜以她的东方魅力嫁接起沟通世界的桥梁！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYSvFNDdtudcOCAuDxwSgtlPPRJVlSOVKuK2tsMKcssh6Yd64WRvJicabyDfzoQ7aiaMHibgBF3SNM8w/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200254659&idx=1&sn=533fbb84171242a0c4a9fc2e09acd5d0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='给予'||$Message=='給予'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"《给予是最好的沟通》一部超级感人的短片！",
+		'生命的意义在于付出，在于给予，而不是在于接受，也不是在于争取。──巴金','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYSvFNDdtudcOCAuDxwSgtlEUhgdsjzNLRpEiblibZCURutLLovkOz4hLn7hMwe8NiadFZrhCg6fBgLQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200257261&idx=1&sn=04278b48531aca8f68444206f26a76e7#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 					
+if($Message=='互补'||$Message=='互补'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"研究发现男女基因相近更易喜结连理",
+		'在婚配问题上，“物以类聚”的作用要大于“性格互补”。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha1HxPD8yOLvzbLk8symtqy1HAIgq65hy3WHX6ibgzkKhrevjtxRXwMPjGcy4WfRvuUZwRF8c82sFQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200260639&idx=1&sn=21c76814208c8fe0257158911d4c5763#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 	
+if($Message=='奖励'||$Message=='獎勵'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"伟大的领导者要懂得有效的奖励！",
+		'最好的奖励是不需要多做解释的，因为每一个和被提拔者一起工作的人都看到了他的成长。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY21ttRUDueBiaYOsGSPCibicZ1JJngSiaibb303oW8c1lVc56601K3U4sfpXAkCfe6UZgoWb2HOlMYyEg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200263896&idx=1&sn=7f5816d80307f43a0cc71765942e177b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 				
+if($Message=='沟通'||$Message=='溝通'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"男女沟通的心理秘籍！",
+		'盛怒时先远离现场，不要在盛怒之下沟通。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hazo2Hhok5zfyBoOOlwBDp4MCEaGNGxhLw9UiaF2FojE9BOEzIaicPu0LQgP10rAyG6LuebAicwGRr6w/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200267282&idx=1&sn=ec8a9757146c660ebf947e5786eefc2e#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 	
+if($Message=='决心'||$Message=='決心'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"带着决心上路！",
+		'做一件事情，重要的不是身外之物是否完备，而是有没有决心！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbNyJ1tiasqkvPe0zOPutaDlGdO9FWusCKwlgYjAOWoqE90geJStJNsVrVFqXpSdgPUm2jBjLQYBXw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200270838&idx=1&sn=7f7b5a796c4b47169b5b2d32ae4deb6f#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 	
+if($Message=='责任'||$Message=='責任'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"提高员工责任心",
+		'强烈的责任心，是做人的最基本准则之一，是一个人价值观的直接反应，是一个人能否做好工作的前提，也是一个人能力发展的催化剂。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha1XZ9ictprLGgcfXSeD2DOZecwAQyBe5L91rckqVCR7RZiaPwdlzG23Pv4G3NduxEZKdnbwe3KsGQw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200274444&idx=1&sn=1df69ee87b344bf6ccce36b879afcbf2#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+if($Message=='全家福'||$Message=='全家福'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"全家福的意义",
+		'一张全家福，就是定格了家庭成员的永恒大团圆，以及很多随着时间流逝不可挽回的美好回忆，无疑意义非同寻常。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYZ3PWosqj5zPURB2TQ0YSeXWr6Sl8qrhBCQPsNKhlODamWhELzmibFvdQnN3UVocKbEV4TwA2tEWQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200278151&idx=1&sn=a7b546c4d198a3ddd0a7efb5c1536b3b#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='美酒'||$Message=='美酒'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"中国酒文化",
+		'自从有了酒，上至帝王将相下至平民百姓，无一不对酒兴味盎然，酒在人们的生活中扮演着重要的角色！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaIiaTF0ARkuEtr0LQTBjibg4f5La1ZFx4rOJiaCRxp77wNe2icJZ6Ccr7QuPDaH1Ij6LgzibqVdriccjUg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200284157&idx=1&sn=7c17cbb047c5d3a4eaa31946c038e4c4#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='分寸'||$Message=='分寸'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"为人处世得有分寸",
+		'为人处世能够把握这些分寸，才最终能够取得成功，或者比别人更接近成功。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYC6TID2WadaYLvcvnicXao3QlDaUl2HpGYsM4cyNReuRuLcEbSaU9icFN3GCaB1mQUPZ2vSUSicokAg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200287112&idx=1&sn=969fd7c79c723968a9c66f7aa48a7695#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='专长'||$Message=='專長'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"找出你的核心专长",
+		'任何一个人想要实现自己的理想，就需要找到自己的核心专长。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha6WnGcwOKKI5BzyZFibicDUc7WexFJegwKwfba6tiayuzBRicFZordicONDFGFMdj3VKVbhueHg0aXYLA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200290969&idx=1&sn=407b2e60370ee9bca44e922205fc111e#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 		
+if($Message=='考勤'||$Message=='考勤'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"一个德国上司对迟到扣工资的反应！",
+		'试想，公司都有考勤制度，如果迟到可以用钱来解决，那制度是什么？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYMg1EG9ia2zAK3qkaqfcfGKvo3SxFcYE0MmRib6gbzyY3xlNkXBTJOTxFxDKln37bAolwXj77iatAeA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200294817&idx=1&sn=3afabf7f9df4e5637eac5dfd425aed8b#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 					
+if($Message=='创新'||$Message=='創新'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"新经济时代管理创新的重要性！",
+		'随着知识经济时代的到来，全球化和信息化步伐的加快，组织将面临着越来越激烈的国内外竞争，只有创新，企业才有出路。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaYO2s3hic9Afwm0Fic68CJhKMTzAAnU0dYiaLicpRx2LdPcPOkZiafUohfBFNAFsmfnicUXiaQiaR2TenNHw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200298360&idx=1&sn=ee8e4c335cf862b3d46caba1ef04821d#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 	
+if($Message=='小时代'||$Message=='小時代'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"“90后“亚文化与主流！",
+		'随着90后消费者与用户的崛起，“亚文化”开始有点“主流化”的意思了。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha19cUXibukibVDaW3Jic6EREHRdfxz71ZTl8CJD3suFvCVpAxxOwPepqQ83N58Z2UkBFnBUgXdZvJkw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200302261&idx=1&sn=12fa85feb9237fa831798596c7695887#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 	
+if($Message=='自我实现'||$Message=='自我實現'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"“90后”亚文化的生态地图",
+		'每个年轻人都有自己的爱好，那么在经意或不经意间，也许就被划进了某个亚文化圈子。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbtuu2718NTrj2pTv6VltEtaqeKwDTXB9g69Mw51onGghUFpEmsN7oPscibbJlicFAP0vqktRvXvPlA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200310303&idx=1&sn=751afa55a99986a6c3476f3f5355e72a#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+           if($Message=='梦想二'||$Message=='夢想二'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"被嘲笑的梦想，更有去实现的价值——北大最牛微电影！",
+		'唯有不可思议的目标，才能达到不可思议的结果！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZarDaQYRBpKaicnrgZJNoAUb537rZ9k8wYqPYQT0OIZclhsiakcsAU10j3iaBtZibI0bJj3ePicL5LeTQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200315667&idx=1&sn=1fe79f5b3f7c483fd5fc3c1b19ebe6b9#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='交集'||$Message=='交集'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"理智与感情的交集——突破你的领导力",
+		'职务越高、责任越大的经理人总有一天会发现自己开始越来越多地处理“人的问题”。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY2GOfEsGuoqWicUbzl0AmXRUHagxvtF8NY8SicQeVeJ8vicGcXXpduQB0d0TPOGr0c2N2dcBk5Rh4PA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200319179&idx=1&sn=4ceb2f3066bedd6ea09f85461d960ddd#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='倾听'||$Message=='傾聽'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"最好的领导者他们都是最佳的倾听者！",
+		'成功的领导者必须具备的条件，成为一位最佳的倾听者！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbXEk9j03S2owQujbS8Rl021rSP2pC25ibpPZmicUn411AU6zyZ9QkugIj3hnziajhEsxC4XyjzeibKicA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200321829&idx=1&sn=26a1618635e883b0ec683d2ac2d50213#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='气场'||$Message=='氣場'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"教你培养强大的气场！",
+		'你的一举一动，反映着你的人生观、修养和自信心；反过来它们也会充盈你，会你的气质饱满，并最终有自己的风格。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZP6d3A0Jzxa78smicwWMjrSOD2pChFAbj5UkrIRFibzxRBkqcAib0MtNFFHO6ia9aqGT30TrUHmkVQiaQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200324654&idx=1&sn=df766987cb75d3da5e377570b865d4ac#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+           if($Message=='自我公关'||$Message=='自我公關'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"危机公关",
+		'谁都不会一帆风顺，稍不留意，摔个“跟头”也是常有的事，只是，面对各种意想不到的危机，你将如何进行危机公关？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha7LQBVblyTa4Yq761iajjNaod3uKqKB8icic9uWSia5hRmUdxUUSnawPmruMkRndvV7Vc4vBqbymsWEw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200328106&idx=1&sn=8d05b6f65d471c74f312f0ba81554b4b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='信息时代'||$Message=='信息時代'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"制造现场体验",
+		'乔布斯带给观众的不是一场演讲，而是一种体验。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZEThumkfibiaw7j0eQK6SL79qcpQbnVuWrId7fsK4Dua2vUjRlhQRv01aeIGXJAJ2GPTedodLjiaiawA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200331190&idx=1&sn=2f5f36de99efb9133c621aa999facbe7#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='责怪'||$Message=='責怪'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"别让脾气毁了你的幸福",
+		'人生的岁月有限，认错、尊重、包容才能让人接受，放下才自在啊！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ2VWAvV80bLzLWHAauwYqNbrtrMANJqp4BmNARbcVpCtF6O3DGAKd5sOE9lW81n4x7wB9ZsNkHIg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200333643&idx=1&sn=af9490d9881687b39e097ab9dd683244#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='欲望'||$Message=='欲望'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"《黑洞》夏纳获奖短片-诠释人性的黑洞",
+		'戛纳非常经典的获奖短片《黑洞》，引人深思，花三分钟时间让你明白人的欲望就像那个黑洞。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYzHzhaBkHibvCNwxawcWvLaDc2scyTfOtZR2Lsz0ibl2r4B0P6J7M6C0Tw3ibSIZs9zoCfW69HUPPWw/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200336366&idx=1&sn=e825bed234804461cd324e8936c33306#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='分享爱'||$Message=='分享愛'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"心胸要宽广，要容下他人！",
+		'心不要太大，容下自己就好；心不要太小，容下他人就好！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbQxxmx9OETpruA3AbuziaRJtycibyMyACUvlEDOqhMFxqgSFzBfSibmp3nT1JEC4ZQ5PERIgPT2Pia3w/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200338919&idx=1&sn=6c43d570c43dddec1b8bb18b486ed07d#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='初衷'||$Message=='初衷'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"人生路上莫忘初衷",
+		'不管你最后走得多远，走的多高，都不要忘记你的初衷，因为那是最宝贵的！——杨澜','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZU4BEXGCUfOMVy92AV2ibibicKlHMYRmgZE6aeEkniae8Mf3ZEejOZvxeAKaiaib1K3wEmf7B1H1UdiadEg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200341205&idx=1&sn=e20434c9656f4b36071debe1e481a7eb#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='真情流露'||$Message=='真情流露'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"小马哥动情演说涨士气，梅西激动流泪！",
+		'充满激情的演讲能激发团队无语论比的潜能！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha1e7DR22H1Ed0rE39R1MznEmuicxju1zo5QClVaoNR6tLcfwGx9XI66Fca3Wq8ibOFrGEtg3LqIafQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200343947&idx=1&sn=e6d32d3eed9c8ca0061ba9352fb9d1b2#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='领导者'||$Message=='領導者'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"领导力的五大误区",
+		'领导力是关于如何影响他人，如何让他人追随自己，而管理关注的是维持系统及其程序的正常运转。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaDD2RmO7hs9e7tFwqZzwHtxSvkInqcVCSHialia4AnUAXr8wPpvsMUn4BOb9NeDbhZlRGUCweZopyg/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200346379&idx=1&sn=2f53e6a43a729b5d59c8e671c36f5337#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='体系'||$Message=='體系'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"系统诠释企业文化 理念体系至关重要",
+		'企业文化理念体系对企业文化建设的整体构建起着至关重要的作用！','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha25WFqcvEKJR7zf7Kf9sd9iaPHicxZz47GrDfWAYLz8oTsuUK0e1HIxJ0CtrX3iasARMMVmyJTFQAYQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200349261&idx=1&sn=a566988d25e6fc9e2f0188ac51b5c4b1#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='人文'||$Message=='人文'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"太极图的奥秘",
+		'中华太极图悠悠千古昭著于世，是我们华夏先祖的智慧结晶，是中国传统文化的骄傲象征，更是中华民族献给人类文明的无价之宝。','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYTViaP98fqKIUwgD0508icHvb0PD8r7P0lNQiao450sxU4ibHKSKFplqVbV52SwXjRc6YjyjGtTNAceQ/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200353379&idx=1&sn=37d1685247103d145f38ee91664e584a#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='背包客'||$Message=='背包客'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"《花甲背包客》恩爱走天下，感动中国！",
+		'人生路上，有无数目标可供选择，必须有取有舍。追求自己的梦想，总要舍弃另一些东西，即使它们充满诱惑。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaJic8OJgPO0OueN7Y6kh5yBQQHAm0TWGy8gJT3r2TfIyVy7FA7nWiaFDmlwS7WDgO3zfYhMb3yKGhg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200356606&idx=1&sn=031dfdb6114999d824d15fae8cf9a26f#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='植入'||$Message=='植入'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"《爱的力量》——科技永远无法替代爱！",
+		'有时候我们往往借着外界的科技、玩具与孩子玩耍，可是在孩子的世界里，他们想要的是父母的一个抱抱，而不是五花八门的科技、玩具，科技永远无法取代爱。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY0XaaJKFDW8TJ85D2qC3Q6eiaMHDQkDxYE1hL0Pp4LrFYq1uTNiblhCcE8soE999Pes3t58kH5V0yQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200358900&idx=1&sn=a08080dc026010ad1f1555a23f01310b#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='影响'||$Message=='影響'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"提升领导者的影响力!",
+		'真正的领导者是能够影响别人，使别人追随自己的人物。他鼓舞周围的人协助他朝着他的理想、目标和成就迈进，他给了他们成功的力量。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZWCNbeb1gHz3wAdmrRJOALicrP08DET5oolK3fte6Dv5L5eAGyRr4qu4xdncgG0G31vg4PONcDoibw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200361856&idx=1&sn=810d5cafa8c418578b5d5a5bd9664a93#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='演讲技巧'||$Message=='演講技巧'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"李开复：你真的输不起了，别再孩子了!",
+		'要有任凭时间流逝，不会磨折和屈服的信念。不是因为在学校的象牙塔中，才说出我爱世界这样的话，是知道外面的黑，脏，丑陋之后，还要说出这样的话。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaxSYg2nRkibbfsm7CqCTNvRHqhsbD6pLb0RqrXmvP44xk17QqltuUTd3sUn9SiaAYibfWRTxbKib9WTw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200365619&idx=1&sn=bc4960122c4162a0da639637a638177a#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='正能量'||$Message=='正能量'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"你若盛开，蝴蝶自来！",
+		'每一个人都有一个气场；充满乐观气息安贫乐道的人，好运便会与之相伴；充满悲观思维愤世嫉俗的人，霉运很难不与之相随。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbzX0KBwoep94W7v6ia5yib3n0wdleiah4PKTiay8qjySrqrpD0rFn4UuONYpcOIrt9qVSxOEr69rxyag/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200369698&idx=1&sn=ede05484ad8cfc601175644b83429b25#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='团队核心'||$Message=='團隊核心'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"创业如何打造核心团队",
+		'历史和现实都告诉我们――是人，也就是你的核心创业团队决定了一个企业的成败。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaLQjpfuRULcBtjw8JVj0D5vAJHBOqpP5htRshpOxSEpBpvOPhVoDMUszYKO4Rv2lLP3ojhVRxjxQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200376121&idx=1&sn=7a454217949dff3166c7972c4c829d1f#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='心理行为'||$Message=='心理行為'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"世界杯上的精彩动作！",
+		'本届世界杯上，32强各队球员为我们带来了众多精彩的比赛，各种看似不可能完成的肢体也让观众们念念不忘，当然还有每场比赛前介绍首发阵容时每位队员抱臂的动作。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbJdib7DZCdaa3LY3rPmGccY27auZWZvOWTaibj99LhUT8ELZcI4cKpruk3UAByn2E983gfVBn7GvEg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200382449&idx=1&sn=1d460f212416167769c15080b90bd210#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='禅文化'||$Message=='禪文化'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"禅师的胆量",
+		'“天下有大勇者，卒（猝）然临之而不惊，无故加之而不怒，此其所挟持者甚大，而其志甚远也。”',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ2ermALEuo1CX500ic9crxepekemia7jImibKdWp5rgOpKmq1lzPQAuedaeiaCTKicN0SGiaGnibiazcdbYg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200385564&idx=1&sn=8ce535c499d9c5437d89b74b1aa9d937#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='训练1'||$Message=='訓練1'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"美国罗斯福总统成功之路",
+		'领导力不是一天练成的，需要用一生的时间去追求。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZnKUwMHMowa11e7EptDI0b8hicVkHW00RxyYMkw1Tt2FPlhwxWjIe1Fzib4Rgs6ohZMDrEk01YkeBw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200389194&idx=1&sn=fdf8a633356ec4052fa94d658e19a2f2#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+} 
+  if($Message=='勇气'||$Message=='勇氣'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"我们是因停止玩乐才会变老！",
+		'人的一生：通常不会因做过的事后悔，却因未曾去做自己想做的事而遗憾……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYrh5oGBCWiaT3PxQYYDG15v0d7LdJYClqSo6LC6AZfekFBCsvA95gwfibibM8hGgFc81icm42FMFicFGw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200393951&idx=1&sn=23bd8e02d74cc74038da11df7f395db7#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='莫忘初心'||$Message=='莫忘初心'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"一切都是最好的安排",
+		'所有的故事都会有一个答案。所有的答案却未必都如最初所愿。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaicUxLON4Evo2hIpNsLMlXGENV2HLtiatV00HAqAI9kV8Gibn1Y0RceiaqmBTD98yaTORLx5UGlVLedw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200396656&idx=1&sn=559385075d6e17359a4aa1653a8dd701#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='点滴'||$Message=='點滴'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"亲情，朴素的让人会忽略，却最能感动所有人！",
+		'朋友我们有时间多多陪伴一下自己的亲人！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYiachhh1fYxHGkh8DibkxncbFu2nX800JHrQZH1zefpYmZSv4MCEbvHzafbY66dQcu5ne8SziaLwhCg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200399551&idx=1&sn=6a337950926e2dabe15c45b2963ba40d#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='岁月'||$Message=='歲月'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"不要去改变别人，做好自己就好！",
+		'冲动来自激情、平静来自修炼，别让外界浮躁了自己。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbadtLR1v7iafqqw6FiaZ4HjpZgoY8NPtCOic8TnUCNdbsvXwrkNRNH4sRws8fW1m54zibaKgicjfQ1Thg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200402256&idx=1&sn=d602249f0fad608c5793b11266792b10#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='情绪'||$Message=='情緒'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"再深的感情不懂珍惜也会断",
+		'时间，带不走真正的朋友；岁月，留不住虚幻的拥有。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpFVZxvuuD2BRnC2icq1MuTMH3KgJnYqqPH2ibZYhZgicDT2AqA4vcjAOwib2fYLIMMQpcVf68nLm35g/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200405298&idx=1&sn=9d0e30ecf8094a95367ccaf9e96a43d6#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='新秀'||$Message=='新秀'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"青训成就德国",
+		'少年强则国强！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaH18ibNicusb4SIgCsXcNWxSzrmAN6HpXppwibt2ibiciaicQSnI3CQUwicPo8yQb9BTyXOUyAzefoX5LFIA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200408721&idx=1&sn=ed230467114d20f438fe4caf72107e2e#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+		  if($Message=='提高'||$Message=='提高'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"提高自己的领导力",
+		'大雁南飞，哪条路线最近、条件最好，如何照顾好群体内的老弱，防御天敌，这些都是对雁群中领头的考验。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZg6Vibnrr1GVbBQia8FuLL2yxoxYYeAFNJVibZRCxGqwlalia9tyLx65mMTqmAzhrGAUlbD0AAY5vRLg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200411334&idx=1&sn=6845ea4253437099da5aee53f3f75319#rd'); 
+      	        echo $resultStr;
+                  return;						
+				
+} 
+           if($Message=='时代'||$Message=='時代'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"​哪一段青春不荒唐",
+		'青春的那一页宣纸上，初时急匆匆高提了笔，摆开架势来弄风云，常常一不留神间，滴下几滴墨迹来，以至于多年后，羞赧到总想绕开。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbvt4qeKZPTqMiaXb8zgIBR9vGqT6EDSDuZ84cAetmv5WvKlokYIofDCoic7KMay0wj5laa1eq3jl6g/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200414181&idx=1&sn=a383ff4284dcb5f6bf604c040c010396#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='后会无期'||$Message=='後會無期'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"文案强大，后会有期！",
+		'你连世界都没观过，哪来的世界观。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYwbHhicx4WCZT1WlibkMb0yYWKtD8YGY1J3qSFq7NXkIUCoHQAeZC9Tdk9uJHCKaYmOiaLBauJoibZMw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200416784&idx=1&sn=a5271864877fcd65b67d88f6b31e87fc#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='相逢'||$Message=='相逢'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"小鲜肉PK型男大叔文青拼颜大战！",
+		'小鲜肉PK型男大叔，你看好谁？',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha8BLlTukdGRz5purH87yTNDiaJ5iaBs1IC4iaiaQbncMVG8U019ZhSkbKricIibEdM9NtdQEAU1GKx7UXw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200420565&idx=1&sn=2a37e9482083dac6b5ab7c0092d3caa0#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='不同1'||$Message=='不同1'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news','不求更好，只要与众不同！
+",'你让大家一提到你的名字，就想到了什么？','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbs0cGmmhG3sAyh2fcUzMMrfyJGJib3fbXLk9cWficEoP5sEfU2e7jwialKOWcPEkdWG5ibrkQicXshxNA/0','http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200136797&idx=1&sn=91e64e3afafb69535d54c1a3b5ed1694#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}  
+           if($Message=='不同'||$Message=='不同'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"男女之间的十个不同差异！",
+		'“男女有别”是句老话，在生活中，男人女人似乎永远存在于地球的两极，有不同的兴趣、脾气，喜爱不同风格的电影、不同口味的食物。其实，男女差别远不止于此……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbTTZjibgFOlZfk9un5GiaAglVSVdHMZYlLiallBtM6aAFvzUE5iabFiaIicVlsMRU5OIQe3D9NrTiakQRjg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200427437&idx=1&sn=0dd48824eb0691cabc2caa6c6ad0b0df#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+           if($Message=='未来'||$Message=='未來'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"半个西瓜的故事献给已婚和未婚的人",
+		'心中有爱，爱是相互的。请体谅你的另一半，别认为所有的事情都是无理取闹，想想自己的错误！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbuuuSJohmMRvBUVKicx1ofueStZO1YJ0wN2ar0B26JRL4oKQhLqKWR09f5nTcQJJDuYsDBwSZh8Og/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200429853&idx=1&sn=e01e1ff3337c22e9deda15a80ba07cc8#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+          if($Message=='独自成长'||$Message=='獨自成長'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"人越多越孤独",
+		'某一个空间里的人越多，人们的孤独和孤立感就会越强烈。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha9ShAyT9gMTLDpLcUP4scMsclpicMYic7CibaGmjE090HELDVpYVWI8MA4ySZaFH3ib3Faef42tGPu2Q/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200432024&idx=1&sn=8b1dd2ebe3b0d5442ca7ca8435c896b4#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+          if($Message=='独自成长'||$Message=='獨自成長'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"人越多越孤独",
+		'某一个空间里的人越多，人们的孤独和孤立感就会越强烈。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha9ShAyT9gMTLDpLcUP4scMsclpicMYic7CibaGmjE090HELDVpYVWI8MA4ySZaFH3ib3Faef42tGPu2Q/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200432024&idx=1&sn=8b1dd2ebe3b0d5442ca7ca8435c896b4#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+          if($Message=='互相扶持'||$Message=='互相扶持'){
+$resultStr = sprintf($QnnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"蝗虫与蚂蚁",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzMzSejlLcQNicaHq2a5hhlW4vibFOGK6Llh7ZnSib6sj3Xpib8ZBHjmC9VRQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200434297&idx=1&sn=34e1c0dcac0173fd6c454cc93de956b3#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'','https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0','http://www.xubokai.net/help/827.html'); 
+      	        echo $resultStr;
+                  return;	
+		}
+          if($Message=='我要幸福'||$Message=='我要幸福'){
+
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"简单的幸福",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSLWzVicx0Z1Bf6CYafrfWeRqwPaDS3dtK8dw7uTsDlxbbuibKXywDFXicQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200436378&idx=1&sn=e898f9dbbf219436a3be0d9da55b5bfe#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+          if($Message=='富人'||$Message=='富人'){
+
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"富人和穷人的圈子",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaGChylRyUbsILhu0iarp4dzQA2LuoicE9czOg8JO9GyCauBMNmylhicLK1stywR5whibNs4wOkvEU9hQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200439077&idx=1&sn=fcc927771382266caf04287d1d89981e#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+if($Message=='恐惧'||$Message=='恐懼'){
+
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"O2O模式的四个核心应用场景和商业生态圈",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaNQZljOpvPBa9tVO1Sxp7QQepE2rKYQzRibTWBW5t6KGXJIVO8Y4BV8ADKaIkkibicqm6EGsn1GJgJw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200444601&idx=1&sn=64012fa8b9111294ad532f3ac5359ef7#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+if($Message=='导航'||$Message=='導航'){
+
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"领导力“导航法则”！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hal10Ufy9iakk53CFOo50Po6S4Wf9fl9DwHT6iaclMCpcuBMg1ULG5vWsE2os7KicIxgo5Rt2iawnsLhQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200447246&idx=1&sn=6cfade1e3180b578a884e4fed42bf57a#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+               if($Message=='迷失'||$Message=='迷失'){
+
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"修得心自在，始有体自然！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hb4SWCcunWscSoiaTRdcRibta6K4UgCWFILEIhcKSLCrH15zrZgFoyxrze6hKSiclXMFc3Uic42TGckVA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200450241&idx=1&sn=040bfe5bfe4d67bb390dc0759f6dda76#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='表现'||$Message=='表現'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"用人：初创公司的生死一课!",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYQZaVpa1L8OwMNBtCKZ1GrLqhFAMaNIpkic34LrqrXH4VIJ50lGriagO07YrYMWicEsxx2iazeqiceXkg/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200452277&idx=1&sn=cde7709d3d6f92adba9c9d37a432eef2#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='价值一'||$Message=='價值一'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"增加价值，改变生活",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaT0Mt0pwVLVoVu7vhkbBUctvYL9vl05PjMPsCTI94KtK2UyUD5Csxpm5uABcaS1OAKC1btvibsDFw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200454738&idx=1&sn=89bcfdac112141b71c14ed4f8a7eccce#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='兴趣'||$Message=='興趣'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"从经典到经验",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaZNoGU07Iwo3WntacZs4ibNkkZPficXTt7kTRxiaVH5ENen8bMciaKgIbtWwGMNlnSoiaZ5E4jPWnaOag/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200457525&idx=1&sn=54e0af65b097a59475ea71fbb9168457#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='激励'||$Message=='激勵'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"如何激励员工？",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HagHvLMiaa7Rqd8wUSUViaVjSRIjeDiann21JltVicSfBcYDeRr9O9dUDhePyRusqEmVbbdmt0wsCe1CA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200460205&idx=1&sn=6979cabe4db86e45238cd2d4b7c18e34#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='竞争对手'||$Message=='競爭對手'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"好的竞争对手",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZo2JHgG6NtCrqkqCqPmqZZPDRA1sHCkuRnAeyg7iaDBpA4aY5rmSEz0SGQrMFzGibVfKS1FRQG29ZQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200465285&idx=1&sn=95cc31f5358b12685d5864bfb9eef241#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='人生经历'||$Message=='人生經歷'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"人生是一种磨练，也是一种修炼",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbFulZ0etDFM4EicMyxxscwT1H6ZDEVAE1b8OpBwO9Soiaiace9oufJdOLRaq9cXBDj7lKicBvOLbGl1A/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200468615&idx=1&sn=3266bae665623aa27c6dae27fd85953c#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='相关'||$Message=='相關'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"成功路上并不拥挤，因为坚持的人不多!",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY8Kq1OvFycNj8tLDBicm4mgViaLlp2nxkIgerc9LJeWUVD0CejVricInVfBxLBuLic5atn6ZibLQhHPBg/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200470825&idx=1&sn=378b79d8d42808c0996c4639734b15b0#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='指引'||$Message=='指引'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"兜圈的毛毛虫!",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZRJ3PSibcKIrGlb4HFtm0h1K8ZLysDoy6C6dzpS0b0OP0yL9eDazCBMZHoM8hQfjmQjqhiaW3dVR5A/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200472767&idx=1&sn=00e5b8768e80969ef2edd923ef454a91#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='问题'||$Message=='問題'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"是什么阻碍了你成功？",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbo9sHEk0eF5EBvmOuzbxXAAOZzCtqdbQoYbfKaOq9SibMWk9mwYVDsaChK9OJnrC3cu8gjXVtUbOQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200475324&idx=1&sn=f0e75fa17105e1f41615ef1e34417ed6#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+	 if($Message=='训练'||$Message=='訓練'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"我们靠什么改变世界",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZUC2bQpiaIfKdXcllyyOjuDn0Fb75pbQ2yzaE2BgBfvWdbOpGWh9TRMib5mMC9iav3vokhmsJCPjDqQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200478357&idx=1&sn=2ce548baaa696df9225c0e92a489fad1#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='孔子思想'||$Message=='孔子思想'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"中华美德——仁义礼智信",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZBWY6fKVtZibMx8YQvmwlQzEJcEZosibX9NbJibaeW6Khy4abCzn1iazU7gqibHovSONnqutu1ZyORysA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200481568&idx=1&sn=6bb4a4df542029a7f1c10438cb480111#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='主动付出'||$Message=='主動付出'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"扎克伯格为何得到员工高达99%的认可?",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HauIlNj7191nEULkf75ibOnYxpTHRdyC56m5Q9glyyCiaN80ShKZmDWLT7GB7o3N5pz7nunUQ2xaGLQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200484578&idx=1&sn=cbb77569f80c88484e585d47af4196f7#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='回家看看'||$Message=='回家看看'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"让所有人潸然泪下的爱《最好吃的饭》！！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYPWT24ic8khhAJB4S5QECmbV8ADxCKhOwf23uQLKwMxXicyO56dWa9zciasz0TpLBU3A5TRAiabdvnvQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200489297&idx=1&sn=29b96276bb17736c8d08a9c31b919c23#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+               if($Message=='深刻'||$Message=='深刻'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"读一遍哭一遍的故事，真的感人！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZldV76qPQgg4TvykFHCic0SfSXZBiaick3jrQI1iaviafwicWDDjH3mYsDIrN4Ne5zIMPDyC6qlickhH5Kw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200492747&idx=1&sn=9b8ff0ba2218a508e08e1b1a1e93c4b8#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+               if($Message=='传承'||$Message=='傳承'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"家族企业如何传承下去",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbGMZQysbMDvRGZKNzqIqMVUgtlouicskeVZ56mrHmM5vrfhgYCRncicDBQTyngJLuOcCMcRNGuqLEg/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200495374&idx=1&sn=b495311d0893f1795a8f8ff1a585c943#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='聆听心灵'||$Message=='聆聽心靈'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"聆听心灵的声音!",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hby8iaqln3EqQn1FGI6CJl7toWwQ44ZamI6kjePUbbRmK0ia4uMxbhagVTv9nuwB1WcgDSUBm32UCDA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200497662&idx=1&sn=fc6f431a76f519707caf36911e0d3b49#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='心智'||$Message=='心智'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"你给孩子的是“爱”还是“伤害”？",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZIGs6icvy8TFQsaxCv2Z0PxbHicCddUacex4RbecibnWMOkwUicmt3938n3CS9I0KNibLEWqBBRm5dTtA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200501601&idx=1&sn=d67490889a3424802474ec3c3a7105d1#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='自我'||$Message=='自我'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"唤醒你心中的自我，超越自我 !",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYvtuqwzcia4kxUOeo6mcEtib7Cuf7fBbj6pZFdGrBR2icXXLiaiaKtBs3FEMr0dBMictxb9vkezicBZMKvQ/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200505214&idx=1&sn=52e4c9e0cffe6c750b2d3bf41d06895f#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+		 if($Message=='为自己代言'||$Message=='為自己代言'){
+$resultStr = sprintf($NnewsTpl, $fromUsername, $toUsername,time(), 'news',
+"成功可复制，不如把就业当“创业”！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ7JY090JRKlT6Jic3QRB8LBm5CrszGve5kFTXwXoWy45Zwqp9y8I2WJuVibXDtia92tkJeDTO6D0urA/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200508087&idx=1&sn=3bda996589296bfe878b957f8660525b#rd',
+"良心蛋糕，等你来切——许伯恺老师微信平台，会员福利震撼来袭！",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZYEjVkVAQ8QHr8rCNR5VzML2FmKE5Yyb3vvxlGZdLwMcmSdwe91DtE30ZJh7xaVasq46S2PqnamA/0',
+'http://www.xubokai.net/help/827.html',
+"许老师微信平台会员Q&A ",'',
+'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbpDK0DvrHry8AQUg2eRqicSuCThMRGC6X5amPxrxAACPw4a3mmNzkJd24M1roookibfSgDqthV5Ovw/0',
+'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200370917&idx=1&sn=1bfd1a53cfb76f4685c98bbcb7eb7788#rd'); 
+      	        echo $resultStr;
+                  return;	
+		}
+          if($Message=='富翁'||$Message=='富翁'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"思维决定成败——穷人、富人思维对比！",
+		'什么是穷人思维？什么是富人思维？让我们一起来谈谈七大穷人、富人思维对比！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYNYw9J7HvAWDdR6Ohl3DtrAuzsRqC1LswJjpdbibiaVY9tv5s5P4ZfHaS0cGkwYyPrnqlclnsDDjXw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200511672&idx=1&sn=42624e6bde9b047212c38df3ac639c18#rd'); 
+      	        echo $resultStr;
+                  return;						
+
+}
+if($Message=='奇迹'||$Message=='奇蹟'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"新经济时代管理创新的重要性！",
+		'随着知识经济时代的到来，全球化和信息化步伐的加快，组织将面临着越来越激烈的国内外竞争，只有创新，企业才有出路。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbM5d1SS5VIcJnAsCnZNfjVe9ZMpPKolb2AGc8Sico0ya0jcQRe3WKsBHKkC3LutAZg1bLZk7zM9OQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200514119&idx=1&sn=09f2cf012f543f93bb374a19661b024a#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='当下'||$Message=='當下'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"特点、产品、公司，你的点子是哪个？",
+		'当创业者有了一个想法，想从风险投资家那里获得投资的时候，风投会问自己几个问题……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY8tYmKCQMe16UJPNJfrrQd61GO7l8KY3CqgrDzU96V0Svk30hmtHKPBIuMnVwgib0XU4ibRbWZCbgw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200516362&idx=1&sn=e5d41830159fabd71316f4f67994bac9#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='是非利弊'||$Message=='是非利弊'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"李东生：百折不回，不负青春!",
+		'找到失败的原因，比指责和埋怨更重要。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbPxbfZYsmrIC4WT8znIshXfF0uMAcOibqAvicXUibMpibWVfdbeFP8KLU53Nv4icZhmHIAR8jqsiaaibcbg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200518530&idx=1&sn=479d06c36bcad6ba357aded5bf1324a3#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='专业'||$Message=='專業'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"掌握8种能力，迅速成为精英！",
+		'托尔斯泰有一句名言：“成功的人都是相似的，不成功的人，各有各的失败”。为什么别人成长速度飞快，而你却亦步亦趋，甚至举步不前？掌握成长的能力，就能快人一步触摸成功！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZGVMrvrUiaXcXFgIoq0dvIto6bAd6ejve9RnmLHGeE5EJMiayJ6RVPAL9uUW3m4OccKrCsWyuTzsTA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200521070&idx=1&sn=a7635745231e48994f2455de0aab6747#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='对称'||$Message=='對稱'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"你为什么不懂TA的心？",
+		'沟通，做什么都离不开这话题。您有没有像漫画中的人物一样遇到过顾客抱怨不断却对自己哪里做得不好浑然不知的情况？',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HY3L4sVmicVIjUXSMqY0TMlT3OiajfotvOqxRYBounbt6WazT2Qicr0Z4WFBLJDG3LsGq6krSGYTXu6g/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200523752&idx=1&sn=8d2a9c2e6dea4f1f4ba5710017bfaa5d#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='知识'||$Message=='知識'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"捐献声音，你试过吗?",
+		'未见其人，先闻其声。你的声音可以帮助更多的人“看见”哦！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hba9CkZZkSaVlKchkY9PN4lfRc0j4Mc8dGovedvEicvV31wqvOm3wRaNJDTiaDaBvg28OabBBxmfolg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200526502&idx=1&sn=90385a939c74c146b723f0ab777c1270#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='逃离'||$Message=='逃離'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"逃离北上广：不是堕落，就是回来？",
+		'“逃离”本身不会带来解脱，唯有资源分配更加合理，选择二线城市才会意味着幸福感的回归。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZEC05LDpn3m296NTDorZeouqyngGjiaatJbGY2tJ70k3xpYqt4cv5xrkicOlRW3jB70eWBdjuHsaLQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200528736&idx=1&sn=1313d272feae492930d9b8ee2762d4fc#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='见识'||$Message=='見識'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"知识点亮生活，见识照亮未来!",
+		'​知识和见识之间有啥区别？',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYp7HmO0WILmFic1b8FsNyfEib4MQzsWrhN5dXZAQWAMUBCoHtvabZS5gOnX2dbibOncrLXNhmzXicZnA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200531660&idx=1&sn=1d65d51eb85b95ba06907718e785cac8#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='抱团'||$Message=='抱團'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"抱团做营销：未来最有效的营销方式!",
+		'建个“抱得住、打得准”的营销团队!',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaXt1VdWEG1aneKhYHFqbliaDBg7UO6R7WknlYlibheOqAll1QOVZnA6GfXYrg4rl3lJFHLxWnzC2fg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200534241&idx=1&sn=9ad691c0f018c70165970b2499fc4482#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='节日'||$Message=='節日'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"挡住那个月亮!",
+		'闭上窗户，拉起窗帘，挡住那悄悄溜来的月亮……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaXt1VdWEG1aneKhYHFqbliaEut6uQucFDC2wibl04bBj5anyOppH40Mo1UWBicURFuZdS6ardxrX7WA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200535820&idx=1&sn=b2f5528f9a1c8655fae3a04325c176b2#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='尊敬'||$Message=='尊敬'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"尊时代的潮流，敬成功的潜质！",
+		'最近大家都在讨论互联网思维。对于互联网思维的理解……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha5BYKIJVar1tTJZu78ibN3LnqZTDjdsezHZibgDzFf5LzZ7PSE2mJDzEBTAMJGrsmS125nSrw2RksQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200538436&idx=1&sn=bfafbf0073dfc94d167a24864c900881#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='义务'||$Message=='義務'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"态度决定事业的高度！",
+		'态度决定一切……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hbqw2YCpfLEBfd0xbIm0vic29rIITWdq3SicZicdGf2rZwvvKomDZR8UFbxBdDib9W7UXUnO7QyVNvurg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200541077&idx=1&sn=3fd9ea9632e7c33243b681e9d39f1b07#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='颠覆'||$Message=='顛覆'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"正在颠覆的世界，你准备好了吗？？？",
+		'这个世界属于有梦想的人，梦想是改变世界的源动力！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HadHgN2mCZiaSUXoLnx5MtiayTzzknxU8ORX3fibWkf6aP5wTOnS7Tia2ffc4hvnw01ZibBaAyVob8kXAA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200552943&idx=1&sn=aac83aa0177ebb2522448a0f01c5f330#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='靠譜'||$Message=='靠谱'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"王石最敬佩的企业家不是比尔盖茨，李嘉诚，而是75岁还在坐牢的一位老人！",
+		'衡量一个人成功的标志。不是看他登到顶峰的高度，而是看他跌到低谷的反弹力……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HatUW5Dr9mUICbMNhR8YGpgSnib1PVR4icRGt3tgSEjYj7de5fAQ4vYiaDjic9VprOoC6AyictOJibGW1sQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200555527&idx=1&sn=5deda4feec225677394799994fa10cd7#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='控制'||$Message=='控制'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"铁血公主揭秘-她，是宝成集团执行长蔡佩君!",
+		'「营运起落都要平常心，每天还是要吃饭睡饱。」',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYTPgOWQowXNKeN1pc0CURZQsibYsc7Wxx4qa394tT0o4tWCvH6CGG0PEI58g7m0o2yick6mLdP0diaw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200558832&idx=1&sn=ed2d6bd4cc3e55323abb6ff4a598f024#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='突破'||$Message=='突破'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"苹果大学内部培训课程首曝，谷歌被当做反面教材!",
+		'你需要不停迭代，直到可以用一种非常简洁的方式传达你的信息。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYDg2cU3KmDtjt8YIRGJL6BnW46pIMerbibSWZiaXNgJiaS91J9UibVibtAHlt93fN9re8HODNjIzUU2hw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200561679&idx=1&sn=86235538f5ca27cf6dea26c19a49dee3#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='大象'||$Message=='大象'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"诺基亚的衰落！",
+		'诺基亚现任CEO约玛•奥利拉在记者招待会上公布同意微软收购时最后说了一句话：“我们并没有做错什么，但不知为什么，我们输了。”',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ74MyeXl1QubwObictrHnmjxZPxMdfIHIhvgXztzGlNzcyicA6TexJkAn4mVB0tk2CuibHty9o2F7BQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200565549&idx=1&sn=c196c78cb7b964b4a95577540f61ca52#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='关注'||$Message=='關注'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"马云的创业公司吸引美国关注",
+		'阿里巴巴从一家小型创业公司起步，未来将成为全球最大的电商市场。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaTWALcib24zE4Nr28B8vkWkgYnphUDzc7PFqLrftVc4wq0fDTOY1wk8mCjSV6FO9M6PS53ymJwD0Q/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200565549&idx=1&sn=c196c78cb7b964b4a95577540f61ca52#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+if($Message=='体验'||$Message=='體驗'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"乔布斯的顿悟！",
+		'勘破人性造就的幻象，回到生命的本体和世界的本源！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbzeppwRFz0iaPSzbAwXEphJHZnC7vZDh72x4SntkQhaHGIjfUdcFO08WgaffWv3A6ic8v2S09PMribw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200571718&idx=1&sn=24ff5110eda2619d8b9761104f18e90f#rd'); 
+      	        echo $resultStr;
+                  return;						
+		} 
+  
+if($Message=='消费'||$Message=='消費'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"浅论：价值消费！",
+		'价值消费是人们对拥有价值的人事物的一种投资、投入、购买和分享的一种行为模式……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HalT3Ftsia7r4z87y6cbsqvZxWWytZRksKVYStn3ibmbAJJwJJO9NKouicFmqNAnD3l37jK6f8nopicLA/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200577630&idx=1&sn=6e4ce4069a53514ccf10fc248dc41abb#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='压力'||$Message=='壓力'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"排解压力，创造好心态！",
+		'面对来自各方面的多重压力时，不要急于求成，可以先把压力一一罗列出来进行梳理，分出轻重缓急，有条理地“各个击破”。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaD845GlbicF4ev0HV8EBbuvgNh7ibflVuOM1NSYZgxBkmJRWVGZfOAQevxWvVlKKWzfuxRqvYGSwrw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200581528&idx=1&sn=753952f33cfef0833b9719fade17d57a#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='状态'||$Message=='狀態'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"别让心态毁了自己，心态决定幸福!",
+		'保持什么样的心态就会有什么样的行为方式，而行为方式决定着一个人的生人走向。心态能够成就一个人，心态也够毁掉一个人。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ03nTWvBjLnshS4Dhz1jQFNyOMGEibNIsIj8gwCArlD9sBxe6vfdhUkwlkiaUIBa4xgbKUPnJ5mTyg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200584548&idx=1&sn=8f20b90fbc49b3784dab6444e71396f6#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='潜能'||$Message=='潛能'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"李嘉诚激励员工的一首诗!",
+		'"大家都看重面子，but do you know honor？"',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbO0gThPunSxgdWibyB8JpfAvqcDExddic124iaw24wfDQA5icn5SmFxtLicutsozgNeSBfzY6LdA5I1Nw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200587336&idx=1&sn=8c914c2e14b84797754c86930b998090#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='危机'||$Message=='危機'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"邓小平的落与起：人生需要隐忍与坚持!",
+		'无论你此时此刻在经历着何种困难，无论这时你的人生陷入了何种低谷，希望的曙光 总会来临。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ5flTF6OibNdaQXpbrIINklnerycPTkz25Ij7BYrUF4DicOibiaggMofuR5KzXnGMFKYuhSaq8pXfic0w/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200589775&idx=1&sn=3473ef53c5093ca5f834a4a9b16f26a5#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='成本'||$Message=='成本'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"马云回应可能的离职潮——留不住员工是阿里无能!",
+		'身价暴增的阿里人在上市后都刻意保持“低调”，除了马云对成为新首富保持平静之外，阿里巴巴集团CEO陆兆禧也表示，上市后会很快赶回公司正常工作，不会有丝毫懈怠。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaMXX0WibAoXfIhUeYczibjrInANtKOsY0DzfT4X3e3wiaZe0EibCMgcWXCoOW6vBLeJzsJNuml7ia8uow/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200594246&idx=1&sn=e5162d689bdca23fafa7612fd1503708#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='附加值'||$Message=='附加值'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"企业管理怎样提升“附加值”才可避免亏损！",
+		'每个人，每个公司每天都要努力做到的，就是不断增加自己的附加价值……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hba6kC3frbTpdLMjhd81rbDNnXaAxztoQ1ADwJn5RyKF3XhZTtcF445ZBRnGx2BhjadSxzicCKwIAg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200598786&idx=1&sn=6c7243d519fad8979657231d415db5c0#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='价值二'||$Message=='價值二'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"俞敏洪：领导要给员工传递完整的企业价值理念！",
+		'一个企业需要向员工和客户传递明确的理念需要告诉大家企业存在的意义……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZxsCLc6BEibmIeIOZXMM6L6051ATcajRn33paibctw5y93npM5dCXFnqCafWQjUvOJNdYoIno8EYNw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200601734&idx=1&sn=5018be3a604d7f9530dc3387f6add317#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='效率'||$Message=='效率'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"提高工作效率的8个小方法！",
+		'效率，你一定可以HOLD住时间！',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYLjFozapRxumVQ02TgibmSicvUYTc57QAbE1t7qiclt7ssHYia6Utlljtlb4EWrchC0ZveR5XhJjFWKw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200605470&idx=1&sn=c8a37ea1826f88ba9357b54285b48bca#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='结果'||$Message=='結果'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"搞清成本再说控制！",
+		'花钱的都是成本吗？成本都花钱吗？',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaGljoGgrf25Fsr5iaVP9jxTqVbWsTx4Pk9mT3UuB5FVAyB8EoZOlNILkn7DAlbM2l1OtZciciafj2wQ/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200609532&idx=1&sn=17137e4ab09048203fc7653a66ddb9b0#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='框架'||$Message=='框架'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"演讲稿的结构！",
+		'演讲稿的结构分开头、主体、结尾三个部分，其结构原则与一般文章的结构原则大致一样……',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hb0hcL3RbVZ4ibN1s8VcWE9KXYGyBicD6Uw8zw1ufaDuE3GSOhvM82x9ynzjQQMqD9FuFERNgzIpiaPg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200613759&idx=1&sn=545e4c6183d8f17f368920169f67d7fd#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='变革'||$Message=='變革'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"教育的互联网式变革：MOOC来了！",
+		'一场关于教育改革的风暴，悄然来袭。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbbHeQqGEtzLFxBu16eseNCOiaPibAyZzRkLlgsv3nT9kA0tiapicLlOicL7Lt66IlU3BLeLpKJ1m7NTwg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200616841&idx=1&sn=8d0c0b1aa3bbbfbc53778a8bbeca09a9#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='负担'||$Message=='負擔'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"员工是公司最重要的资产！",
+		'现在很多企业都在讲“核心竞争力”，究竟什么是企业的“核心竞争力”？先进设备？技术实力？雄厚资本？',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hb3FT2Wbyx1hzCibgKdcRIU1ic9AjqamYU1NicbZ8Cm1auG6y5rbljCuKjy3mt3jRVFLBFm1R6JzJrzg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200620071&idx=1&sn=ebaae713571348e1d4d82f41b6e97bd1#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='胜利'||$Message=='勝利'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"自信就是胜利！",
+		'七彩的糖果在阳光下闪耀出淡淡光芒，透明的晶体中似乎有光芒在流动。想起生活中的种种不如意不顺心，一切都被透明化，灰飞湮灭了。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Ha5Dj6oRpPKp6lXEAhHlSC38CMeN6ib5YN4TjrfGJCsciaRWFZpjAnSSqPufhpKtH82rX9wvmMkssAg/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200623123&idx=1&sn=2e7efd8b8e43f58fc7ce8c8e966ca38b#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+if($Message=='文化'||$Message=='文化'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"塑造现代企业精神！",
+		'企业文化是土壤，企业精神是鲜花。没有肥沃的土壤为之提供营养和水分，也只能是昙花一现，或如瓶中插花，迟早总要凋谢。',
+		'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaIUGWEpznFSjCVFKsbkqJ3YR0iaTEibvZnDicvVPSXpB72c2z1CkicvfwB760JB5batMb8cwOZsdia2Qw/0',
+		'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200626461&idx=1&sn=b52d718e07d35cb0f7852609a31e2f30#rd'); 
+      	        echo $resultStr;
+                  return;						
+		}
+        if($Message=='梦想'||$Message=='夢想'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"梦想与现实！",
+		'如果说成功是生米，那梦想就是清水，没有水，生米什么时候也是煮不熟的！',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYSjO3I3aiacwFyxRXsmibQuxx5A7Hlk7lmmWFcI5vGnJD5jLU0ia1mVvpZW1NNmDQ10vIJrsU5YjpoA/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200628928&idx=1&sn=8d23e7782d02846edc7326e1044f0ced#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='词汇'||$Message=='詞彙'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"成功属于不抛弃不放弃的人！",
+		'当幸运之神还未降临的时候，请不要着急，要耐心等待，并非你不是天才，而是时间还未到，我为这一天，努力了20年，在此期间，我从来不曾放弃。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6Hb0TuNskI7PDrQNg34p9fUoqrrYaEcQ6VXYuEXsPOhKPx5CT8AIZE7nKRsPAKriaEpzyiapV7SGFic8g/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200631670&idx=1&sn=c6fa745f0b4a490825d4d58efe1d7095#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='平衡'||$Message=='平衡'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"铸造企业的辉煌需要平衡！",
+		'绿水长流，是因高山低谷的不平而追求的一种不息方式，因而致使自然中水往低处流，冲刷淤积而趋于平衡。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZIBhH9Sg1fUqLoXtQkd45NZJ8JQwsuDAF2jxBeePu4UaYoBwQgvTObsEWNcUDIicm0WvBcxiaJbAkw/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200634362&idx=1&sn=7e5478f8de178fdb4261c88247dfeccc#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='逻辑'||$Message=='邏輯'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"最贫穷的哈佛女孩！",
+		'‍没有人可以和生活讨价还价，所以只要活着，就一定要努力！',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HbXIGlbuslOtrsrqG3qvSzb5oZcYiazUWa0fiaa3X1eSGRUQFGBq7wMbDVibHPB2J5ddAMoBxyfOYZeQ/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200637553&idx=1&sn=1343ff49909d3239c7a74d5f20541e3d#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='进步'||$Message=='進步'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"每天进步一点点！",
+		'‍沒有人不想成功，但并不是所有人都能夠成功。那么，我們不禁要問，成功到底有沒有秘訣？成功的奧妙到底蘊藏于何處？本文給您的答案是：只要每天進步一點點。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HaAgFMdnnpXic9RjnBicMWbib3mbCELdQTFsqraImorPZDrW3LSGWZBCpaM8YBDP1Izo7n9ZVYiaoib7Yg/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200641458&idx=1&sn=eff96912504b4064ef3426eaf308e0cb#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='系统'||$Message=='系統'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"上帝的花园杂草丛生！",
+		'‍有机系统和一些社会系统具有的最神奇的功能，是他们能够通过创造全新的结构和行为，彻底改变自身。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ9jgVmria9ya4xnwuJHF5IkR5Zmy6RtqCdm5t0FtcdeMJ4US1w4KwkjtFlxwe5DZKPP02rFGO9G5Q/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200644456&idx=1&sn=5751e60d98dc59ac5b5952588567b44a#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='论证'||$Message=='論證'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"演讲中的类比论证技巧！",
+		'类比论证是演讲从相同属性的两类事物出发，由已知的判断来推断未知的新的判断，透过比较两种相似的事物，主张因为两事物相似，因此在其中之一成立的现象，在另一事物身上也应该成立的推理过程。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZsUKm4JAwibakAiaMM2Upq5ApiagOsepYDyb9Dj5utPXowszFiaAZT8KLL1BSW5ql87FwNJc8uDlQ46Q/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200648972&idx=1&sn=cbbc02ee799e768f569713c93ad4fcd5#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='谦卑'||$Message=='謙卑'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"越谦卑越伟大！",
+		'谦卑是一种交际态度，更是一种人格修为……',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZfiaer1KkRMUmSSosiathulWd1PianEZT2lLpGzwnpvWziaO1dZuHbL95hCIO0JsP7ocLEUft7ic9sLBw/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200651548&idx=1&sn=ba9b7bd3ae4295ab0afd2e978c180a14#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='营销'||$Message=='營銷'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"懂得网络营销便能成为市场的主宰！",
+		'整合营销又称“整合营销传播”，其英文是Integrated Marketing communication。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ0pM181LFwMD1exWY7h2vSedO1Dsnmohj5E5k8tib6huxBsS2kjdYOQo4TickIaMcymkq4heWFVibWg/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200654845&idx=1&sn=809f23f2f41cd7d2d97bc96bb79773e0#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='创造'||$Message=='創造'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"不谈技术 ， 只谈感情！",
+		'一个不错的思路：在谈感情的同时，顺便推销了产品。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYmoYibPlcNMo7BOF2Xm1d3WIA0YxQvMg3oJckUyTk2icdWUknVoqGIotTpQtPE2vLxymx0E2r2tGRA/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200657698&idx=1&sn=6a491d9a1e8b2a2699e2b91e1fc80d33#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+        if($Message=='虚拟'||$Message=='虛擬'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"互联网大佬热衷“老板决定论！",
+		'一个企业的发展在很大程度上也受到老板基因和出身的影响，商业模式如此，员工福利也是这样。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HZ04libKFmfMzBqZMqtqFP4dDia7QbczafWTyohLqJEljlib90kOb4T3pqCCK4vJ7rjJfWfurq7UkNxw/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200660603&idx=1&sn=b695104f45e62f725d4cd3de458dfe1f#rd'); 
+      	        echo $resultStr;
+                  return;						
+				} 
+  if($Message=='价值'||$Message=='價值'){
+		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername,time(), 'news',
+		"李嘉诚投资的奇葩公司！！",
+		'李嘉诚曾表示，“我们正身处于一个数据驱动、能力主导的经济，其中‘颠覆’成为主流”，将继续大力投资有价值潜力的初创公司。',
+                  'https://mmbiz.qlogo.cn/mmbiz/LHJ4OG7B6HYrl60phlR3Fic1WtSPoIY01S6Det0WyCRznZdr6msZak9HtJcxkeLd3DiaeEEibTRdwgEFhClgibOzvQ/0',
+                  'http://mp.weixin.qq.com/s?__biz=MjM5NDM2NTU1Mw==&mid=200663415&idx=1&sn=16b32da5c5db66403fc55f1146a8504d#rd'); 
+      	        echo $resultStr;
+                  return;						
+				}
