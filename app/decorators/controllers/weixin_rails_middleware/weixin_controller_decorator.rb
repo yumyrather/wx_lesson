@@ -21,7 +21,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     end
     
     @articles.each do |article|
-      cover_url = article.cover.nil? ? "" : "#{server_path}#{article.cover_url(:normal)}"
+      cover_url = article.cover.nil? ? "" : "#{server_path}#{article.wx_cover}"
       art = generate_article("#{article.title}", "#{article.breif}", "#{cover_url}",mobile_wx_article_url(article))
       arts << art
     end
