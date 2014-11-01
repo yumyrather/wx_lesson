@@ -3,13 +3,11 @@ class WxArticle < ActiveRecord::Base
   mount_uploader :cover, ArticleCoverUploaderUploader
   
   acts_as_cached(:version => 1, :expires_in => 1.week)
-  after_save :clean_cache
-  before_destroy :clean_cache
+
    
-   
+
   # blog viewer hit counter
   def increment_view_count
-    puts "increment"
     
     increment(:view_count)        # add view_count += 1
     write_second_level_cache      # update cache per hit, but do not touch db

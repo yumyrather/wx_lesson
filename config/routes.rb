@@ -37,7 +37,11 @@ WxCast::Application.routes.draw do
   
   namespace :mobile do
     root :to => 'home#index'
-    resources :wx_articles
+    resources :wx_articles do
+      member do
+        get 'like'
+      end
+    end
     
     resources :wx_lessons 
     resources :wx_chapters

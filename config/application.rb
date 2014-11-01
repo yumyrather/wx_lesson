@@ -37,7 +37,7 @@ module WxCast
     config.i18n.default_locale = :"zh-CN"
     config.time_zone = 'Beijing'
     config.active_record.default_timezone = :local
-    config.assets.precompile += %w(admin.css admin.js ckeditor.js mobile.js mobile.css wx_articles.css editor.js)    
+    config.assets.precompile += %w(admin.css admin.js ckeditor.js mobile.js mobile.css wx_articles.js wx_articles.css editor.js)    
     
   end
 end
