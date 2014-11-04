@@ -33,17 +33,17 @@
             	<li class="treeview <%=active_menu(['wx_lessons','wx_chapters'])%>" >
                   <a href="#">
                       <i class="fa fa-cube"></i>
-                      <span>课程管理</span>
+                      <span>会员服务主题管理</span>
                   </a>
                   <ul class="treeview-menu">
 	                  <li>
 											<%=link_to admin_wx_lessons_path do%>
-												<i class="fa fa-angle-double-right"></i> <span>课程主题管理</span>
+												<i class="fa fa-angle-double-right"></i> <span>会员服务主题列表</span>
 											<%end%>
 										</li>
                     <li>
 											<%=link_to admin_wx_chapters_path do%>
-												<i class="fa fa-angle-double-right"></i> <span>课程章节管理</span>
+												<i class="fa fa-angle-double-right"></i> <span>课程章节列表</span>
 											<%end%>
 										</li>
                   </ul>
@@ -67,30 +67,40 @@
 										</li>
                   </ul>
               </li-->
-            	<li class="treeview <%=active_menu(['wx_keywords','wx_articles','wx_users'])%>">
+            	<li class="treeview <%=active_menu(['wx_keywords','wx_articles'])%>">
                   <a href="#">
 										<i class="fa fa-weixin"></i>
-                      <span>微信设置</span>
+                      <span>公众平台推送管理</span>
                   </a>
                   <ul class="treeview-menu">
                     <li>
 											<%=link_to admin_wx_keywords_path do%>
-												<i class="fa fa-angle-double-right"></i> <span>微信关键字列表</span>
+												<i class="fa fa-angle-double-right"></i> <span>关键词列表</span>
 											<%end%>
 										</li>
 										<li>
 											<%=link_to admin_wx_articles_path do%>
-												<i class="fa fa-angle-double-right"></i> <span>微信图文消息列表</span>
+												<i class="fa fa-angle-double-right"></i> <span>图文消息列表</span>
 											<%end%>
 										</li>
-										<li>
-											<%=link_to admin_wx_users_path do%>
-												<i class="fa fa-angle-double-right"></i> <span>微信用户列表</span>
-											<%end%>
-										</li>
+
                   </ul>
               </li>
-    
+            	<li class="treeview <%=active_menu(['wx_users'])%>">
+                  <a href="#">
+										<i class="fa fa-user"></i>
+                      <span>会员管理</span>
+                  </a>
+                  <ul class="treeview-menu">
+
+									<li>
+										<%=link_to admin_wx_users_path do%>
+											<i class="fa fa-angle-double-right"></i> <span>年付费会员列表</span>
+										<%end%>
+									</li>
+							    </ul>
+              </li>
+							
             	<li class="treeview <%=active_menu(['users'])%>">
                   <a href="#">
                       <i class="fa fa-cog"></i>

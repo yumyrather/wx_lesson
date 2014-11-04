@@ -1,11 +1,11 @@
 <%= content_for :title do %>
-	课程主题
+	会员服务主题
 <% end %>
 
 <%=render 'header_nav'%>
 <div class="box">
 	<div class="box-header">
-	   <h3 class="box-title">课程主题 - <%=@lesson.title%>
+	   <h3 class="box-title">会员服务主题 - <%=@lesson.title%>
      </h3>
 	</div><!-- /.box-header -->
 	<div class="box-body">
@@ -14,7 +14,7 @@
 					<b>封面:</b>
 	
 					<%if @lesson.cover %>
-						<%=image_tag @lesson.cover_url(:normal)%>
+						<%=image_tag @lesson.cover_url(:normal)%>					
 					<%end%>
 	
 
