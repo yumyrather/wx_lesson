@@ -4,7 +4,7 @@
 # 3, @keyword: 目前微信只有这三种情况存在关键字: 文本消息, 事件推送, 接收语音识别结果
 WeixinRailsMiddleware::WeixinController.class_eval do
   include Rails.application.routes.url_helpers
-  
+  require 'chinese'
   
 
     
@@ -36,6 +36,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
   private
 
     def response_text_message(options={})
+      @wx_keyword = @wx_keyword.to_gbk
       @wx_keyword = WxKeyword.find_by :keyword => @keyword 
       if @wx_keyword 
         
