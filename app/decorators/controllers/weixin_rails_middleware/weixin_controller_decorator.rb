@@ -36,7 +36,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
   private
 
     def response_text_message(options={})
-      @wx_keyword = @wx_keyword.to_gbk
+      @keyword = @keyword.to_gbk
       @wx_keyword = WxKeyword.find_by :keyword => @keyword 
       if @wx_keyword 
         
