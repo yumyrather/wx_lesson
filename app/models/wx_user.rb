@@ -23,12 +23,12 @@ class WxUser < ActiveRecord::Base
   end
   
   def encrypt_password
-     Digest::MD5.hexdigest("#{self.username}#{self.password}")
+     Digest::MD5.hexdigest("#{self.password}")
   end
   
   
   def authenticate(password)
-    try_password = Digest::MD5.hexdigest("#{self.username}#{password}")
+    try_password = Digest::MD5.hexdigest("#{password}")
     
     puts "#{self.password} & #{try_password}"
     try_password == self.password   
