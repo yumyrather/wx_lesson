@@ -37,9 +37,9 @@ WeixinRailsMiddleware::WeixinController.class_eval do
 
     def response_text_message(options={})
       @keyword = @keyword.to_gbk
-      @wx_keyword = WxKeyword.find_by :keyword => @keyword 
-      if @wx_keyword 
-        
+      @wx_keyword = WxKeyword.find_by :keyword => @keyword
+      logger.info("keyword in database and input:#{@wx_keyword.try(:keyword)} |#{@keyword}") 
+      if @wx_keyword
         @user = WxUser.find_by_open_id( @weixin_message.FromUserName )
         
         @articles = articles_list_by_keyword(@wx_keyword,@user)
