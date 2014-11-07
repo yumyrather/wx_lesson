@@ -31,6 +31,11 @@
 					<hr/>
 						<b>是否免费</b>
 						<p><%=t @article.public_flag.to_s%></p>
+						
+						<b>是否外链</b>
+						<p><%=t @article.is_linked.to_s%></p>
+						
+						
 						<b>分配关键字:</b>
 						<%@article.wx_keyword_items.each do |item|%>
 							<%=link_to item.wx_keyword.keyword,[:admin,item.wx_keyword]%><br/>
@@ -45,8 +50,15 @@
 						<b>简介</b><br/>
 						<p><%=@article.breif%></p>
 						
-						<b>正文</b><br/>
-					<%=raw @article.content%>
+						
+						<%if @article.is_linked%>
+							<b>外链地址</b><br/>
+							<%=@article.linked_url%>
+						<%else%>
+							<b>正文</b><br/>
+							<%=raw @article.content%>
+						<%end%>
+
 				</div>	
 				
 		
