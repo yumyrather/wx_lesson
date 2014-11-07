@@ -1,5 +1,5 @@
 <%=render 'shared/error_messages',:target=>@article%>
-<div class="row">
+<div class="row-fluid">
 	<%if @article.cover %>
 		<%=image_tag @article.cover_url(:normal)%>
 	<%end%>
@@ -16,16 +16,26 @@
 		</div>
 	</div>
 	
-	<%= f.input :is_linked,:html=>{:class=>"form-control"},:collection=>[["外链",1],["内部",0]],:include_blank=>false%>
-	<%= f.input :linked_url,:input_html=>{:class=>"form-control"},:placeholder=>"外链模式下必填字段" %>
+	
+	<%if @article.is_linked%>
+		<%@modes = [["外链",1],["内部",0]]%>
+	<%else%>
+		<%@modes = [["内部",0],["外链",1]]%>
+	
+	<%end%>
+	<%= f.input :is_linked,:html=>{:class=>"form-control"},:collection=>@modes,:include_blank=>false%>
+	
   
 	<%= f.input :public_flag,:html=>{:class=>"form-control"},:collection=>[["免费",1],["收费",0]],:include_blank=>false%>
 	
+	<div id="link">
 	
-	
-	
+	<%= f.input :linked_url,:input_html=>{:class=>"form-control"},:placeholder=>"外链模式下必填字段" %>
+	</div>
+	<div id="content">
 	
 	<%= f.kindeditor :content,:input_html=>{:class=>"form-control"}, :ckeditor => { :height => 500 }%>
+	</div>
 	
 	<div class="form-actions">
 		<%=link_to "返回列表", admin_wx_keywords_path,:class=>"btn"%>
@@ -33,4 +43,31 @@
 	</div> <!-- /form-actions -->
 <%end%>
 
+<script>
 
+
+$(document).ready(function(){
+	$("#wx_article_is_linked").change(function() { 
+		var value = $(this).children('option:selected').val();
+		if (value == 1){
+			$("#content").hide();
+			$("#link").show();
+
+		}else{
+			$("#content").show();
+			$("#link").hide();
+		}
+	});
+	var value =  $("#wx_article_is_linked").children('option:selected').val();
+
+	if (value == 1){
+		$("#content").hide();
+		$("#link").show();
+
+	}else{
+		$("#content").show();
+		$("#link").hide();
+	}
+
+	});
+</script>
