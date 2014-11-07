@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101125020) do
+ActiveRecord::Schema.define(version: 20141107012453) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -62,15 +62,17 @@ ActiveRecord::Schema.define(version: 20141101125020) do
     t.string   "title"
     t.string   "cover"
     t.string   "breif"
-    t.text     "content",     limit: 2147483647
-    t.boolean  "hidden",                         default: true
+    t.text     "content",      limit: 2147483647
+    t.boolean  "hidden",                          default: true
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "public_flag",                    default: true
-    t.integer  "like_count",                     default: 0,    null: false
-    t.integer  "view_count",                     default: 0,    null: false
-    t.integer  "share_count",                    default: 0,    null: false
-    t.date     "post_date"
+    t.boolean  "public_flag",                     default: true
+    t.integer  "like_count",                      default: 0,     null: false
+    t.integer  "view_count",                      default: 0,     null: false
+    t.integer  "share_count",                     default: 0,     null: false
+    t.boolean  "is_linked",                       default: false
+    t.string   "linked_url"
+    t.date     "published_at"
   end
 
   create_table "wx_chapters", force: true do |t|

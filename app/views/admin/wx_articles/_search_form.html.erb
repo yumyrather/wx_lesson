@@ -15,7 +15,16 @@
 			    </div>
 			  </div>
 			
-	
+				<div class="control-group">
+			    <label class="control-label" for="inputEmail">跳转模式</label>
+			    <div class="controls">
+						<select id="q_is_linked" name="q[is_linked_eq]">
+							<option value=""></option>
+							<option value="1">外链</option>
+							<option value="0">内部</option>
+						</select>
+			  </div>
+			
 			<hr/>
 			  <%= f.submit "查询",:class=>"btn btn-block btn-primary" %>				  
 			<% end %>

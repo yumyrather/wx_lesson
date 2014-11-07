@@ -21,6 +21,10 @@
                 hidden: "隐藏"
                 content: "正文"
                 public_flag: "是否收费阅读"
+                published_at: "发布日期"
+                is_linked: "跳转模式"
+                linked_url: "外链地址"
+                
             wx_chapter:
                 title: "标题"
                 breif: "简介"

@@ -15,6 +15,19 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     render xml: send("response_#{@weixin_message.MsgType}_message", {})
   end
 
+  def generate_wx_article(article)
+      cover_url = article.cover.nil? ? "" : "#{server_path}#{article.cover_url(:normal)}"
+      if article.is_linked
+        link_url = article.linked_url
+      else
+        link_url = mobile_wx_article_url(article)
+      end
+      
+      art = generate_article("#{article.title}", "#{article.breif}", "#{cover_url}",link_url)
+      art
+  end
+  
+  
   def articles_list_by_keyword(keyword,user)
     arts = []
     if user.nil?
@@ -25,8 +38,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
     
     @articles.each do |article|
       cover_url = article.cover.nil? ? "" : "#{server_path}#{article.cover_url(:normal)}"
-      art = generate_article("#{article.title}", "#{article.breif}", "#{cover_url}",mobile_wx_article_url(article))
-      arts << art
+      arts << generate_wx_article(article)
     end
     # 商城首页
     arts

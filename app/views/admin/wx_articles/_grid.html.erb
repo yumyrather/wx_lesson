@@ -11,6 +11,14 @@
 		raw link
 	end
 	
+	g.column :name => "发布日期", :attribute => 'published_at'
+	g.column :name => "免费", :attribute => 'public_flag'  do |article|
+		t article.public_flag.to_s
+	end
+	g.column :name => "外链", :attribute => 'is_linked' do |article|
+		t article.is_linked.to_s
+	end
+	
 	g.column :name => '浏览', :attribute => 'view_count'
 	g.column :name => '点赞', :attribute => 'like_count'
 	
