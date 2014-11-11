@@ -19,8 +19,12 @@
 }
 
 .images-wrapper{
-min-height:200px;
-position:relative;
+	min-height:200px;
+	position:relative;
+}
+
+.images-wrapper .cover{
+	width:100%;
 }
 .pad{
 	padding-left:30px;
@@ -39,7 +43,7 @@ position:relative;
 
 <div class="header">
 		<div class="images-wrapper">
-			<%=image_tag @lesson.cover_url(:normal)%>
+			<%=image_tag @lesson.cover_url(:normal),:class=>"cover"%>
 			<div class="images-content pad">
 				课程名称：<%=@lesson.title%>
 			</div>

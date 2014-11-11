@@ -16,6 +16,7 @@
 					<%if @lesson.cover %>
 						<%=image_tag @lesson.cover_url(:normal)%>					
 					<%end%>
+					<br/>
 	
 
 						<b>创建文档时间</b>:
@@ -57,7 +58,7 @@
 </div>
 
 
-<div class="row">
+<div class="row-fluid">
 	<div class="btn-group pull-left">
 		<%=link_to "返回列表",admin_wx_lessons_path,:class=>"btn"%>
 	
