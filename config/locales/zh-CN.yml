@@ -50,3 +50,7 @@
                 password: "密码"
                 password_confirmation: "密码确认"
                 role: "权限"
+            setting:
+                name: "参数名"
+                key: "参数代码"
+                value: "参数值"

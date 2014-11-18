@@ -32,6 +32,8 @@ WxCast::Application.routes.draw do
       end
     end
     
+    resources :settings
+    
   end
   
   

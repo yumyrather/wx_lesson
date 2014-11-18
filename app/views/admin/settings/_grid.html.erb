@@ -1,0 +1,23 @@
+<%= grid(@settings_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+	
+	g.column :name => "系统ID	" ,:attribute => "id"  do |setting|
+		link_to [:admin,setting] do
+			 setting.id
+		end
+	end
+	
+	g.column :name => '参数名称', :attribute => 'name'  
+	
+
+	g.column :name => '参数值', :attribute => 'value'  do |setting|
+		truncate setting.value
+	end
+
+
+	g.column do |setting|
+		edit =  link_to raw("<button class=\"btn btn-mini btn-info\"><i class=\"fa fa-edit bigger-120\"></i></button>"), edit_admin_setting_path(setting)
+		remove = link_to raw("<button class=\"btn btn-mini btn-danger\"><i class=\"fa fa-trash-o  bigger-120\"></i></button>"), [:admin,setting], method: :delete, data: { confirm: '确认删除记录吗?' }
+		raw "#{edit} #{remove}"
+	end
+	
+end -%>

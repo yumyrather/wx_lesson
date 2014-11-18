@@ -2,7 +2,7 @@ class  Admin::WxArticlesController < Admin::BaseController
   def index
     @page_title = "微信图文消息管理"
     @q = WxArticle.search(params[:q])
-    @articles = @q.result(distinct: true)
+    @articles = @q.result(distinct: true).order("published_at")
     @articles_grid = initialize_grid(@articles,:per_page => 20)
   end
   

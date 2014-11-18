@@ -101,7 +101,7 @@
 							    </ul>
               </li>
 							
-            	<li class="treeview <%=active_menu(['users'])%>">
+            	<li class="treeview <%=active_menu(['users','setting'])%>">
                   <a href="#">
                       <i class="fa fa-cog"></i>
                       <span>系统设置</span>
@@ -110,6 +110,11 @@
                     <li>
 											<%=link_to admin_users_path do%>
 												<i class="fa fa-angle-double-right"></i> <span>管理员列表</span>
+											<%end%>
+										</li>
+										<li>
+											<%=link_to admin_settings_path do%>
+												<i class="fa fa-angle-double-right"></i> <span>系统参数设置</span>
 											<%end%>
 										</li>
                   </ul>
