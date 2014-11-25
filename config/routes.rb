@@ -42,6 +42,7 @@ WxCast::Application.routes.draw do
     resources :wx_articles do
       member do
         get 'like'
+        get 'share'
       end
     end
     

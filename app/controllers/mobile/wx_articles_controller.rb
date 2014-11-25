@@ -12,4 +12,10 @@ class  Mobile::WxArticlesController < Mobile::BaseController
       @article.like_count += 1
       @article.save
     end
+    
+    def share
+      @article = WxArticle.find(params[:id])
+      @article.share_count += 1
+      @article.save
+    end
 end

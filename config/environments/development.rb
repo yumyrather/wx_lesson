@@ -27,5 +27,6 @@ WxCast::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   SITE_NAME = "超越极限"
+  SERVER_PATH = "http://www.xubokai.net"
   
 end
