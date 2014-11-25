@@ -17,5 +17,6 @@ class  Mobile::WxArticlesController < Mobile::BaseController
       @article = WxArticle.find(params[:id])
       @article.share_count += 1
       @article.save
+      render :text=>""
     end
 end
