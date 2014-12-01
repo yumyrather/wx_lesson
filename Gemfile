@@ -31,6 +31,8 @@ gem 'carrierwave', '0.6.2'
 gem 'carrierwave-upyun', '0.1.5'
 gem 'mini_magick'
 
+#Alipay
+gem 'alipay'
 
 #pageinate
 gem 'wice_grid'

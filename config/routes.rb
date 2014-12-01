@@ -4,7 +4,13 @@ WxCast::Application.routes.draw do
   mount WeixinRailsMiddleware::Engine, at: "/"
   
   root :to => 'admin/home#index'
-
+  
+  
+  namespace :payment do
+    resources :alipay_payments
+  end
+  
+  
   namespace :admin do
     root :to => 'home#index'
     resources :wx_keywords do
