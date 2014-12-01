@@ -1,0 +1,60 @@
+<div id="parent_menus_box" class="box">
+	<div class="box-header">
+		 <div class="box-tools">
+		 	<ul class="pagination pagination-sm no-margin pull-right">
+       <li>
+       	<%=link_to new_admin_wx_menu_path ,:remote=>true do%>
+					<i class="fa fa-plus"></i>
+				<%end%>
+       </li>
+     	</ul>
+     </div>
+	</div><!-- /.box-header -->
+	<div class="box-body">
+		<ol class="dd-list">
+			
+			<%menus.parent_menus.each do |parent_menu|%>
+				<li class="dd-item main-item" data-id="<%=parent_menu.id%>" data-type="main">
+          <div class="dd-handle"><%=parent_menu.name%>
+						<div class="pull-right">
+			       	<%=link_to edit_admin_wx_menu_path(parent_menu) ,:remote=>true do%>
+								<i class="fa fa-edit"></i>
+							<%end%>
+							<%=link_to new_admin_wx_menu_path(:parent_id=>parent_menu) ,:remote=>true do%>
+								<i class="fa fa-plus"></i>
+							<%end%>
+							<%=link_to [:admin,parent_menu],:method=>:delete ,:remote=>true , data: { confirm: '确定删除菜单吗?' } do%>
+								<i class="fa fa-trash-o red"></i>
+							<%end%>
+						</div>
+					</div>
+					<%if parent_menu.sub_menus.any?%>
+
+						<ol class="dd-list">
+							<%parent_menu.sub_menus.each do |sub_menu|%>
+
+	             <li class="dd-item sub-item" data-id="<%=sub_menu.id%>" data-type="sub">
+	               <div class="dd-handle"><%=sub_menu.name%>
+										<div class="pull-right">
+							       	<%=link_to edit_admin_wx_menu_path(sub_menu) ,:remote=>true do%>
+												<i class="fa fa-edit"></i>
+											<%end%>
+
+											<%=link_to [:admin,parent_menu],:method=>:delete ,:remote=>true, data: { confirm: '确定删除菜单吗?' } do%>
+												<i class="fa fa-trash-o red"></i>
+											<%end%>
+										</div>
+		
+									</div>
+	             </li>
+							<%end%>
+	          </ol>
+					<%end%>
+	
+				</li>
+			<%end%>
+
+
+	  </ol>
+	</div>
+</div>

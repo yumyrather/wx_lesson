@@ -80,4 +80,6 @@ WxCast::Application.configure do
   SITE_NAME = "超越极限"
   SERVER_PATH = "http://www.xubokai.net"
   
+  
+  
 end

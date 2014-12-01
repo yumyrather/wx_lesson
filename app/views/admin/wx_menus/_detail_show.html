@@ -1,0 +1,24 @@
+<div  class="menu-detail" id="menu_detail">
+	<%=simple_form_for([:admin,@menu],:html=>{:class=>"form-horizontal"} , :remote=>true) do |f|%>
+			<div class="box-body">
+          <div class="form-group">
+						<%=f.label :name%>
+							<%=f.text_field :name,:class=>"form-control" ,:placeholder=>"输入菜单名称"%>
+          </div>
+          <div class="form-group">
+						<%=f.label :url%>
+							<%=f.text_field :url,:class=>"form-control" ,:placeholder=>"跳转链接URL"%>
+          </div>
+          <div class="form-group">
+						<%=f.label :key%>
+							<%=f.text_field :key,:class=>"form-control" ,:placeholder=>"按钮关键字"%>
+          </div>
+
+      </div><!-- /.box-body -->
+
+      <div class="box-footer">
+          <button type="submit" class="btn btn-primary">保存</button>
+      </div>
+			<%=f.hidden_field :parent_id%>
+	<%end%>
+</div>

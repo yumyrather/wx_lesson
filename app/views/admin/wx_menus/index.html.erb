@@ -1,0 +1,40 @@
+<div id="alert">
+	
+</div>
+<div class="box">
+	<div class="box-header">
+	   <h3 class="box-title">微信自定义菜单设置</h3>
+		 <div class="box-tools">
+				<%=link_to push_admin_wx_menus_path,:class=>"btn btn-success pull-right" ,:remote=>true do%>
+					同步 
+				<%end%>
+     </div>
+	</div><!-- /.box-header -->
+	<div class="box-body">
+		<div class="row">
+	    <div class="col-md-5">
+				<%=render 'parent_menus',:menus=>WxMenu.parent_menus%>
+			</div>
+			
+	    <div class="col-md-7">
+				<div id="menu_detail">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Small modal -->
+<div id="new_modal">
+	
+</div>
+
+
+<script>
+$(document).ready(function(){
+	//$('#parent_menus_box').nestable({});
+});
+	
+	
+
+</script>

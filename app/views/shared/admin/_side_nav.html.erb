@@ -67,7 +67,7 @@
 										</li>
                   </ul>
               </li-->
-            	<li class="treeview <%=active_menu(['wx_keywords','wx_articles'])%>">
+            	<li class="treeview <%=active_menu(['wx_keywords','wx_articles','wx_menus'])%>">
                   <a href="#">
 										<i class="fa fa-weixin"></i>
                       <span>公众平台推送管理</span>
@@ -83,7 +83,11 @@
 												<i class="fa fa-angle-double-right"></i> <span>图文消息列表</span>
 											<%end%>
 										</li>
-
+										<li>
+											<%=link_to admin_wx_menus_path do%>
+												<i class="fa fa-angle-double-right"></i> <span>自定义菜单设置</span>
+											<%end%>
+										</li>
                   </ul>
               </li>
             	<li class="treeview <%=active_menu(['wx_users'])%>">
@@ -98,6 +102,8 @@
 											<i class="fa fa-angle-double-right"></i> <span>年付费会员列表</span>
 										<%end%>
 									</li>
+									
+	
 							    </ul>
               </li>
 							

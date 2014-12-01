@@ -34,6 +34,14 @@ WxCast::Application.routes.draw do
     
     resources :settings
     
+    resources :wx_menus do
+      collection do
+        get 'push'
+        get 'fetch'
+      end  
+    end
+    
+    
   end
   
   

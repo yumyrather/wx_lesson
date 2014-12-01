@@ -1,0 +1,22 @@
+$("#new_modal").replaceWith('<%= j(render("new_modal")) %>');
+
+
+$("#submit_button").on('click', function(e) {
+	console.info($(".modal-body form").serialize());
+	
+	$.ajax({
+		cache: true,
+        type: "POST",
+        url:"/admin/wx_menus",
+        data:$('.modal-body form').serialize(),// 你的formid
+        async: false,
+        error: function(request) {
+            alert("提交失败,请重试");
+        },
+        success: function(data) {
+			$('#new_modal').modal('hide');
+        }
+	});
+});
+
+$('#new_modal').modal('show');

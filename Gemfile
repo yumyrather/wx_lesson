@@ -18,6 +18,7 @@ gem 'devise'
 #mobile framework
 gem 'twitter_ratchet_rails'
 gem 'weixin_rails_middleware'
+gem 'weixin_authorize'
 
 #API
 gem 'grape'
@@ -36,6 +37,9 @@ gem 'wice_grid'
 gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 0.1.3'
 gem "ransack"
+
+#setting
+gem 'settingslogic'
 
 
 

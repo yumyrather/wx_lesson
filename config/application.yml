@@ -1,0 +1,15 @@
+# config/application.yml
+defaults: &defaults
+
+development:
+  <<: *defaults
+  app_id: "wxa67fec6c3c90afde"
+  app_secret: "0d8c02599fca26fc193dbd3de09b0c10"
+  
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  app_id: "wxa67fec6c3c90afde"
+  app_secret: "0d8c02599fca26fc193dbd3de09b0c10"

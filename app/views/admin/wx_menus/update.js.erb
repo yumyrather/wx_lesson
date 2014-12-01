@@ -1,0 +1,7 @@
+$("#parent_menus_box").replaceWith('<%= j(render("parent_menus",:menus=>@menus)) %>');
+
+<%if @success%>
+	$("#alert").replaceWith('<%= j(render("alert")) %>');
+<%else%>
+	$("#alert").replaceWith('<%= j(render("error")) %>');
+<%end%>

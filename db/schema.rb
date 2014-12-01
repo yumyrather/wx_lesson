@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118161009) do
+ActiveRecord::Schema.define(version: 20141130134129) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -137,6 +137,22 @@ ActiveRecord::Schema.define(version: 20141118161009) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "wx_menus", force: true do |t|
+    t.integer  "public_account_id"
+    t.integer  "parent_id"
+    t.string   "name"
+    t.string   "key"
+    t.string   "url"
+    t.boolean  "is_show",           default: true
+    t.integer  "sort"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "wx_menus", ["key"], name: "index_wx_menus_on_key", using: :btree
+  add_index "wx_menus", ["parent_id"], name: "index_wx_menus_on_parent_id", using: :btree
+  add_index "wx_menus", ["public_account_id"], name: "index_wx_menus_on_public_account_id", using: :btree
 
   create_table "wx_roles", force: true do |t|
     t.string   "name"

@@ -20,13 +20,15 @@
 </div>
 
 <div class="info pull-right">
-     <span class="views" title="浏览次数"><i class="fa fa-eye"></i><%= view_count %>次浏览</span>
+     <span class="views" title="浏览次数"><i class="fa fa-eye"></i><%= view_count %>浏览</span>
+     <span class="views" title="分享次数"><i class="fa fa-share-square-o"></i><%=  @article.share_count%>分享</span>
+
 		 
 		<%if session["article_like_#{@article.id}"].nil?%>
 				<%=link_to like_mobile_wx_article_path(@article) , :remote=>true do%>
-			  <span class="like" title="点赞"><i class="fa fa-thumbs-o-up"></i><%= @article.like_count %>个赞</span>
+			  <span class="like" title="点赞"><i class="fa fa-thumbs-o-up"></i><%= @article.like_count %>赞</span>
 				<%end%>
 		 <%else%>
-	 			<span class="like" title="点赞"><i class="fa fa-thumbs-up"></i><%= @article.like_count %>个赞</span>
+	 			<span class="like" title="点赞"><i class="fa fa-thumbs-up"></i><%= @article.like_count %>赞</span>
 		 <%end%>
 </div>
