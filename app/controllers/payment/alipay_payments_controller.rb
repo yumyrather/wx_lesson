@@ -12,24 +12,18 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
     
     user_id = params[:user_id]
     
+
     md5 = Digest::MD5.hexdigest(user_id.to_s)
-    logger.info("uuid is #{md5}")
     trade_no = "#{Time.now.strftime("%Y%m%d%H%M%S")}#{md5}"
     
-    
     @wx_user = WxUser.find(user_id)
-    
-    
-    options = {
-      :req_data => {
-        :out_trade_no  => "#{trade_no}",         # 20130801000001
-        :subject       => '测试用的',   # Writings.io Base Account x 12
-        :total_fee     => '0.01',
-        :call_back_url        => "http://115.29.189.26/mobile/wx_users/#{@wx_user.id}", # https://writings.io/orders/20130801000001
-        :notify_url        => 'http://115.29.189.26/payment/alipay_payments/alipay_wap_notify'  # https://writings.io/orders/20130801000001/alipay_notify
-      }
-    }
-
+    @alipay = AlipayPayment.new
+    @alipay.wx_user_id = @wx_user.id
+    @alipay.total_fee = 0.01
+    @alipay.out_trade_no = trade_no
+    @alipay.subject = "测试用的"
+    @alipay.save
+    options = @alipay.payment_config
     token = Alipay::Service::Wap.trade_create_direct_token(options)
     redirect_to Alipay::Service::Wap.auth_and_execute(request_token: token)
   end
@@ -44,7 +38,11 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
       # valid notify, code your business logic.
       # you may want to get you order id:
       order_id = Hash.from_xml(params[:notify_data])['notify']['out_trade_no']
+      @feedback = AlipayFeedback.build_with_feedback(Hash.from_xml(params[:notify_data])['notify'])
+      @feedback.save
+      @feedback.update_payment
       logger.info("order_id is #{order_id} success")
+      
       render :text => 'success'
     else
       render :text => 'error'
