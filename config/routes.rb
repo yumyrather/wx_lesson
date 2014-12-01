@@ -7,7 +7,12 @@ WxCast::Application.routes.draw do
   
   
   namespace :payment do
-    resources :alipay_payments
+    resources :alipay_payments do
+      collection do
+        get 'alipay_wap_notify'
+        post 'alipay_wap_notify'
+      end
+    end
   end
   
   

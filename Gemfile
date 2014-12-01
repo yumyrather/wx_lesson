@@ -32,7 +32,7 @@ gem 'carrierwave-upyun', '0.1.5'
 gem 'mini_magick'
 
 #Alipay
-gem 'alipay'
+gem 'alipay', :github => 'chloerei/alipay'
 
 #pageinate
 gem 'wice_grid'

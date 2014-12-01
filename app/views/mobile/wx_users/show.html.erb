@@ -43,5 +43,9 @@
 	     <%= l @user.end_time,:format=>:long  if @user.end_time%>
 	  </li>
 	</ul>
+	<%=link_to payment_alipay_payments_path,:class=>"btn btn-block"  ,"data-ignore"=>"push" do%>
+	
+		会员升级
+	<%end%>
 </div>
 
