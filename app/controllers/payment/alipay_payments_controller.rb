@@ -8,10 +8,10 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
     md5 = Digest::MD5.hexdigest('1')
     logger.info("uuid is #{md5}")
     logger.info("uuid is #{Time.now.strftime("%Y%m%d%H%M%S")}")
-    
+    trade_no = Time.now.strftime("%Y%m%d%H%M%S")
     options = {
       :req_data => {
-        :out_trade_no  => '20130801000001',         # 20130801000001
+        :out_trade_no  => "#{trade_no}",         # 20130801000001
         :subject       => '测试用的',   # Writings.io Base Account x 12
         :total_fee     => '0.01',
         :call_back_url        => 'http://115.29.189.26/', # https://writings.io/orders/20130801000001
