@@ -31,13 +31,15 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
   
   def alipay_wap_notify
     # except :controller_name, :action_name, :host, etc.
-    logger.info("ver params is #{params}")
     notify_params = params.except(*request.path_parameters.keys)
+    logger.info("ver params is #{params}")
     
     if Alipay::Notify::Wap.verify?(notify_params)
       # valid notify, code your business logic.
       # you may want to get you order id:
       order_id = Hash.from_xml(params[:notify_data])['notify']['out_trade_no']
+      logger.info("notify_date is #{Hash.from_xml(params[:notify_data])['notify']}")
+      
       @feedback = AlipayFeedback.build_with_feedback(Hash.from_xml(params[:notify_data])['notify'])
       @feedback.save
       @feedback.update_payment
