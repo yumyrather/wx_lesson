@@ -14,8 +14,8 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
         :out_trade_no  => '20130801000001',         # 20130801000001
         :subject       => '测试用的',   # Writings.io Base Account x 12
         :total_fee     => '0.01',
-        :call_back_url        => 'http://www.xubokai.net', # https://writings.io/orders/20130801000001
-        :notify_url        => 'http://www.xubokai.net/payment/alipay_payments/alipay_wap_notify'  # https://writings.io/orders/20130801000001/alipay_notify
+        :call_back_url        => 'http://115.29.189.26/', # https://writings.io/orders/20130801000001
+        :notify_url        => 'http://115.29.189.26/payment/alipay_payments/alipay_wap_notify'  # https://writings.io/orders/20130801000001/alipay_notify
       }
     }
 
