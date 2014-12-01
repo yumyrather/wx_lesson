@@ -1,20 +1,31 @@
 class  Payment::AlipayPaymentsController < Payment::BaseController  
   require 'digest/md5' 
+  
+  
+  skip_before_filter :verify_authenticity_token,:only => :alipay_wap_notify  
+  
+  
   def index
     Alipay.pid = '2088211609440258'
     Alipay.key = 'mk96m21cti3xhfpxkzfkt2kkplvmebfx'
     Alipay.seller_email = 'hp@goal101.com'
     
-    md5 = Digest::MD5.hexdigest('1')
+    user_id = params[:user_id]
+    
+    md5 = Digest::MD5.hexdigest(user_id)
     logger.info("uuid is #{md5}")
-    logger.info("uuid is #{Time.now.strftime("%Y%m%d%H%M%S")}")
-    trade_no = Time.now.strftime("%Y%m%d%H%M%S")
+    trade_no = "#{Time.now.strftime("%Y%m%d%H%M%S")}#{md5}"
+    
+    
+    @wx_user = WxUser.find(user_id)
+    
+    
     options = {
       :req_data => {
         :out_trade_no  => "#{trade_no}",         # 20130801000001
         :subject       => '测试用的',   # Writings.io Base Account x 12
         :total_fee     => '0.01',
-        :call_back_url        => 'http://115.29.189.26/', # https://writings.io/orders/20130801000001
+        :call_back_url        => "http://115.29.189.26/mobile/wx_users/#{@wx_user.id}", # https://writings.io/orders/20130801000001
         :notify_url        => 'http://115.29.189.26/payment/alipay_payments/alipay_wap_notify'  # https://writings.io/orders/20130801000001/alipay_notify
       }
     }

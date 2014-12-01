@@ -53,6 +53,7 @@ class  Admin::WxUsersController < Admin::BaseController
       redirect_to admin_wx_users_path,:notice=>"删除微信订阅用户成功!"
     end
     
+    
     private
     def wx_user_params
       params.require(:wx_user).permit!

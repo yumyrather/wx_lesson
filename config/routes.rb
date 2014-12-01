@@ -5,7 +5,6 @@ WxCast::Application.routes.draw do
   
   root :to => 'admin/home#index'
   
-  
   namespace :payment do
     resources :alipay_payments do
       collection do
