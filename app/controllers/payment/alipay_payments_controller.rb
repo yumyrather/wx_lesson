@@ -12,7 +12,7 @@ class  Payment::AlipayPaymentsController < Payment::BaseController
     
     user_id = params[:user_id]
     
-    md5 = Digest::MD5.hexdigest(user_id)
+    md5 = Digest::MD5.hexdigest(user_id.to_s)
     logger.info("uuid is #{md5}")
     trade_no = "#{Time.now.strftime("%Y%m%d%H%M%S")}#{md5}"
     
