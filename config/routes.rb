@@ -52,6 +52,9 @@ WxCast::Application.routes.draw do
     end
     
     
+    resources :alipay_payments
+    resources :alipay_feedbacks
+    
   end
   
   

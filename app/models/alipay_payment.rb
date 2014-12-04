@@ -1,5 +1,5 @@
 class AlipayPayment < ActiveRecord::Base
-
+  belongs_to :wx_user
   def payment_config
     options = {
       :req_data => {

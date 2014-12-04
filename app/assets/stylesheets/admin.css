@@ -20,6 +20,7 @@
  *= require admin/simditor
  *= require admin/bootstrap-editable
  *= require wice_grid
+ *= requier admin/jquery.countdown
 
 */
 

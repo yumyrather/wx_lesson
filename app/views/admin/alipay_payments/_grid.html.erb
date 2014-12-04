@@ -1,0 +1,18 @@
+<%= grid(@payments_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+
+	g.column :name => '编号', :attribute => 'id' do |payment|
+		link_to payment.id,[:admin,payment]
+	end
+	
+	g.column :name => '支付会员账号', :attribute => 'wx_user_id' do |payment| 
+		link_to payment.try(:wx_user).try(:username),[:admin,payment.try(:wx_user)]
+	end
+
+	g.column :name=>  '订单金额' ,:attribute => "total_fee" 
+	
+	g.column :name=>  '支付时间' ,:attribute => "paid_at" do |payment| 
+		l payment.paid_at if payment.paid_at
+	end
+	
+	
+end -%>
