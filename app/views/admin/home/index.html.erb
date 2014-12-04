@@ -2,14 +2,19 @@
 	<div class="col-lg-12 col-xs-12">
     <div class="small-box bg-red">
       <div class="inner">
-        <h4>
+	      <h3>
+            <%=WxUser.all.size%>
+        </h3>
+				<h4>
+					年付费会员,
+			
 					目标10万年付费会员还需 
 				</h4>
 				<h3>
-					<%=100000-WxUser.all.size%> 位
+					<%=100000-WxUser.all.size%> 
 				</h3>
 				<h4>
-					<span>至2015年12月30日还有</span>
+					<span>至2015年12月30日剩</span>
 					<span id="counter"></span>
 				</h4>
 
@@ -19,35 +24,17 @@
 			    <i class="ion ion-flag"></i>
 			</div>
 			<%=link_to admin_wx_users_path ,:class=>"small-box-footer" do%>
-				付费会员列表 <i class="fa fa-arrow-circle-right"></i>
+				更多信息 <i class="fa fa-arrow-circle-right"></i>
 			<%end%>
 		</div>
 	</div>
 </div>
 
 <div class="row">
-  <div class="col-lg-6 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-yellow">
-            <div class="inner">
-                <h3>
-                    <%=WxUser.all.size%>
-                </h3>
-                <p>
-                    年付费会员
-                </p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-person-add"></i>
-            </div>
-						<%=link_to admin_wx_users_path ,:class=>"small-box-footer" do%>
-							更多信息 <i class="fa fa-arrow-circle-right"></i>
-						<%end%>
-        </div>
-    </div><!-- ./col -->
+  
     <div class="col-lg-6 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-red">
+        <div class="small-box bg-green">
             <div class="inner">
                 <h3>
                     <%=WxKeyword.all.size%>
@@ -65,31 +52,31 @@
 						<%end%>
         </div>
     </div><!-- ./col -->
-    
+    <div class="col-lg-6 col-xs-6">
+	      <!-- small box -->
+	      <div class="small-box bg-blue">
+	          <div class="inner">
+	              <h3>
+	                  <%=WxArticle.all.size%>
+	              </h3>
+	              <p>
+	                  微信图文消息
+	              </p>
+	          </div>
+	          <div class="icon">
+	              <i class="ion ion-ios7-compose"></i>
+	          </div>
+						<%=link_to admin_wx_articles_path ,:class=>"small-box-footer" do%>
+	          	更多信息 <i class="fa fa-arrow-circle-right"></i>
+						<%end%>
+	      </div>
 </div><!-- /.row -->
 <div class="row">
-	<div class="col-lg-6 col-xs-6">
-      <!-- small box -->
-      <div class="small-box bg-green">
-          <div class="inner">
-              <h3>
-                  <%=WxArticle.all.size%>
-              </h3>
-              <p>
-                  微信图文消息
-              </p>
-          </div>
-          <div class="icon">
-              <i class="ion ion-ios7-compose"></i>
-          </div>
-					<%=link_to admin_wx_articles_path ,:class=>"small-box-footer" do%>
-          	更多信息 <i class="fa fa-arrow-circle-right"></i>
-					<%end%>
-      </div>
+
   </div><!-- ./col -->
   <div class="col-lg-6 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-blue">
+        <div class="small-box bg-red">
             <div class="inner">
                 <h3>
                     <%=WxLesson.all.size%>
@@ -106,9 +93,6 @@
 						<%end%>
         </div>
     </div><!-- ./col -->
-</div>
-<div class="row">
-
     <div class="col-lg-6 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-orange">
@@ -129,6 +113,10 @@
 						<%end%>
         </div>
     </div><!-- ./col -->
+</div>
+<div class="row">
+
+
    
 </div><!-- /.row -->
 
